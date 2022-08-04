@@ -7,8 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 * {
-    --blk: #212020;
-    --pnk: #E09384;
-    --org: #F8724C;
-
+  --blk: #212020;
+  --pnk: #e09384;
+  --org: #f8724c;
 }
