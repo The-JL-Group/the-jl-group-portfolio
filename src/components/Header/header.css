@@ -2,5 +2,17 @@
     width: 100%;
     background: var(--dkred);
     text-align: center;
-    padding: 4em 2em;
+    padding: 4em 0em;
+}
+
+.main-header h1 {
+    line-height: 1.2;
+}
+
+.main-header h5 {
+    line-height: 6;
+}
+
+.main-header p {
+    
 }
