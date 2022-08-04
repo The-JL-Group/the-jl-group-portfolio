@@ -3,6 +3,13 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './work.css';
 
+import desktopDark from '../../assets/desktop-work-dark.svg';
+import desktopLight from '../../assets/desktop-work-light.svg';
+import tabletDark from '../../assets/tablet-work-light.svg';
+import tabletLight from '../../assets/tablet-work-light.svg';
+import phoneDark from '../../assets/phone-work-light.svg';
+import phoneLight from '../../assets/phone-work-light.svg';
+
 const Work = () => {
   // SCROLL ANIMATION
   useEffect(() => {
@@ -10,7 +17,7 @@ const Work = () => {
   }, []);
 
   return (
-    <section>
+    <section className="work-container">
       {/* WORK HEADER */}
       <div className="work-header">
         <h2>VIEW</h2>
@@ -31,6 +38,7 @@ const Work = () => {
         </p>
         <p>-Mr. P</p>
         <button></button>
+        <img src={desktopDark} alt="Desktop Project 1"></img>
       </div>
 
       {/* PROJECT 2 ON TABLET*/}
@@ -43,12 +51,14 @@ const Work = () => {
         <p>“best website i’ve ever had for my business! 10/10 recommend.”</p>
         <p>-Mrs. H</p>
         <button></button>
+        <img src={tabletDark} alt="Desktop Project 2"></img>
       </div>
 
       {/* PROJECT 3 ON PHONE*/}
       <div className="work-phone">
         <h3>coming soon.</h3>
         <button></button>
+        <img src={phoneDark} alt="Desktop Project 3"></img>
       </div>
     </section>
   );
