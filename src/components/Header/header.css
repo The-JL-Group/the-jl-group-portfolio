@@ -3,6 +3,11 @@
     background: var(--dkred);
     text-align: center;
     padding: 4em 0em;
+   
+}
+
+.main-header img {
+    width: 100%;
 }
 
 .main-header h1 {
@@ -13,6 +18,3 @@
     line-height: 6;
 }
 
-.main-header p {
-    
-}

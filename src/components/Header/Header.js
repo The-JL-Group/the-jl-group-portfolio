@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './header.css';
 
+import Navbar from './navbar';
+
 import logoDark from '../../assets/jl-logo-dark.svg';
 import logoLight from '../../assets/jl-logo-light.svg';
 import headerDark from '../../assets/header-image-dark.svg';
@@ -19,13 +21,13 @@ const Header = () => {
       {/* Header Img + Main Text */}
       <div className="main-header">
         {/* Img */}
-        <img src="" alt="Circular header images"></img>
+        <img src={headerDark} alt="Circular header images"></img>
 
         {/* Text */}
-        <div>
-          <h1>The</h1>
+        <div className="text-wrapper">
+          <h1>THE</h1>
           <h1>JL</h1>
-          <h1>Group</h1>
+          <h1>GROUP</h1>
           <h5>UX/UI Developers</h5>
           <p>Giving your website a more experienced experience</p>
         </div>
