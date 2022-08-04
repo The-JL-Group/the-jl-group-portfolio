@@ -6,8 +6,8 @@ import { regIcons, socialsIcons, ctaIcons } from '../Header/navIcons'
 import logoDark from '../../assets/jl-logo-dark.svg'
 import logoLight from '../../assets/jl-logo-light.svg'
 
-import headerDark from '../../assets/header-image-dark.svg'
-import headerLight from '../../assets/header-image-light.svg'
+import headerDark from '../../assets/header-image-dark.png'
+import headerLight from '../../assets/header-image-light.png'
 
 const Header = () => {
 
