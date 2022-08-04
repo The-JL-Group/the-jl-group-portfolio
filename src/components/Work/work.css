@@ -1,0 +1,9 @@
+.work-container {
+  width: 100%;
+  text-align: center;
+  padding: 4em 1em;
+}
+
+.work-container img {
+  margin: 0 auto;
+}

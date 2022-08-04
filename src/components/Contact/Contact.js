@@ -11,7 +11,7 @@ const Contact = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <section>
+    <section className="contact-container">
       <h2>CONTACT</h2>
       <img src={contactHeaderDark} alt="Contact Header Dark"></img>
       <div>
