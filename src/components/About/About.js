@@ -1,9 +1,11 @@
 import React from 'react'
+import './about.css';
+import Navbar from '../Header/navbar';
 
 const About = () => {
   return (
     <section>
-        <div>
+        <div className='main-about'>
 
             {/* Component Title */}
             <div>
