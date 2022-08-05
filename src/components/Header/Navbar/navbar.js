@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { regIcons, socialsIcons, ctaIcons } from '../Header/navIcons'
+import { regIcons, socialsIcons, ctaIcons } from '../navIcons'
 
 const Navbar = () => {
   return (
