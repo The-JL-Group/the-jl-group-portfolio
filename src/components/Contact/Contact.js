@@ -2,8 +2,10 @@ import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './contact.css';
+import './InputBox';
 
 import contactHeaderDark from '../../assets/contact-header-dark.svg';
+import InputBox from './InputBox';
 
 const Contact = () => {
   // SCROLL ANIMATION
@@ -12,15 +14,31 @@ const Contact = () => {
   }, []);
   return (
     <section className="contact-container">
-      <h2>CONTACT</h2>
+      <h2 className="contact-header">CONTACT</h2>
       <img src={contactHeaderDark} alt="Contact Header Dark"></img>
+      <div className="contact-text">
+        <p>
+          Have any <span className="contact-color">QUESTIONS?</span>
+        </p>
+        <p>
+          Hit our <span className="contact-color">EMAIL</span> or send us
+        </p>
+        <p>
+          a <span className="contact-color">MESSAGE</span> down below
+        </p>
+        <p>
+          or find us on <span className="contact-color">GITHUB</span>{' '}
+        </p>
+        <p>
+          and find us on <span className="contact-color">FIVERR</span>
+        </p>
+      </div>
       <div>
-        <p>Have any QUESTIONS? </p>
-        <p>Hit our EMAIL or send us a</p>
-        <p>MESSAGE down below</p>
-        <p>or find us on GITHUB </p>
-        <p>and find us on FIVERR</p>
-        <p>jameslinagroup@gmail.com</p>
+        <p className="contact-color">jameslinagroup@gmail.com</p>
+      </div>
+
+      <div>
+        <InputBox />
       </div>
     </section>
   );
