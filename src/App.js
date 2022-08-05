@@ -4,6 +4,7 @@ import Navbar from './components/Header/navbar';
 import About from './components/About/About';
 import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
+import Toggle from './components/Header/Toggle';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <About />
       <Work />
       <Contact />
-
+      <Toggle />
     </div>
   );
 }

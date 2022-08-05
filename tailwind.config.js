@@ -3,6 +3,7 @@ module.exports = {
     './src/**/*.{html,js}',
     './node_modules/tw-elements/dist/js/**/*.js',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
