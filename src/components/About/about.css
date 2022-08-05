@@ -2,5 +2,9 @@
     width: 100%;
     background: var(--dkred);
     text-align: center;
-    padding: 4em 2em;
+    padding: 4em 0em;
+}
+
+.main-about img {
+    margin: 0 auto;
 }
