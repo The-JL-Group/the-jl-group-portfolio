@@ -19,7 +19,7 @@ const Header = () => {
       {/* Header Img + Main Text */}
       <div className="main-header">
         {/* Img */}
-        <img src="" alt="Circular header images"></img>
+        <img src={headerDark} alt="Circular header images"></img>
 
         {/* Text */}
         <div>
