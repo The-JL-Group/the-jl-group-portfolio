@@ -25,7 +25,6 @@ import emailLight from '../../assets/icons/fiverr-icon-light.svg'
 import closeDark from '../../assets/icons/x-icon-dark.svg'
 import closeLight from '../../assets/icons/x-icon-light.svg'
 
-import eyeIcon from '../../assets/icons/eye-icon.svg'
 
   // Regular Icons
   export const regIcons = [
@@ -43,9 +42,5 @@ import eyeIcon from '../../assets/icons/eye-icon.svg'
     { title: 'CLOSE', pathway: '#' },
   ]
 
-  // Call-To-Action Icons
-  export  const ctaIcon = [
-    { title: 'View Work', pathway: '#' }
-  ]
 
 

@@ -1,8 +1,38 @@
+.logo-wrapper {
+    padding: .6rem;
+}
+
 .main-header {
-  width: 100%;
-  background: var(--dkred);
-  text-align: center;
-  padding: 4em 0em;
+    width: 100%;
+    /* background: var(--dkred); */
+    text-align: center;
+    padding: 2em 1em; 
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+
+    height: 120vh;
+    position: relative;
+    overflow: hidden;  
+}
+
+.header-image {
+    transform: scale(3);
+    position: absolute;
+    left: -200px;
+    top: 200px;
+}
+
+.header-img-wrapper {
+    /* width: 100%; */
+    /* top: -2rem;
+    left: -31rem;  */
+
+    /* position: absolute; */
+}
+
+.header-image {
+    /* width: 100%; */
+    /* transform: scale(2); */
 }
 
 .main-header h1 {
@@ -10,5 +40,71 @@
 }
 
 .main-header h5 {
-  line-height: 6;
+    /* line-height: 0; */
+    margin: 2rem 0 0 0;
+    letter-spacing: 0.119rem;
+}
+
+.text-wrapper {
+    position: relative;
+    /* margin-top: -90%; */
+}
+
+.text-wrapper p {
+    position: relative;
+    font-family: Manrope, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* color: var(--blk); */
+}
+
+.text-wrapper p span {
+    color: #fff;
+}
+
+.cta-wrapper{
+    margin: 0.625rem 0 0 0;
+} 
+
+.cta-wrapper button {
+    display: inline-flex;
+    padding: .563rem;
+    border: none;
+    outline: none;
+    border-radius: 4rem;
+    background: rgba(0, 0, 0, 0.4);
+    font-family: Manrope, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cta-text,
+.cta-icon {
+    /* display: inline-flex; */
+    align-items: center;
+    padding: 0 0.4rem;
+}
+
+/* On-Hover */
+.cta-wrapper button:hover {
+    background:rgba(57, 56, 56, 0.4)
+}
+
+/* On-Click */
+.cta-wrapper button:active {
+    background:rgba(57, 56, 56, 0.4)
+}
+
+/* @media (min-width: 500px) {
+    .text-wrapper {
+        position:initial;
+        margin-top: 0;
+        
+    }
+
+    .header-img-wrapper {
+        position:initial;
+    }
+} */
+
+.carousel-container {
+    margin: 0 20%;
 }
