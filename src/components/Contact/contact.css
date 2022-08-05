@@ -1,10 +1,30 @@
+/* MAIN CONTAINER */
 .contact-container {
   width: 100%;
   text-align: center;
   padding: 4em 1em;
 }
 
+/* CONTACT CONTAINER */
+.contact-header {
+  text-align: center;
+  text-shadow: 4px 0 var(--org);
+}
+
 .contact-container img {
   margin: 0 auto;
   width: 100%;
+}
+
+.contact-color {
+  color: var(--org);
+}
+
+.contact-text {
+  padding: 2em 0;
+}
+
+/* INPUT BOX */
+.input-box-container {
+  padding: 2em 0;
 }
