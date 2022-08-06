@@ -13,10 +13,7 @@ import eyeIcon from '../../assets/icons/eye-icon.svg';
 
 const Header = () => {
   return (
-
     <header className="z-0 header font-['Major Mono Display']">
-
-
       {/* Logo + Day/Night Btn */}
       <div className="logo-wrapper">
         <a href="#">
@@ -43,8 +40,9 @@ const Header = () => {
           {/* Plain Text 'Carats' must be written as HTML entities */}
 
           <h5>&lt;ux/ui developers/&gt;</h5>
-          <p>Giving your website a more experienced <span>experience</span></p>
-
+          <p>
+            Giving your website a more experienced <span>experience</span>
+          </p>
 
           {/* Call-To-Action Btn */}
           <div className="cta-wrapper">
@@ -63,12 +61,9 @@ const Header = () => {
 
         {/* Work Preview Carousel */}
 
-    <CardSlider />
-    
-          
-         
+        <CardSlider />
       </div>
-
+      <Toggle />
     </header>
   );
 };
