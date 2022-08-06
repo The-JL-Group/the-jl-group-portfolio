@@ -9,8 +9,8 @@ import Toggle from './components/Header/Toggle';
 function App() {
   return (
     <div>
-      <Header />
       <Navbar />
+      <Header />
       <About />
       <Work />
       <Contact />

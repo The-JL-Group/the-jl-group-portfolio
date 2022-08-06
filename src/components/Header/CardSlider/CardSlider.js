@@ -1,26 +1,57 @@
 import { useRef, useEffect, useState } from 'react'
+
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
 import './cardSlider.css'
-// Motion NPM Package
-import { motion } from 'framer-motion';
 import images from './images'
 
 const CardSlider = () => {
 
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3 // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    }
+  };
+
+
   return (
-    // CHANGE NAMES LATER
-    
-    <motion.div className='carousel'>
-      <motion.div className='inner-carousel'>
+    // Image Container
+    <div className='image-container'>
+      {/* Image Wrapper */}
+      <Carousel
+       responsive={responsive} 
+       swipeable={true}
+       draggable={true}
+       ssr={true}
+       infinite={true}
+       autoPlaySpeed={1000}
+       keyBoardControl={true}
+       removeArrowOnDeviceType={["mobile"]}
+       className='image-wrapper'
+      >
         {images.map(image => {
           return (
-            <motion.div className='item'>
-              <img src={image} alt="looped carousel images"></img>
-            </motion.div>
-          )
+            <div className='carousel-image'>
+              <img src={image}></img>
+            </div>
+          );
         })}
-      </motion.div>
-    </motion.div>
+      </Carousel>
+    </div>
   )
 }
 
-export default CardSlider
+export default CardSlider;

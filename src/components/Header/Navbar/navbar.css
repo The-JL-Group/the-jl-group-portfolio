@@ -1,0 +1,21 @@
+nav {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.reg-icon-container {
+    width: 100%;
+}
+
+/* Centered Icons */
+.reg-icon-container img {
+    width: 50%; 
+    vertical-align: middle;
+    display: inline-block;
+ 
+}
+
+.nav-list {
+    font-size: 0.625rem;
+    color: var(--blk);
+    width: 100%;
+}
