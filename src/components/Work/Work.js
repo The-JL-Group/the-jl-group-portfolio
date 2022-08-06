@@ -20,7 +20,7 @@ const Work = () => {
     <section className="work-container">
       {/* WORK HEADER */}
 
-      <div className="work-header-main">
+      <div className="work-header-main text-shadow-org dark:text-shadow-pnk">
         <h2>VIEW</h2>
         <h2>OUR</h2>
         <h2>WORK</h2>
