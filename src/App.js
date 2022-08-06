@@ -7,12 +7,9 @@ import Contact from './components/Contact/Contact';
 
 function App() {
   return (
-
     <div className="dark:bg-white dark:text-blk">
       <Header />
-
       <Navbar />
-      <Header />
       <About />
       <Work />
       <Contact />
