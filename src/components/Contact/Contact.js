@@ -5,6 +5,7 @@ import './contact.css';
 import './InputBox';
 
 import contactHeaderDark from '../../assets/contact-header-dark.svg';
+// import contactHeaderLight from '../../assets/contact-header-light.svg';
 import InputBox from './InputBox';
 
 const Contact = () => {
@@ -14,27 +15,39 @@ const Contact = () => {
   }, []);
   return (
     <section className="contact-container">
-      <h2 className="contact-header">CONTACT</h2>
-      <img src={contactHeaderDark} alt="Contact Header Dark"></img>
+      <h2 className="contact-header text-shadow-org dark:text-shadow-pnk ">
+        CONTACT
+      </h2>
+      {/* <img
+        src={contactHeaderDark}
+        alt="Contact Header Dark"
+        className="dark:color-blk"
+      ></img> */}
+      <div className="bg-contact-dark"></div>
       <div className="contact-text">
         <p>
-          Have any <span className="contact-color">QUESTIONS?</span>
+          Have any{' '}
+          <span className="contact-color dark:text-pnk">QUESTIONS?</span>
         </p>
         <p>
-          Hit our <span className="contact-color">EMAIL</span> or send us
+          Hit our <span className="contact-color dark:text-pnk">EMAIL</span> or
+          send us
         </p>
         <p>
-          a <span className="contact-color">MESSAGE</span> down below
+          a <span className="contact-color dark:text-pnk">MESSAGE</span> down
+          below
         </p>
         <p>
-          or find us on <span className="contact-color">GITHUB</span>{' '}
+          or find us on{' '}
+          <span className="contact-color dark:text-pnk">GITHUB</span>{' '}
         </p>
         <p>
-          and find us on <span className="contact-color">FIVERR</span>
+          and find us on{' '}
+          <span className="contact-color dark:text-pnk">FIVERR</span>
         </p>
       </div>
       <div>
-        <p className="contact-color">jameslinagroup@gmail.com</p>
+        <p className="contact-color dark:text-pnk">jameslinagroup@gmail.com</p>
       </div>
 
       <div>

@@ -6,32 +6,45 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-*, *::before, *::after {
-    --blk: #212020;
-    --wht: #ffffff;
-    --pnk: #E09384;
-    --org: #F8724C;
-    --dkred: rgb(128, 37, 37);
+@layer utilities {
+  .text-shadow-org {
+    text-shadow: 4px 0 #f8724c;
+  }
+  .text-shadow-pnk {
+    text-shadow: 4px 0 #e09384;
+  }
+}
 
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  --blk: #212020;
+  --wht: #ffffff;
+  --pnk: #e09384;
+  --org: #f8724c;
+  --dkred: rgb(128, 37, 37);
+
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: 'Major Mono Display';
-    background-color: var(--blk);
-    color: var(--wht);
-    line-height: 1.6;
-    padding-bottom: 2em;
+  margin: 0;
+  font-family: 'Major Mono Display';
+  background-color: var(--blk);
+  color: var(--wht);
+  line-height: 1.6;
+  padding-bottom: 2em;
 }
 
 h1 {
+
     line-height: 1;
     font-size: 4.6rem;
     margin: 0;
+
 }
 
 h2 {
-    font-size: 2rem;
-    margin: 0;
+  font-size: 2rem;
+  margin: 0;
 }

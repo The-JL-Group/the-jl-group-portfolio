@@ -8,7 +8,7 @@
 /* CONTACT CONTAINER */
 .contact-header {
   text-align: center;
-  text-shadow: 4px 0 var(--org);
+  /* text-shadow: 4px 0 var(--org); */
 }
 
 .contact-container img {
