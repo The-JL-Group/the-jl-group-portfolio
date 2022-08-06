@@ -1,7 +1,9 @@
 import React from 'react';
 import './header.css';
+import useDarkMode from '../../hooks/useDarkMode';
 
 const Toggle = () => {
+  const [setTheme, colorTheme] = useDarkMode();
   return (
     <div className="toggle-button">
       <div class="flex justify-center">
@@ -11,6 +13,7 @@ const Toggle = () => {
             type="checkbox"
             role="switch"
             id="flexSwitchCheckDefault56"
+            onClick={() => setTheme(colorTheme)}
           />
         </div>
       </div>
