@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 
 // Icons
-import portfolioDark from '../../assets/icons/portfolio-icon-dark.svg'
+import portfolioDark from '../../assets/icons/desktop-outline.svg'
 import portfolioLight from '../../assets/icons/portfolio-icon-light.svg'
 
-import aboutDark from '../../assets/icons/about-us-icon-dark.svg'
+import aboutDark from '../../assets/icons/people-circle-outline.svg'
 import aboutLight from '../../assets/icons/about-us-icon-light.svg'
 
-import hireDark from '../../assets/icons/hire-us-icon-dark.svg'
+import hireDark from '../../assets/icons/happy-outline.svg'
 import hireLight from '../../assets/icons/hire-us-icon-light.svg'
 
-import socialsDark from '../../assets/icons/socials-icon-dark.svg'
+import socialsDark from '../../assets/icons/list-outline.svg'
 import socialsLight from '../../assets/icons/socials-icon-light.svg'
 
 import githubDark from '../../assets/icons/github-icon-dark.svg'
@@ -28,18 +28,18 @@ import closeLight from '../../assets/icons/x-icon-light.svg'
 
   // Regular Icons
   export const regIcons = [
-    { title: 'PORTFOLIO', src: portfolioDark ,  pathway: '#' },
-    { title: 'ABOUT US', pathway: '#' },
-    { title: 'HIRE US', pathway: '#' },
-    { title: 'SOCIALS', pathway: '#' },
+    { title: 'portfolio', icon: portfolioDark, dis: "translate-x-0" },
+    { title: 'about us', icon: aboutDark, dis: "translate-x-16" },
+    { title: 'hire us', icon: hireDark, dis: "translate-x-32" },
+    { title: 'socials', icon: socialsDark, dis: "translate-x-48" },
   ]
 
   // Social Icons
   export const socialsIcons = [
-    { title: 'GITHUB', pathway: '#' },
-    { title: 'FIVERR',  pathway: '#' },
-    { title: 'EMAIL US', pathway: '#' },
-    { title: 'CLOSE', pathway: '#' },
+    { title: 'github', icon: portfolioDark, },
+    { title: 'fiverr',  icon: portfolioDark,},
+    { title: 'email us', icon: portfolioDark, },
+    { title: 'close', icon: portfolioDark,},
   ]
 
 
