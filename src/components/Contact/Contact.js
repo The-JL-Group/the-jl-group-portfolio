@@ -14,7 +14,7 @@ const Contact = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <section className="contact-container">
+    <section id="contact" className="contact-container">
       <h2 className="contact-header text-shadow-org dark:text-shadow-pnk ">
         CONTACT
       </h2>

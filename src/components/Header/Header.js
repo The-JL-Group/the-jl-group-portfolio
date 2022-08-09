@@ -13,7 +13,7 @@ import eyeIcon from '../../assets/icons/eye-icon.svg';
 
 const Header = () => {
   return (
-    <header className="z-0 header font-['Major Mono Display']">
+    <header id="header" className="z-0 header font-['Major Mono Display']">
       {/* Logo + Day/Night Btn */}
       <div className="logo-wrapper">
         <a href="#">
