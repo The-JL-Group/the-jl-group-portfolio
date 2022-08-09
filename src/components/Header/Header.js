@@ -24,12 +24,13 @@ const Header = () => {
       {/* Header Img + Main Text */}
       <div className="main-header">
         {/* Img */}
-        <div className="header-img-wrapper">
-          <img
+        <div className="header-img-wrapper bg-header-dark dark:bg-header-light bg-cover object-cover bg-center h-56 w-full header-image">
+          {/* <div> */}
+          {/* <img
             src={headerDark}
             alt="Circular header images"
             className="header-image"
-          ></img>
+          ></img> */}
         </div>
 
         {/* Text */}

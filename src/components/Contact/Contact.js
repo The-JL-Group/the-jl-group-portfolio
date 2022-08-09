@@ -18,36 +18,51 @@ const Contact = () => {
       <h2 className="contact-header text-shadow-org dark:text-shadow-pnk ">
         CONTACT
       </h2>
-      {/* <img
-        src={contactHeaderDark}
-        alt="Contact Header Dark"
-        className="dark:color-blk"
-      ></img> */}
-      <div className="bg-contact-dark"></div>
+      <div className="bg-contact-dark dark:bg-contact-light bg-cover object-cover h-64 contact-image"></div>
       <div className="contact-text">
         <p>
-          Have any{' '}
-          <span className="contact-color dark:text-pnk">QUESTIONS?</span>
+          Have any
+          <span className="contact-color dark:text-pnk"> QUESTIONS?</span>
         </p>
         <p>
-          Hit our <span className="contact-color dark:text-pnk">EMAIL</span> or
-          send us
+          Hit our{' '}
+          <a
+            href="mailto:jameslinagroup@gmail.com"
+            className="contact-color dark:text-pnk"
+          >
+            EMAIL
+          </a>{' '}
+          or send us
         </p>
         <p>
           a <span className="contact-color dark:text-pnk">MESSAGE</span> down
           below
         </p>
         <p>
-          or find us on{' '}
-          <span className="contact-color dark:text-pnk">GITHUB</span>{' '}
+          or find us on
+          <a
+            href="https://github.com/The-JL-Group"
+            className="contact-color dark:text-pnk"
+          >
+            {' '}
+            GITHUB
+          </a>
         </p>
         <p>
-          and find us on{' '}
-          <span className="contact-color dark:text-pnk">FIVERR</span>
+          and find us on
+          <a href="#" className="contact-color dark:text-pnk">
+            {' '}
+            FIVERR
+          </a>
         </p>
       </div>
       <div>
-        <p className="contact-color dark:text-pnk">jameslinagroup@gmail.com</p>
+        <a
+          href="mailto:jameslinagroup@gmail.com"
+          className="contact-color dark:text-pnk"
+        >
+          jameslinagroup@gmail.com
+        </a>
       </div>
 
       <div>

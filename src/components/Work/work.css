@@ -1,7 +1,7 @@
 /* MAIN CONTAINER */
 .work-container {
   width: 100%;
-  padding: 4em 1em;
+  padding: 2em 1em;
 }
 
 /* WORK HEADER */
@@ -13,7 +13,36 @@
   letter-spacing: 4px;
 }
 
-/* CSS FOR ALL WORK CONTAINERS*/
+/* WORK DESKTOP */
+.desktop-image {
+  height: 25em;
+}
+
+.work-desktop-text {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0em 3em;
+}
+
+.work-desktop-text p {
+  font-size: 0.7em;
+}
+
+/* WORK TABLET */
+.tablet-image {
+  height: 23em;
+}
+
+/* WORK PHONE */
+.phone-image {
+  height: 22em;
+}
+
+/* CSS FOR ALL OTHER WORK CONTAINERS*/
+
 .work-tech {
   position: relative;
   text-align: center;
@@ -32,14 +61,4 @@
 
 .work-text p {
   font-size: 0.7em;
-}
-
-/* WORK DESKTOP */
-.desktop-image {
-  height: 35em;
-  margin: 0 auto;
-}
-
-.phone-image {
-  margin: 0 auto;
 }
