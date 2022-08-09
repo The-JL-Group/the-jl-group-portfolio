@@ -1,10 +1,12 @@
 .main-about {
     width: 100%;
-    background: var(--dkred);
-    text-align: center;
-    padding: 4em 0em;
+    /* background: var(--dkred); */
+    height: 100vh;
+    padding: 0em 0em 4em 0em;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
-.main-about img {
+/* .main-about img {
     margin: 0 auto;
-}
+} */

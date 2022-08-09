@@ -17,7 +17,7 @@ const Work = () => {
   }, []);
 
   return (
-    <section className="work-container">
+    <section id="work" className="work-container">
       {/* WORK HEADER */}
 
       <div className="work-header-main text-shadow-org dark:text-shadow-pnk">
