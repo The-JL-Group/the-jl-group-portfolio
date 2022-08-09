@@ -2,18 +2,20 @@
 .contact-container {
   width: 100%;
   text-align: center;
-  padding: 4em 0em;
+  padding: 2em 1em;
 }
 
 /* CONTACT CONTAINER */
 .contact-header {
   text-align: center;
-  /* text-shadow: 4px 0 var(--org); */
+  padding-bottom: 1em;
+  letter-spacing: 4px;
 }
 
-.contact-container img {
+.contact-image {
   margin: 0 auto;
-  width: 100%;
+  background-image: cover;
+  background-position: center;
 }
 
 .contact-color {
@@ -28,3 +30,18 @@
 .input-box-container {
   padding: 2em 0;
 }
+
+/* MEDIA QUERY */
+@media (min-width: 601px) {
+  .contact-text {
+    /* background-color: aqua; */
+  }
+}
+
+
+/* tailwind */
+/* sm = 640 */
+/* md = 768 */
+/* lg = 1024 */
+/* xl = 1280 */
+/* 2xl = 1536 */

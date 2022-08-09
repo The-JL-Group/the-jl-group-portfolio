@@ -1,15 +1,45 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './contact.css';
+import emailjs from '@emailjs/browser';
 
 const InputBox = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_pf27c74',
+        'template_mt9q5gv',
+        form.current,
+        'aV5vgf8-feK56xvce'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log('message sent');
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    document.getElementById('inputName').value = '';
+    document.getElementById('inputEmail').value = '';
+    document.getElementById('inputMessage').value = '';
+  };
+
   return (
     <div className="input-box-container">
       {/* INPUT BOX NAME */}
-      <div class="flex justify-center">
-        <div class="mb-3 xl:w-96">
-          <input
-            type="text"
-            class="
+      <form ref={form} onSubmit={sendEmail}>
+        <div class="flex justify-center">
+          <div class="mb-3 sm:w-2/3 xl:w-96">
+            <input
+              type="text"
+              name="user_name"
+              id="inputName"
+              class="
               form-control
               block
               w-full
@@ -17,27 +47,29 @@ const InputBox = () => {
               py-1.5
               text-base
               font-normal
-              text-gray-700
+              text-black
               bg-white bg-clip-padding
               border border-solid border-gray-300
               rounded
               transition
               ease-in-out
               m-0
-              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-            "
-            id="exampleText0"
-            placeholder="name"
-          />
+              focus:text-gray-700 focus:bg-white focus:border-org focus:ring-org focus:ring-1 focus:outline-none
+              dark:focus:border-pnk dark:focus:ring-pnk
+              "
+              placeholder="name"
+            />
+          </div>
         </div>
-      </div>
 
-      {/* INPUT BOX EMAIL */}
-      <div class="flex justify-center">
-        <div class="mb-3 xl:w-96">
-          <input
-            type="email"
-            class="
+        {/* INPUT BOX EMAIL */}
+        <div class="flex justify-center">
+          <div class="mb-3 sm:w-2/3 xl:w-96">
+            <input
+              type="email"
+              name="user_email"
+              id="inputEmail"
+              class="
                 form-control
                 block
                 w-full
@@ -45,26 +77,28 @@ const InputBox = () => {
                 py-1.5
                 text-base
                 font-normal
-                text-gray-700
+                text-black
                 bg-white bg-clip-padding
                 border border-solid border-gray-300
                 rounded
                 transition
                 ease-in-out
                 m-0
-                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                focus:text-gray-700 focus:bg-white focus:border-org focus:ring-org focus:ring-1 focus:outline-none
+                dark:focus:border-pnk dark:focus:ring-pnk
                 "
-            id="exampleEmail0"
-            placeholder="email"
-          />
+              placeholder="email"
+            />
+          </div>
         </div>
-      </div>
 
-      {/* INPUT BOX MESSAGE */}
-      <div class="flex justify-center">
-        <div class="mb-3 xl:w-96">
-          <textarea
-            class="
+        {/* INPUT BOX MESSAGE */}
+        <div class="flex justify-center">
+          <div class="mb-3 sm:w-2/3 xl:w-96">
+            <textarea
+              name="message"
+              id="inputMessage"
+              class="
               form-control
               block
               w-full
@@ -72,33 +106,36 @@ const InputBox = () => {
               py-1.5
               text-base
               font-normal
-              text-org
+              text-black
               bg-white bg-clip-padding
-              border border-solid border-org
+              border border-solid border-gray-300
               rounded
               transition
               ease-in-out
               m-0
-              focus:text-blk focus:bg-white focus:border-org focus:outline-none
-            "
-            id="exampleFormControlTextarea1"
-            rows="3"
-            placeholder="your message"
-          ></textarea>
+              focus:text-gray-700 focus:bg-white focus:border-org focus:ring-org focus:ring-1 focus:outline-none
+              dark:focus:border-pnk dark:focus:ring-pnk
+              "
+              rows="3"
+              placeholder="your message"
+            ></textarea>
+          </div>
         </div>
-      </div>
 
-      {/* INPUT BOX BUTTON */}
-      <div class="flex space-x-2 justify-center">
-        <button
-          type="button"
-          data-mdb-ripple="true"
-          data-mdb-ripple-color="light"
-          class="inline-block px-6 py-2.5 bg-org text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-black hover:shadow-lg focus:bg-org focus:shadow-lg focus:outline-none focus:ring-0 active:bg-pnk active:shadow-lg transition duration-150 ease-in-out dark:bg-pnk"
-        >
-          send
-        </button>
-      </div>
+        {/* INPUT BOX BUTTON */}
+        <div class="flex space-x-2 justify-center">
+          <button
+            type="submit"
+            value="send"
+            data-mdb-ripple="true"
+            data-mdb-ripple-color="light"
+            class="inline-block px-6 py-3 sm:px-1/3 xl:px-12 bg-org text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-org hover:shadow-lg focus:bg-ltOrg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-org active:shadow-lg transition duration-150 ease-in-out
+            dark:bg-pnk dark:hover:bg-pnk dark:focus:bg-ltPnk dark:active:bg-pnk"
+          >
+            send
+          </button>
+        </div>
+      </form>
     </div>
   );
 };

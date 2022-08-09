@@ -21,7 +21,9 @@
   --blk: #212020;
   --wht: #ffffff;
   --pnk: #e09384;
+  --ltPnk: #daada4;
   --org: #f8724c;
+  --ltOrg: #ee8d72;
   --dkred: rgb(128, 37, 37);
 
   box-sizing: border-box;
@@ -37,11 +39,9 @@ body {
 }
 
 h1 {
-
-    line-height: 1;
-    font-size: 4.6rem;
-    margin: 0;
-
+  line-height: 1;
+  font-size: 4.6rem;
+  margin: 0;
 }
 
 h2 {

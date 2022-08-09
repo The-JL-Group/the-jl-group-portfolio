@@ -5,9 +5,6 @@ import Toggle from '../../components/Header/Toggle';
 import CardSlider from './CardSlider/CardSlider';
 
 import logoDark from '../../assets/jl-logo-dark.svg';
-import logoLight from '../../assets/jl-logo-light.svg';
-import headerDark from '../../assets/header-image-dark.svg';
-import headerLight from '../../assets/header-image-light.svg';
 
 import eyeIcon from '../../assets/icons/eye-icon.svg';
 
@@ -24,12 +21,13 @@ const Header = () => {
       {/* Header Img + Main Text */}
       <div className="main-header">
         {/* Img */}
-        <div className="header-img-wrapper">
-          <img
+        <div className="header-img-wrapper bg-header-dark dark:bg-header-light bg-cover object-cover bg-center h-56 w-full header-image">
+          {/* <div> */}
+          {/* <img
             src={headerDark}
             alt="Circular header images"
             className="header-image"
-          ></img>
+          ></img> */}
         </div>
 
         {/* Text */}
