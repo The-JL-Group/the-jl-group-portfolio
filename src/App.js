@@ -5,12 +5,15 @@ import About from './components/About/About';
 import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
 
+import RentalCard from './components/About/AboutCards/RentalCard';
+
 function App() {
   return (
     <div className="dark:bg-white dark:text-blk">
-      <Header />
       <Navbar />
+      <Header />
       <About />
+      {/* <RentalCard /> */}
       <Work />
       <Contact />
     </div>

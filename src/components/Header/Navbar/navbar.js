@@ -1,86 +1,79 @@
 import React, { useState } from 'react';
-import { regIcons, socialsIcons, ctaIcons } from '../navIcons'
+import { regIcons, socialsIcons, openCloseBtn } from '../navIcons';
 import './navbar.css';
+
+import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
 
-  const [active, setActive ] = useState(0);
+    // Menu Slider
+    const [ open, setOpen ] = useState(false);
 
   return (
-    <nav className='fixed z-10 flex justify-around items-center bottom w-full bottom-0 max-h-[4.4rem]'>
-        <ul className='flex relative'>
-            {
-                regIcons.map((menu, i) => (
-                    <li key={i} className="nav-list w-16">
-                        <a href="#" className='flex flex-col text-center' onClick={() => setActive(i)} alt="Site link icons">
-                            <span className='reg-icon-container cursor-pointer'>
-                                <img src={menu.icon}></img>
+    // Navbar
+    <nav className='flex fixed z-10 w-full'>
+
+        {/* Nav Outer Container */}
+        <div className='nav-outer w-full'>
+
+            {/* Nav Inner Reg Container */}
+            <div className='nav-inner-reg'>
+
+                {/* Nav List Container */}
+                <div>
+
+                    <ul className='flex justify-around'>
+                        {regIcons.map((nav, index) => (
+                            <a href={nav.pathway} className='nav-link  justify-center text-center pt-2 pb-1'>
+                                {/* Nav List */}
+                                <li key={index} className="nav-list">
+                                    <span>
+                                        <span className='reg-icon-images'>{nav.icon}</span>
+                                        <span>{nav.title}</span>
+                                    </span>
+                                    
+                                </li>
+                            </a>
+                        ))}
+                        <div className=''>
+                            <span className='cursor-pointer nav-list'
+                                  onClick={() => setOpen(!open)}
+                            >
+                                <i className={`openCloseIcon ${open ? 'fa fa-times text-black text-lg' : 'fa fa-list text-black text-lg'}`}></i>
                             </span>
-                            <span>
-                                {menu.title}
-                            </span>
-                        </a>
-                    </li>
-                ))
-            }
-        </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            {/* Nav Inner Socials Container */}
+            <div className={`${open ? 'h-full' : 'h-0'}  nav-inner-reg`}>
+
+                {/* Nav List Container */}
+                <div>
+
+                    <ul className='flex justify-around'>
+                        {socialsIcons.map((nav, index) => (
+                            <a href={nav.pathway} className='nav-link  justify-center text-center'>
+                                {/* Nav List */}
+                                <li key={index} className={` ${!open && 'hidden'} nav-list`}>
+                                    <span>
+                                        <span className='social-icon-images'>{nav.icon}</span>
+                                        <span>{nav.title}</span>
+                                    </span>
+                                    
+                                </li>
+                            </a>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+
+        </div>
     </nav>
   )
 }
 
-export default Navbar
+export default Navbar;
 
-
-// {/* <span 
-//                                 className={` ${
-//                                     active === i 
-//                                         ? 'translate-y-4 duration-700 opacity-100' 
-//                                         : 'opacity-0 translate-y-10'} `}
-//                             >
-//                                 {menu.title}
-//                             </span> */}
-
-
-// {/* <nav>
-//        {/* Regular Navbar */}
-//        <div>
-
-//         {/* Regular Items */}
-//             <div className='reg-navbar'>
-//                 <ul>
-//                     {regIcons.map((nav, index) => (
-//                     <a href={`${nav.pathway}`}>
-//                         <li>
-//                         <span href={`${nav.pathway}`}>
-//                             <img src={nav.src} alt=""></img>
-//                         </span>
-//                         <span href={`${nav.pathway}`}>
-//                             {nav.title}
-//                         </span>
-//                         </li>
-//                     </a>
-//                     ))}
-//                 </ul>
-//             </div>
-//         </div>
-
-//         {/* Socials Navbar */}
-//         <div>
-//             <div className='socials-navbar'>
-//                 <ul>
-//                     {socialsIcons.map((nav, index) => (
-//                     <a href={`${nav.pathway}`}>
-//                         <li>
-//                         <span href={`${nav.pathway}`}>
-//                             <img src={nav.src} alt=""></img>
-//                         </span>
-//                         <span href={`${nav.pathway}`}>
-//                             {nav.title}
-//                         </span>
-//                         </li>
-//                     </a>
-//                     ))}
-//                 </ul>
-//             </div>
-//         </div>
-//     </nav> */}
+// ${open ? 'h-full' : 'h-0'}

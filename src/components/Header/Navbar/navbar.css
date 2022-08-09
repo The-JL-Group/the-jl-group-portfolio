@@ -1,21 +1,33 @@
 nav {
+    bottom: 0;
+    left: 0;
+}
+
+.nav-outer {
     background: rgba(255, 255, 255, 0.9);
 }
 
-.reg-icon-container {
-    width: 100%;
-}
-
-/* Centered Icons */
-.reg-icon-container img {
-    width: 50%; 
-    vertical-align: middle;
-    display: inline-block;
- 
-}
-
 .nav-list {
-    font-size: 0.625rem;
     color: var(--blk);
+    font-size: .625rem;
     width: 100%;
+}
+
+.reg-icon-images {
+    display: flex;
+    justify-content: center;
+    height: 2.3em;
+}
+
+.social-icon-images {
+    display: flex;
+    justify-content: center;
+}
+
+.openCloseIcon {
+    padding-top: 10px;
+}
+
+.nav-link.active {
+    background-color: rgb(73, 133, 189);
 }
