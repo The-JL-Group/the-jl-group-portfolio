@@ -3,9 +3,6 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './contact.css';
 import './InputBox';
-
-import contactHeaderDark from '../../assets/contact-header-dark.svg';
-// import contactHeaderLight from '../../assets/contact-header-light.svg';
 import InputBox from './InputBox';
 
 const Contact = () => {
@@ -50,7 +47,10 @@ const Contact = () => {
         </p>
         <p>
           and find us on
-          <a href="#" className="contact-color dark:text-pnk">
+          <a
+            href="https://www.fiverr.com/thejlgroup/design-and-create-your-custom-unique-website-using-react"
+            className="contact-color dark:text-pnk"
+          >
             {' '}
             FIVERR
           </a>

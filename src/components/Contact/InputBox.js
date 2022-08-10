@@ -33,13 +33,13 @@ const InputBox = () => {
     <div className="input-box-container">
       {/* INPUT BOX NAME */}
       <form ref={form} onSubmit={sendEmail}>
-        <div class="flex justify-center">
-          <div class="mb-3 sm:w-2/3 xl:w-96">
+        <div className="flex justify-center">
+          <div className="mb-3 sm:w-2/3 xl:w-96">
             <input
               type="text"
               name="user_name"
               id="inputName"
-              class="
+              className="
               form-control
               block
               w-full
@@ -63,13 +63,13 @@ const InputBox = () => {
         </div>
 
         {/* INPUT BOX EMAIL */}
-        <div class="flex justify-center">
-          <div class="mb-3 sm:w-2/3 xl:w-96">
+        <div className="flex justify-center">
+          <div className="mb-3 sm:w-2/3 xl:w-96">
             <input
               type="email"
               name="user_email"
               id="inputEmail"
-              class="
+              className="
                 form-control
                 block
                 w-full
@@ -93,12 +93,12 @@ const InputBox = () => {
         </div>
 
         {/* INPUT BOX MESSAGE */}
-        <div class="flex justify-center">
-          <div class="mb-3 sm:w-2/3 xl:w-96">
+        <div className="flex justify-center">
+          <div className="mb-3 sm:w-2/3 xl:w-96">
             <textarea
               name="message"
               id="inputMessage"
-              class="
+              className="
               form-control
               block
               w-full
@@ -123,13 +123,13 @@ const InputBox = () => {
         </div>
 
         {/* INPUT BOX BUTTON */}
-        <div class="flex space-x-2 justify-center">
+        <div className="flex space-x-2 justify-center">
           <button
             type="submit"
             value="send"
             data-mdb-ripple="true"
             data-mdb-ripple-color="light"
-            class="inline-block px-6 py-3 sm:px-1/3 xl:px-12 bg-org text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-org hover:shadow-lg focus:bg-ltOrg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-org active:shadow-lg transition duration-150 ease-in-out
+            className="inline-block px-6 py-3 sm:px-1/3 xl:px-12 bg-org text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-org hover:shadow-lg focus:bg-ltOrg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-org active:shadow-lg transition duration-150 ease-in-out
             dark:bg-pnk dark:hover:bg-pnk dark:focus:bg-ltPnk dark:active:bg-pnk"
           >
             send

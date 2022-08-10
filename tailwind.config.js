@@ -17,6 +17,8 @@ module.exports = {
         // HEADER IMAGES - WORKS
         'header-light': "url('/src/assets/header-image-light.svg')",
         'header-dark': "url('/src/assets/header-image-dark.svg')",
+        'logo-light': "url('/src/assets/jl-logo-light.svg')",
+        'logo-dark': "url('/src/assets/jl-logo-dark.svg')",
 
         // WORK IMAGES - WORKS
         'desktop-light': "url('/src/assets/work-desktop-light.svg')",
