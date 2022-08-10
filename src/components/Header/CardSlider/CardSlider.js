@@ -1,57 +1,49 @@
-import { useRef, useEffect, useState } from 'react'
+import React from 'react';
+import './cardSlider.css';
 
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+// https://www.npmjs.com/package/react-owl-carousel
+import OwlCarousel from 'react-owl-carousel';
+// importing this in from the node_modules folder from the npm package
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-import './cardSlider.css'
-import images from './images'
+import project1 from '../../../assets/carousel1.png';
+import project2 from '../../../assets/carousel2.png';
 
-const CardSlider = () => {
-
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 3 // optional, default to 1.
+function CardSlider() {
+  const settings = {
+    loop: true,
+    center: true,
+    items: 2,
+    margin: 0,
+    autoplay: true,
+    dots: false,
+    merge: false,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      480: {
+        items: 2,
+      },
     },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1,
-      slidesToSlide: 1 // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1 // optional, default to 1.
-    }
   };
 
-
   return (
-    // Image Container
-    <div className='image-container'>
-      {/* Image Wrapper */}
-      <Carousel
-       responsive={responsive} 
-       swipeable={true}
-       draggable={true}
-       ssr={true}
-       infinite={true}
-       autoPlaySpeed={1000}
-       keyBoardControl={true}
-       removeArrowOnDeviceType={["mobile"]}
-       className='image-wrapper'
-      >
-        {images.map(image => {
-          return (
-            <div className='carousel-image'>
-              <img src={image}></img>
-            </div>
-          );
-        })}
-      </Carousel>
+    <div>
+      <OwlCarousel className="owl-theme project-carousel" {...settings}>
+        <div class="item drop-shadow-xl p-2">
+          <img src={project1} alt="project 1"></img>
+        </div>
+        <div class="item drop-shadow-xl p-2">
+          <img src={project2} alt="project 2"></img>
+        </div>
+        <div class="item drop-shadow-xl p-2">
+          <p>coming soon!</p>
+        </div>
+      </OwlCarousel>
     </div>
-  )
+  );
 }
 
 export default CardSlider;

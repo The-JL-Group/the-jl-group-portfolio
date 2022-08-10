@@ -9,9 +9,17 @@
 @layer utilities {
   .text-shadow-org {
     text-shadow: 4px 0 #f8724c;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
   }
   .text-shadow-pnk {
     text-shadow: 4px 0 #e09384;
+  }
+  .text-header-org {
+    text-shadow: 4px 0 #212020;
+  }
+  .text-header-pnk {
+    text-shadow: 4px 0 #ffffff;
   }
 }
 
@@ -21,6 +29,7 @@
   --blk: #212020;
   --wht: #ffffff;
   --pnk: #e09384;
+  --newPnk: #a25a4c;
   --ltPnk: #daada4;
   --org: #f8724c;
   --ltOrg: #ee8d72;

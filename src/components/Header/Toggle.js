@@ -6,10 +6,10 @@ const Toggle = () => {
   const [setTheme, colorTheme] = useDarkMode();
   return (
     <div className="toggle-button">
-      <div class="flex justify-center">
-        <div class="form-check form-switch mb-7">
+      <div className="flex justify-center">
+        <div className="form-check form-switch mb-7">
           <input
-            class="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-white bg-no-repeat bg-contain bg-gray-300 focus:outline-none cursor-pointer shadow-sm"
+            className="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-black bg-no-repeat bg-contain  focus:outline-none cursor-pointer shadow-sm"
             type="checkbox"
             role="switch"
             id="flexSwitchCheckDefault56"

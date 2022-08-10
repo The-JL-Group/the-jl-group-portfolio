@@ -28,8 +28,7 @@
 
 /* INPUT BOX */
 .input-box-container {
-  padding: 2em 0;
-}
+  padding: 1em 0;}
 
 /* MEDIA QUERY */
 @media (min-width: 601px) {
@@ -37,7 +36,6 @@
     /* background-color: aqua; */
   }
 }
-
 
 /* tailwind */
 /* sm = 640 */
