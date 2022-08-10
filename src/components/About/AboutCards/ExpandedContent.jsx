@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ReactComponent as Close } from "../../../assets/icons/x-icon-dark.svg";
+import { ReactComponent as Close } from "../../../assets/icons/x-icon-light.svg";
 import {
   expandedVariants,
   contentBlockVariants,
@@ -9,7 +9,9 @@ import {
 
 // Utility component to assist w/animations that will be repeated
 const AnimatedContentBlock = ({ children }) => (
-    <motion.div variants={contentBlockVariants}>
+    <motion.div 
+    variants={contentBlockVariants}
+    >
       {children}
     </motion.div>
   );
@@ -21,7 +23,7 @@ const JamesExpandedContent = ({
     onClick,
   }) => (
     <motion.div 
-        variants={expandedVariants}
+        // variants={expandedVariants}
         animate="active"
         initial="inactive"
         exit="exit"
@@ -62,7 +64,7 @@ const JamesExpandedContent = ({
                     </ul> */}
                 </AnimatedContentBlock>
                 <AnimatedContentBlock>
-                    <button className="reserve-btn">My Portfolio</button>
+                    <button className="j-portfolio-btn">My Portfolio</button>
                 </AnimatedContentBlock>
             </motion.div>
         </motion.div>

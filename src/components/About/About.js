@@ -4,7 +4,9 @@ import './about.css';
 
 import AboutCards from './AboutCards/AboutCards';
 
+
 const About = () => {
+
   return (
     <section>
         <div id="about" className='main-about'>
