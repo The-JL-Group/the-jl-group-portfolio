@@ -19,7 +19,7 @@ const CardContent = ({
     >
       <motion.div 
       className="thumbnail-container"
-      variants={thumbnailVariants}
+      // variants={thumbnailVariants}
       >
         <img
           src={data.imgSrc}
@@ -29,7 +29,7 @@ const CardContent = ({
       </motion.div>
       <motion.div 
       className="initial-content"
-      variants={contentVariants}
+      // variants={contentVariants}
       >
         <span className="title">{data.title}</span>
         <span className="location">{data.location}</span>
