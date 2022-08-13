@@ -133,7 +133,7 @@ export const contentBlockVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
+      duration: 0.8,
     }
   },
   exit: {

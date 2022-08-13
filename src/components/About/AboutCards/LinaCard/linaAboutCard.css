@@ -1,0 +1,71 @@
+/* Card Content */
+  .l-card-content-flex {
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .l-content {
+    background: url('../../../../assets/lina-card-dark.jpg');
+    background-size: cover;
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    border-radius: 0.313rem;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.6);
+    padding: 0.875rem 1rem;
+    /* z-index: 2; */
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Expanded Content (James) */
+  .l-expanded-close {
+     background: none;
+      padding: 0.313rem;
+      position: absolute;
+      /* z-index: 3; */
+      right: 0;
+      top: 0;
+  }
+
+  .l-title {
+    /* margin: 0 0 10px; */
+    font-size: 3rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0px 0.625rem 0px 0px;
+  }
+
+    
+  .l-info-btn {
+    display:block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid red;
+  }
+
+  @media (min-width: 500px) {
+    .l-card-content-flex {
+      margin: 0;
+    }
+
+    .l-title {
+      /* margin: 0 0 10px; */
+      font-size: 4rem;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 0px 0.625rem 0px 0px;
+    }
+      
+    .l-info-btn {
+      display:block;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      border: 1px solid red;
+    }
+  }
