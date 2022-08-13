@@ -1,29 +1,26 @@
-import React from 'react';
+import React, { useState } from "react";
 
 import './about.css';
 
-import AboutCards from './AboutCards/AboutCards';
+// The Cards
+import AboutCards from './AboutCards/JamesCard/AboutCards'
 
-const About = () => {
+const AboutJames = () => {
+
   return (
     <section>
-      <div id="about" className="main-about">
+      <div id="about" className="j-main-about">
         {/* Component Title */}
         <div className="text-shadow-org dark:text-shadow-pnk">
           <h2>ABOUT US</h2>
         </div>
 
         {/* Card Components */}
-        <AboutCards />
+        <AboutCards/>
+        {/* <LinaAboutCard /> */}
       </div>
     </section>
   );
 };
 
-export default About;
-
-// {/* Flip Cards */}
-// <div>
-//   <img src={jimboCardDark}></img>
-//   <img src={linaCardDark}></img>
-// </div>
+export default AboutJames;
