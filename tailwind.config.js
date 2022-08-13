@@ -31,7 +31,7 @@ module.exports = {
         'test-1': "url('/src/assets/test3.jpg')",
         'test-2': "url('/src/assets/test4.jpg')",
 
-        // ABOUT IMAGES 
+        // ABOUT IMAGES
         // Dark
         'card-dark': "url('/src/assets/jimbo-card-dark.jpg')",
         'card-d': "url('/src/assets/lina-card-dark.jpg')",
@@ -50,7 +50,6 @@ module.exports = {
 
         'phone-light': "url('/src/assets/work-phone-light.svg')",
         'phone-dark': "url('/src/assets/work-phone-dark.svg')",
->>>>>>> 45055e20f2626b25b8e0224f995e50c9f87e3116
 
         // CONTACT IMAGES - WORKS
         'contact-light': "url('/src/assets/contact-header-light.svg')",
