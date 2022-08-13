@@ -10,7 +10,7 @@ const Navbar = () => {
     // Navbar
     <nav className="flex fixed z-10 w-full">
       {/* Nav Outer Container */}
-      <div className="nav-outer w-full">
+      <div className="nav-outer w-full dark:nav-light">
         {/* Nav Inner Reg Container */}
         <div className="nav-inner-reg">
           {/* Nav List Container */}

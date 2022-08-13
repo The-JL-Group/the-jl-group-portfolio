@@ -15,31 +15,38 @@ const Contact = () => {
       <h2 className="contact-header text-shadow-org dark:text-shadow-pnk ">
         CONTACT
       </h2>
-      <div className="bg-contact-dark dark:bg-contact-light bg-cover object-cover h-64 contact-image"></div>
-      <div className="contact-text">
+
+      {/* IMAGE CONTAINER */}
+      {/* ON SMALLER SCREEN | HIDDEN ON LARGE AND UP */}
+      <div className="bg-contact-dark dark:bg-contact-light bg-cover object-cover contact-image lg:hidden"></div>
+
+      {/* ON LARGER SCREEN | HIDDEN ON MEDIUM AND DOWN*/}
+      <div className="bg-full-dark dark:bg-full-light bg-cover object-cover contact-image-large hidden lg:inline-flex"></div>
+
+      {/* TEXT ON SMALLER SCREEN / HIDDEN ON LARGE */}
+      <div className="contact-text lg:hidden">
         <p>
           Have any
-          <span className="contact-color dark:text-pnk"> QUESTIONS?</span>
+          <span className="text-org dark:text-pnk"> QUESTIONS?</span>
         </p>
         <p>
           Hit our{' '}
           <a
             href="mailto:jameslinagroup@gmail.com"
-            className="contact-color dark:text-pnk"
+            className="text-org dark:text-pnk"
           >
             EMAIL
           </a>{' '}
           or send us
         </p>
         <p>
-          a <span className="contact-color dark:text-pnk">MESSAGE</span> down
-          below
+          a <span className="text-org dark:text-pnk">MESSAGE</span> down below
         </p>
         <p>
           or find us on
           <a
             href="https://github.com/The-JL-Group"
-            className="contact-color dark:text-pnk"
+            className="text-org dark:text-pnk"
           >
             {' '}
             GITHUB
@@ -49,23 +56,25 @@ const Contact = () => {
           and find us on
           <a
             href="https://www.fiverr.com/thejlgroup/design-and-create-your-custom-unique-website-using-react"
-            className="contact-color dark:text-pnk"
+            className="text-org dark:text-pnk"
           >
             {' '}
             FIVERR
           </a>
         </p>
       </div>
-      <div>
+
+      {/* EMAIL CONTAINER */}
+      <div className="pb-6 lg:py-6">
         <a
           href="mailto:jameslinagroup@gmail.com"
-          className="contact-color dark:text-pnk"
+          className="text-org dark:text-pnk lg:text-2xl"
         >
           jameslinagroup@gmail.com
         </a>
       </div>
 
-      <div>
+      <div className="lg:p-8">
         <InputBox />
       </div>
     </section>

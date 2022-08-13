@@ -1,9 +1,17 @@
 .logo-wrapper {
   padding: 0.6rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo-wrapper img {
   width: 15%;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-header {
