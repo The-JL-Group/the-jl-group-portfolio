@@ -5,18 +5,20 @@ import useDarkMode from '../../hooks/useDarkMode';
 const Toggle = () => {
   const [setTheme, colorTheme] = useDarkMode();
   return (
-    <div className="toggle-button">
-      <div className="flex justify-center">
-        <div className="form-check form-switch mb-7">
-          <input
-            className="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-black bg-no-repeat bg-contain  focus:outline-none cursor-pointer shadow-sm"
-            type="checkbox"
-            role="switch"
-            id="flexSwitchCheckDefault56"
-            onClick={() => setTheme(colorTheme)}
-          />
-        </div>
-      </div>
+    <div>
+      <label
+        for="default-toggle"
+        class="inline-flex relative items-center cursor-pointer"
+      >
+        <input
+          type="checkbox"
+          value=""
+          id="default-toggle"
+          class="sr-only peer"
+          onClick={() => setTheme(colorTheme)}
+        />
+        <div class="w-11 h-6 bg-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+      </label>
     </div>
   );
 };

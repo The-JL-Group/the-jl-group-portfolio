@@ -14,28 +14,34 @@
 
 .contact-image {
   margin: 0 auto;
-  background-image: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 80%;
 }
 
-.contact-color {
-  color: var(--org);
+.contact-image-large {
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 600px;
+  width: 83%;
 }
 
 .contact-text {
   padding: 2em 0;
 }
 
-/* INPUT BOX */
-.input-box-container {
-  padding: 1em 0;}
+
 
 /* MEDIA QUERY */
-@media (min-width: 601px) {
-  .contact-text {
-    /* background-color: aqua; */
+/* @media (min-width: 1024px) {
+  .contact-image-large {
+    display: normal;
   }
-}
+} */
 
 /* tailwind */
 /* sm = 640 */

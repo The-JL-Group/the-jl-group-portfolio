@@ -3,8 +3,6 @@ import './header.css';
 import Toggle from '../../components/Header/Toggle';
 import CardSlider from './CardSlider/CardSlider';
 
-import eyeIcon from '../../assets/icons/eye-icon.svg';
-
 const Header = () => {
   return (
     <header id="header" className="z-0 header font-['Major Mono Display']">
@@ -13,7 +11,7 @@ const Header = () => {
         <a href="#header">
           <div className="bg-logo-dark dark:bg-logo-light bg-cover object-cover bg-left h-10 w-10"></div>
         </a>
-        <div>
+        <div className="toggle-container">
           <Toggle />
         </div>
       </div>
@@ -32,22 +30,24 @@ const Header = () => {
           </div>
           {/* Plain Text 'Carats' must be written as HTML entities */}
 
-          <h5>&lt;ux/ui developers/&gt;</h5>
-          <p>
-            Giving your website a more experienced <span>experience</span>
+          <h5 className="dark:text-black">&lt;ux/ui developers/&gt;</h5>
+          <p className="dark:text-white">
+            Giving your website a more experienced{' '}
+            <span className="dark:text-black">experience</span>
           </p>
 
           {/* Call-To-Action Btn */}
           <div className="cta-wrapper">
             <button>
               <span className="cta-icon-wrapper">
-                <img
+                {/* <img
                   src={eyeIcon}
                   alt="View Work Button"
                   className="cta-icon"
-                ></img>
+                ></img> */}
+                {/* <div className="bg-eye-light"></div> */}
               </span>
-              <span className="cta-text">View Work</span>
+              <span className="cta-text dark:text-white">View Work</span>
             </button>
           </div>
         </div>

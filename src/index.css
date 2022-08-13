@@ -21,6 +21,9 @@
   .text-header-pnk {
     text-shadow: 4px 0 #ffffff;
   }
+  .nav-light {
+    background: rgba(31, 29, 29, 0.9);
+  }
 }
 
 *,

@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './work.css';
+import test1 from '../../assets/test1.png';
+import test2 from '../../assets/test2.png';
 
 const Work = () => {
   // SCROLL ANIMATION
@@ -12,58 +14,71 @@ const Work = () => {
   return (
     <section id="work" className="work-container">
       {/* WORK HEADER */}
-      <div className="work-header-main text-shadow-org dark:text-shadow-pnk">
-        <h2>VIEW</h2>
-        <h2>OUR</h2>
-        <h2>WORK</h2>
+      <div className="work-header">
+        <h2 className="text-shadow-org dark:text-shadow-pnk">WORK</h2>
       </div>
 
-      {/* PROJECT 1 ON DESKTOP*/}
-      <div className="work-tech">
-        <a href="https://www.allamericandoorsandwindowsinc.com/">
-          <div className="bg-desktop-d dark:bg-desktop-l bg-contain bg-no-repeat bg-center inline-block w-full desktop-image"></div>
-        </a>
-        <div className="work-desktop-text">
-          <h3>all american doors and windows, inc.</h3>
-          <hr></hr>
-          <p>
-            a react-based, front-end, responsive website for a company centered
-            around the refurbishing of doors, windows, molding, etc.
-          </p>
-          <hr></hr>
-          <p>
-            “best website i’ve ever had for my business! 10/10 recommend. will
-            be a repeat customer”
-          </p>
-          <p>-Mr. P</p>
+      {/* ALL AMERICAN CONTAINER */}
+      <div className="header-1 mb-5" data-aos="fade-right">
+        <div>
+          <a
+            href="https://www.allamericandoorsandwindowsinc.com/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src={test1} alt="test"></img>
+            <h2 className="text-header-org dark:text-header-pnk">
+              ALL AMERICAN DOORS & WINDOWS
+            </h2>
+            <div class="relative marquee-container d-none d-sm-block">
+              <div class="marquee d-flex justify-content-around">
+                <span>react</span>
+                <span>·front end</span>
+                <span>·responsive</span>
+                <span>·tailwind</span>
+                <span>·bootstrap</span>
+                <span>·aos animated scroll</span>
+              </div>
+              <div class="marquee marquee2 d-flex justify-content-around">
+                <span>·react</span>
+                <span>·front end</span>
+                <span>·responsive</span>
+                <span>·tailwind</span>
+                <span>·bootstrap</span>
+                <span>·aos animated scroll</span>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
 
-      {/* PROJECT 2 ON TABLET*/}
-      <div className="work-tech">
-        <a href="https://medcare-healthcert.herokuapp.com/">
-          <div className="bg-tablet-dark dark:bg-tablet-light bg-contain bg-no-repeat bg-center inline-block w-full tablet-image"></div>
-        </a>
-        <div className="work-text">
-          <h3>medcare healthcert, llc.</h3>
-          <hr></hr>
-          <p>
-            A react-based, front-end, and responsive website for a company
-            centered around ccma certification.
-          </p>
-          <hr></hr>
-          <p>“best website i’ve ever had for my business! 10/10 recommend.”</p>
-          <p>-Mrs. H</p>
-        </div>
-      </div>
-
-      {/* PROJECT 3 ON PHONE*/}
-      <div className="work-tech">
-        <a href="https://medcare-healthcert.herokuapp.com/">
-          <div className="bg-phone-dark dark:bg-phone-light bg-contain bg-no-repeat bg-center inline-block w-full phone-image"></div>
-        </a>
-        <div className="work-text">
-          <h3>coming soon.</h3>
+      {/* MEDCARE CONTAINER */}
+      <div className="header-1" data-aos="fade-left">
+        <div className="test2">
+          <img src={test2} alt="test"></img>
+          <h2 className="text-header-org dark:text-header-pnk">
+            MEDCARE HEALTHCERT
+          </h2>
+          <div class="relative marquee-container d-none d-sm-block">
+            <div class="marquee d-flex justify-content-around">
+              <span>react</span>
+              <span>·front end</span>
+              <span>·responsive</span>
+              <span>·tailwind</span>
+              <span>·react helmet</span>
+              <span>·owl react carousel</span>
+              <span>·aos animated scroll·</span>
+            </div>
+            <div class="marquee marquee2 d-flex justify-content-around">
+              <span>·react</span>
+              <span>·front end</span>
+              <span>·responsive</span>
+              <span>·tailwind</span>
+              <span>·react helmet</span>
+              <span>·owl react carousel</span>
+              <span>·aos animated scroll·</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
