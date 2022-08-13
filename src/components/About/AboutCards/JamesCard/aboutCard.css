@@ -1,0 +1,297 @@
+/* Base */
+/* Card Content */
+.j-card-content-flex {
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.thumbnail-container {
+  vertical-align: middle;
+}
+
+.thumbnail-container {
+  margin-right: 3%;
+  align-self: center;
+}
+
+.thumbnail {
+  max-width: 5.25rem;
+  height: auto;
+}
+
+.initial-content span {
+  display: block;
+  /* margin-bottom: 10px; */
+}
+
+.title {
+  /* margin: 0 10px 10px; */
+  font-size: 2rem;
+}
+
+.location {
+  font-size: 1rem;
+  /* margin: 0 0 10px; */
+}
+
+.price {
+  font-size: 1rem;
+  background: blue;
+  color: #222;
+  /* padding: 6px 16px; */
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+.info-btn {
+  background: white;
+  color: var(--blk);
+  padding: 10px 22px;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Rental Card */
+.card {
+  margin: auto;
+  max-height: 500px;
+  min-height: 50%;
+  max-width: 800px;
+  position: relative;
+  /* margin-bottom: 50px; */
+  padding: 1rem;
+}
+
+.card::before {
+  content: '';
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0.313rem;
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  top: 0;
+  /* z-index: 0; */
+  /* Moves div behind */
+  /* 5px, 11px */
+  transform: translate(8px, 0.488rem);
+  transition: transform 0.4s ease;
+}
+
+.card:hover:not(.expanded)::before {
+  /* 8px, 8px */
+  /* transform: translate(0.5rem, 0.5rem); */
+  transform: translate(0.25, 0.488rem);
+}
+
+.content {
+  background: url('../../../../assets/jimbo-card-dark.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.313rem;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.6);
+  padding: 0.875rem 1rem;
+  /* z-index: 2; */
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+/* Expanded Content (James) */
+.j-expanded-close {
+   background: none;
+    padding: 0.313rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.close svg {
+  height: 40px;
+  width: 40px;
+  color: #222;
+}
+
+.james-main-image {
+  max-width: 380px;
+  width: 60%;
+  height: 60%;
+  box-shadow: 5px -5px 1px 1px;
+  border-radius: 5px;
+}
+
+
+.j-expanded-content {
+    overflow: auto;
+    max-height: 82vh;
+    width: 100%;
+    /* height: 100%; */
+    color: #222;
+}
+
+.j-expanded-content span, 
+.j-expanded-content p {
+  background: rgba(255, 255, 255, .9);
+  border-radius: 5px;
+}
+
+.title-large {
+  font-size: 1.5rem;
+  margin: 0.625rem 0;
+}
+
+.j-portfolio-btn {
+  width: 100%;
+  margin-top: 5px;
+  background: var(--blk);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.j-about-btn {
+  width: 100%;
+  margin-top: 5px;
+  background: var(--blk);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 18px;
+  color: #fff;
+}
+
+
+ /* ------------------ */
+  /* 500px Media Query */
+  @media (min-width: 500px) {
+    /* Card Content */
+    .j-card-content-flex {
+      
+    }
+  
+  
+    /* .initial-content span {
+      display: block;
+      margin-bottom: 10px;
+    } */
+  
+    .j-title {
+        /* margin: 0 0 10px; */
+        font-size: 4rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0px 0px 0px 0.625rem;
+    }
+  
+    /* .location {
+      font-size: 16px;
+      margin: 0 0 10px;
+    } */
+  
+    /* .price {
+      font-size: 14px;
+      background: var(--pink);
+      color: #222;
+      padding: 6px 16px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 10px;
+    } */
+  
+    .j-info-btn {
+      display:block;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      border: 1px solid rgb(234, 255, 0);
+      text-align: right;
+    }
+    
+  
+    /* Rental Card */
+    /* .card {
+      margin: auto;
+      max-height: 700px;
+      min-height: 318px;
+      max-width: 800px;
+      position: relative;
+      margin-bottom: 50px;
+    } */
+    
+    /* .card::before {
+      content: '';
+      overflow: hidden;
+      background: white;
+      border-radius: var(--border-radius);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      z-index: 0;
+      transform: translate(8px, 8px);
+      transition: transform 0.4s ease;
+    } */
+  
+    /* .card:hover:not(.expanded)::before {
+      transform: translate(14px, 14px);
+    } */
+  
+    /* .content {
+      background: url('../../../../assets/lina-card-dark.jpg');
+      border-radius: var(--border-radius);
+      box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+      padding: 24px 16px;
+      z-index: 2;
+      position: relative;
+      display: flex;
+      height: 100%;
+    } */
+  
+    /* Expanded Content (James) */
+    /* .j-expanded-close {
+      background: none;
+      padding: 5px;
+      position: absolute;
+      z-index: 3;
+      right: 0;
+      top: 0;
+    } */
+  
+    /* .close svg {
+      height: 40px;
+      width: 40px;
+    } */
+    
+    /* .james-main-image {
+      max-width: 380px;
+      width: 100%;
+    } */
+  
+    /* .j-expanded-content {
+      overflow: hidden;
+      max-height: 82vh;
+      width: 55%;
+    } */
+  
+    /* .title-large {
+      font-size: 44px;
+      margin: 10px 0;
+    } */
+  
+    /* .reserve-btn {
+      width: 100%;
+      margin-top: 16px;
+      background: var(--white);
+      border: 1px solid var(--black);
+      border-radius: var(--border-radius);
+      padding: 20px;
+      font-size: 18px;
+    } */
+    
+  }

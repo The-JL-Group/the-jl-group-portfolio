@@ -8,7 +8,7 @@ import CardContent from "./CardContent";
 import JamesExpandedContent from "./ExpandedContent";
 
 // Stylesheet
-import "./aboutCard.css";
+import './aboutCard.css';
 
 // Card Variants
 import { cardVariants } from "./variants";
@@ -17,8 +17,8 @@ const RentalCard = () => {
 	const [isExpanded, setIsExpanded] = useState();
 
 	return (
-    <div>
-
+    <div className="">
+ 
     {/* James's Card */}
     <motion.div 
       className={`card ${isExpanded ? 'expanded' : 'initial'}`}
@@ -44,6 +44,7 @@ const RentalCard = () => {
         />
         ) : (
         <JamesExpandedContent
+          className="z-10"
           data={cardData}
           onClick={setIsExpanded}
           key="contentExpanded" // Children of AnimatePresence need a key
@@ -52,30 +53,6 @@ const RentalCard = () => {
         </AnimatePresence>
       </div>
     </motion.div>
-
-  {/* Lina's Card */}
-    {/* <motion.div className={`card ${isExpanded ? 'expanded' : 'initial'}`}>
-      <div className="content">
-        <AnimatePresence
-          initial={false}
-          exitBeforeEnter
-        >
-         {!isExpanded ? (
-  <CardContent
-    data={cardData}
-    onClick={setIsExpanded}
-    key="content" // Children of AnimatePresence need a key
-  />
-) : (
-  <ExpandedContent
-    data={cardData}
-    onClick={setIsExpanded}
-    key="contentExpanded" // Children of AnimatePresence need a key
-  />
-)}
-        </AnimatePresence>
-      </div>
-    </motion.div> */}
     </div>
   );
 }

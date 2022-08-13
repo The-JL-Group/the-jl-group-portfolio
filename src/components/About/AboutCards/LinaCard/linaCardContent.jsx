@@ -4,14 +4,14 @@ import {
   cardContentVariants,
   thumbnailVariants,
   contentVariants,
-} from "./variants";
+} from "./linaVariants";
 
-const CardContent = ({
+const linaCardContent = ({
     data,
     onClick,
   }) => (
     <motion.div 
-    className="card-content-flex"
+    className="l-card-content-flex"
     variants={cardContentVariants}
     exit="inactive"
     animate="active"
@@ -31,14 +31,14 @@ const CardContent = ({
       className="initial-content"
       // variants={contentVariants}
       >
-        <span className="title">{data.title}</span>
+        <span className="l-title text-header-org dark:text-header-pnk">{data.contentTitle}</span>
         <span className="location">{data.location}</span>
         <span className="price">{data.price}</span>
         <p>{data.shortDescription}</p>
-        <button className="info-btn" onClick={() => onClick(true)}>More Info</button>
+        <button className="l-info-btn" onClick={() => onClick(true)}>click me!</button>
       </motion.div>
     </motion.div>
   );
   
-  export default CardContent;
+  export default linaCardContent;
   
