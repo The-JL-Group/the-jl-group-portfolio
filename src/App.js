@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Header />
       <AboutJames />
-      <AboutLina/>
+      <AboutLina />
       <Work />
       <Contact />
     </div>
