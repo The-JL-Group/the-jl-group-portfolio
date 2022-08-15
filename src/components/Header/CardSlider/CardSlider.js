@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './cardSlider.css';
 
-// https://www.npmjs.com/package/react-owl-carousel
 import OwlCarousel from 'react-owl-carousel';
-// importing this in from the node_modules folder from the npm package
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-import project1 from '../../../assets/carousel1.png';
-import project2 from '../../../assets/carousel2.png';
-
 function CardSlider() {
+  const cardSliderDetails = [
+    {
+      project: 'All American',
+      url: 'https://www.allamericandoorsandwindowsinc.com/',
+      image: 'card-slider-1',
+      class: 'object-left-top',
+    },
+    {
+      project: 'Medcare Healthcert',
+      url: 'https://medcare-healthcert.herokuapp.com/',
+      image: 'card-slider-2',
+      class: 'object-left-top',
+    },
+  ];
+
+  const [workSliderList, setWorkSliderList] = useState(cardSliderDetails);
+
   const settings = {
     loop: true,
     center: true,
@@ -32,14 +44,19 @@ function CardSlider() {
   return (
     <div>
       <OwlCarousel className="owl-theme project-carousel" {...settings}>
-        <div class="item drop-shadow-xl p-2">
-          <img src={project1} alt="project 1"></img>
-        </div>
-        <div class="item drop-shadow-xl p-2">
-          <img src={project2} alt="project 2"></img>
-        </div>
-        <div class="item drop-shadow-xl p-2">
-          <p>coming soon!</p>
+        {workSliderList.map((item, index) => (
+          <div>
+            <div className="item drop-shadow-xl p-2">
+              <img
+                src={require('../../../assets/' + item.image + '.png')}
+                alt={item.project}
+                className={item.class}
+              ></img>
+            </div>
+          </div>
+        ))}
+        <div className="item drop-shadow-xl p-2">
+          <p>COMING SOON!</p>
         </div>
       </OwlCarousel>
     </div>
