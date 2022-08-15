@@ -8,9 +8,8 @@
   max-width: 100%;
   overflow: hidden;
   border-radius: 0.5rem;
-  object-fit: fill;
-  /* cover / contain*/
-  /* top - manually */
+  object-fit: cover;
+  filter: brightness(90%);
 }
 
 .item p {
@@ -22,6 +21,7 @@
   align-items: center;
   background-color: var(--wht);
   color: var(--blk);
+  filter: brightness(90%);
 }
 
 .item {
