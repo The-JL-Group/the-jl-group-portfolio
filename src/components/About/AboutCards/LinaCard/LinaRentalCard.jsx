@@ -21,7 +21,7 @@ const LinaRentalCard = () => {
 
     {/* James's Card */}
     <motion.div 
-      className={`card ${isExpanded ? 'expanded' : 'initial'}`}
+      className={`l-card ${isExpanded ? 'expanded' : 'initial'}`}
       // Variants & Animations
       // Initial Animations  
       // variants={cardVariants}
@@ -54,29 +54,6 @@ const LinaRentalCard = () => {
       </div>
     </motion.div>
 
-  {/* Lina's Card */}
-    {/* <motion.div className={`card ${isExpanded ? 'expanded' : 'initial'}`}>
-      <div className="content">
-        <AnimatePresence
-          initial={false}
-          exitBeforeEnter
-        >
-         {!isExpanded ? (
-  <CardContent
-    data={cardData}
-    onClick={setIsExpanded}
-    key="content" // Children of AnimatePresence need a key
-  />
-) : (
-  <ExpandedContent
-    data={cardData}
-    onClick={setIsExpanded}
-    key="contentExpanded" // Children of AnimatePresence need a key
-  />
-)}
-        </AnimatePresence>
-      </div>
-    </motion.div> */}
     </div>
   );
 }

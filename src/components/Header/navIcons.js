@@ -13,11 +13,11 @@ import { MdEmail } from "react-icons/md";
     { title: 'portfolio', icon:<BiDesktop style={{ color: '#212020'}} size={'1.4rem'}/>, style: 'color: #000', pathway: '#header'},
     { title: 'about us', icon:<IoPeopleCircleSharp style={{ color: '#212020'}} size={'1.4rem'}/>, pathway: '#about' },
     { title: 'hire us', icon: <RiChatSmile2Line style={{ color: '#212020'}} size={'1.4rem'}/>, pathway: '#contact' },
-  ]
+  ];
 
   // Social Icons
   export const socialsIcons = [
     { title: 'github', icon: <AiOutlineGithub style={{ color: '#212020'}} size={'1.4rem'}/>, pathway: 'https://github.com/The-JL-Group' },
     { title: 'fiverr', icon: <SiFiverr style={{ color: '#212020'}} size={'1.4rem'}/>, pathway: 'https://www.fiverr.com/thejlgroup/design-and-create-your-custom-unique-website-using-react'},
     { title: 'email us', icon: <MdEmail style={{ color: '#212020'}} size={'1.4rem'}/>, pathway: 'mailto:jameslinagroup@gmail.com'},
-  ]
+  ];
