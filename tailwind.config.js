@@ -27,10 +27,6 @@ module.exports = {
         // 'eye-light': "url('/src/assets/icons/eye-icon-light')",
         // 'eye-dark': "url('/src/assets/icons/eye-icon-dark')",
 
-        // WORK IMAGES
-        'test-1': "url('/src/assets/test3.jpg')",
-        'test-2': "url('/src/assets/test4.jpg')",
-
         // ABOUT IMAGES
         // Dark
         'card-dark': "url('/src/assets/jimbo-card-dark.jpg')",
@@ -38,18 +34,6 @@ module.exports = {
         // Light
         'card-light': "url('/src/assets/jimbo-card-light.jpg')",
         'card-l': "url('/src/assets/lina-card-light.jpg')",
-
-        // WORK IMAGES - WORKS
-        'desktop-light': "url('/src/assets/work-desktop-light.svg')",
-        'desktop-dark': "url('/src/assets/work-desktop-dark.svg')",
-        'desktop-l': "url('/src/assets/work-desktop-light-1.svg')",
-        'desktop-d': "url('/src/assets/work-desktop-dark-1.svg')",
-
-        'tablet-light': "url('/src/assets/work-tablet-light.svg')",
-        'tablet-dark': "url('/src/assets/work-tablet-dark.svg')",
-
-        'phone-light': "url('/src/assets/work-phone-light.svg')",
-        'phone-dark': "url('/src/assets/work-phone-dark.svg')",
 
         // CONTACT IMAGES - WORKS
         'contact-light': "url('/src/assets/contact-header-light.svg')",
