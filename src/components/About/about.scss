@@ -1,0 +1,258 @@
+$color1: #ffffff;
+$color2: #212020;
+$color3: #212020;
+$color4: #212020;
+$cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+
+@function textShadow($color){
+	//value variable: x-value, y-value, color value;
+	$val: 0px 0px $color;
+	//loop to create text-shadow variables moving 1px to the left and 1 down
+	@for $i from 1 through 50{
+		$val: #{$val}, #{$i}px #{$i}px #{$color};
+	}
+	//return value
+	@return $val;
+}
+
+@function textAnimationShadow($color1, $color2,$color3,$color4,$color5){
+	$val1: 0px 0px $color1;
+	$val2: 0px 0px $color2;
+	$val3: 0px 0px $color3;
+	$val4: 0px 0px $color4;
+	$val5: 0px 0px $color5;
+	@for $i from 1 through 10{
+		$val1: #{$val1}, #{$i}px #{$i}px #{$color1};
+	}
+	@for $i from 11 through 20{
+		$val2: #{$val2}, #{$i}px #{$i}px #{$color2};
+	}
+	@for $i from 21 through 30{
+		$val3: #{$val3}, #{$i}px #{$i}px #{$color3};
+	}
+	@for $i from 31 through 40{
+		$val4: #{$val4}, #{$i}px #{$i}px #{$color4};
+	}
+	@for $i from 41 through 50{
+		$val5: #{$val5}, #{$i}px #{$i}px #{$color5};
+	}
+	@return $val1, $val2, $val3, $val4, $val5;
+}
+
+//mixin to create initial text-shadow
+@mixin shadow($shadow-color){
+	text-shadow: textShadow($shadow-color);
+}
+//mixin to create animation shadow, can enter 5 color variables
+@mixin animationShadow($shadow-color1, $shadow-color2,$shadow-color3, $shadow-color4, $shadow-color5){
+	text-shadow: textAnimationShadow($shadow-color1, $shadow-color2,$shadow-color3, $shadow-color4, $shadow-color5);
+}
+
+@keyframes color{
+	0%,10%{
+		color: $color1;
+		@include shadow($color3);
+	}
+	11%,20%{
+		color: $color1;
+		@include animationShadow($color3,$color3,$color3,$color3,$color1);
+	}
+	21%, 30%{
+		color: $color1;
+		@include animationShadow($color3,$color3,$color3,$color1,$color1);
+	}
+	31%, 40%{
+		color: $color1;
+		@include animationShadow($color3,$color3,$color1,$color1,$color1);
+	}
+	41%, 50%{
+		color: $color1;
+		@include animationShadow($color3,$color1,$color1,$color1,$color1);
+	}
+	51%,60%{
+		color: $color2;
+		@include animationShadow($color1,$color1,$color1,$color1,$color1);
+	}
+	61%,100%{
+		color: $color2;
+		@include animationShadow($color1,$color1,$color1,$color1,$color1);
+	}
+}
+
+// --------------------------------------------
+/* Base */
+.j-main-about {
+    width: 100%;
+    height: 42vh;
+    position: relative;
+    /* height: 46vh; */
+    padding: 0em 0em 0em 0em;
+}
+ 
+.j-main-about h2 {
+    text-align: center;
+}
+
+.about-text-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.l-main-about {
+    width: 100%;
+    height: 37vh;
+    /* height: 100%; */
+    position: relative;
+    padding: 0em 0em 0em 0em;
+    border-bottom: 1px solid #fff;
+}
+
+// --------------------------------------------
+/* Mobile */
+@media screen and (min-height: 640px) {
+    .j-main-about {
+        height: 42vh;
+    }
+    
+    .l-main-about {  
+        height: 37vh;
+    }
+}
+
+@media screen and (min-height: 725px) {
+    .j-main-about {
+        height: 38vh;
+    }
+    
+    .l-main-about {  
+        height: 32vh;
+    }
+}
+
+@media screen and (min-height: 825px) {
+    .j-main-about {
+        height: 35vh;
+    }
+    
+    .l-main-about {  
+        height: 30vh;
+    }
+}
+
+@media screen and (min-height: 896px) {
+    .j-main-about {
+        height: 33vh;
+    }
+    
+    .l-main-about {  
+        height: 27vh;
+    }
+}
+
+// --------------------------------------------
+/* Tablet */
+@media screen and (min-width: 601px) {
+    .about-text-container {
+        display: flex;
+        justify-content: center;
+        gap: 0rem;
+    }
+
+    .about-about {
+        position: absolute;
+        left: 30px;
+        top: 70px;
+        font-size: 4rem;
+        z-index: 100;
+        transform: rotate(-90deg) translateX(-20%) translateY(-50%);
+        
+    }
+
+    /* Hidden so OTHER `Us` can be centered in the bottom container */
+    .about-us-1{
+        font-size: 0;
+    }
+
+    /* Bottom container `Us` in `AboutLina.js` */
+    .about-us-2 {
+        position: absolute;
+        right: 40px;
+        bottom: 70px;
+        font-size: 4rem;
+        /* transform: translateX(-50%); */
+    }
+}
+
+@media (min-width: 784px) {
+    .about-us-2 {
+        right: 40px;
+        bottom: 70px;
+        font-size: 4rem;
+        transform: translateX(-50%);
+    }
+}
+
+// --------------------------------------------
+/* Desktop */
+/* 1065px w is when boxes begin to move away */
+@media (min-width: 1029px) {
+    .about-about {
+        position: absolute;
+        left: 100px;
+        top: 130px;
+        font-size: 7rem;
+        // z-index: 50;
+        transform: rotate(0deg) translateX(-20%) translateY(-50%);
+        color: $color2;
+        @include shadow($color1);
+        animation: color 2s ease-in infinite;
+        -webkit-text-stroke: 2px rgb(255, 255, 255);
+    }
+
+    .about-us-2 {
+        position: absolute;
+        right: 100px;
+        bottom: 30px;
+        font-size: 7rem;
+        // z-index: 50;
+        @include shadow($color1);
+        animation: color 2s ease-in infinite;
+        -webkit-text-stroke: 2px rgb(255, 255, 255);
+    }
+}
+
+@media (min-width: 1235px) {
+    .about-about {
+        font-size: 8rem;
+        left: 150px;
+    }
+
+    .about-us-2 {
+        font-size: 8rem;
+        right: 200px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .about-about {
+        font-size: 10rem;
+    }
+
+    .about-us-2 {
+        font-size: 10rem;
+    }
+}
+
+@media (min-width: 1655px) {
+    .about-about {
+        font-size: 11rem;
+        left: 14%;
+    }
+
+    .about-us-2 {
+        font-size: 11rem;
+        right: 15%;
+    }
+}

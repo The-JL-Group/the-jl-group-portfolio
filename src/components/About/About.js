@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import './about.css';
+import './about.scss';
 
 // The Cards
 import AboutCards from './AboutCards/JamesCard/AboutCards'
@@ -12,7 +12,10 @@ const AboutJames = () => {
       <div id="about" className="j-main-about">
         {/* Component Title */}
         <div className="text-shadow-org dark:text-shadow-pnk">
-          <h2>ABOUT US</h2>
+          <div className="about-text-container">
+            <h2 className="about-about">ABOUT</h2>
+          </div>
+         
         </div>
 
         {/* Card Components */}

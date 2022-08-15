@@ -31,7 +31,7 @@ export const ModalBtn = (props) => {
     <div>
       {/* Show Modal */}
           <button 
-          className="j-about-btn"
+          className="l-about-btn"
           onClick={() => getData(data.expandedTitle, data.jamesImgSrc)}
         >
           about me
@@ -43,8 +43,15 @@ export const ModalBtn = (props) => {
   )
 };
 
-// Lina Modal
-
+const PortfolioBtn = () => {
+  return (
+    <div>
+      <button class="l-portfolio-btn">
+        my portfolio
+      </button>
+    </div>
+  )
+}
 
 // Utility component to assist w/animations that will be repeated
 const AnimatedContentBlock = ({ children }) => (
@@ -70,45 +77,36 @@ const LinaExpandedContent = ({
       <button 
         className="j-expanded-close" 
         onClick={() => onClick(false)}
-      >
+      > 
         <Close />
       </button>
-        <motion.div className="card-content-flex">
-            <motion.div 
-                className="jimbo-image-container"
-                variants={mainImageVariants}
-                >
-                {/* <img
-                src={data.jamesImgSrc}
-                alt={data.imgAlt}
-                className="james-main-image"
-                /> */}
-            </motion.div>
-            {/* Expanded Content */}
-            <motion.div className="j-expanded-content">
-                <AnimatedContentBlock>
-                    {/* <span className="title-large">{data.expandedTitle}</span> */}
-                    <span className="location">{data.location}</span>
-                    <span className="price">{data.price}</span>
-                    <p>{data.longDescription}</p>
-                </AnimatedContentBlock>
-                <AnimatedContentBlock>
-                    {/* <ul className="amenities-list card-content-flex">
-                    {data.amenities.map((amenity) => (
-                        <li key={amenity.name}>
-                        <amenity.icon />
-                        <span>{amenity.name}</span>
-                        </li>
-                    ))}
-                    </ul> */}
-                </AnimatedContentBlock>
-                {/* <AnimatedContentBlock>
-                    <button className="j-portfolio-btn">My Portfolio</button>
-                </AnimatedContentBlock> */}
-                <AnimatedContentBlock>
-                  <ModalBtn/>
-                </AnimatedContentBlock>
-            </motion.div>
+        <motion.div className="card-content-flex l-expanded-content">
+          
+        <div className="l-inner-card">
+
+        <div className="l-profile-sidebar">
+          <img className="l-profile-img" src={data.linaImgSrc}></img>
+          <ul className="l-social-list">
+            <li className="l-social-item">
+              <a href="#" className="l-social-link"></a>{data.github}
+            </li>
+            <li className="l-social-item">
+              <a href="#" className="l-social-link"></a>{data.email}
+            </li>
+            <li className="l-social-item">
+              <a href="#" className="l-social-link"></a>{data.linkedIn}
+            </li>
+          </ul>
+        </div>
+        <div className="l-profile-main">
+          <p className="l-profile-name">{data.expandedTitle}</p>
+          <p className="l-profile-position">UX/UI Developer</p>
+          <p className="l-profile-body">{data.longDescription}</p>
+          <ModalBtn/>
+          {/* <PortfolioBtn/> */}
+        </div>
+        </div>
+        
         </motion.div>
     </motion.div>
   );
