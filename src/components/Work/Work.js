@@ -4,14 +4,16 @@ import './work.css';
 const Work = () => {
   const workDetails = [
     {
-      project: 'all american doors & windows',
+      project: 'all american',
       url: 'https://www.allamericandoorsandwindowsinc.com/',
       image: 'work-card-1',
+      class: 'object-top',
     },
     {
       project: 'medcare healthcert',
       url: 'https://medcare-healthcert.herokuapp.com/',
       image: 'work-card-2',
+      class: 'object-left-top',
     },
   ];
 
@@ -20,7 +22,7 @@ const Work = () => {
   return (
     <section className="work-container">
       {/* HEADER CONTAINER */}
-      <div>
+      <div className="work-container-header">
         <h2 className="text-shadow-org dark:text-shadow-pnk">VIEW OUR WORK</h2>
       </div>
 
@@ -31,6 +33,7 @@ const Work = () => {
             <img
               src={require('../../assets/' + item.image + '.png')}
               alt={item.project}
+              className={item.class}
             ></img>
             <h3>{item.project}</h3>
             <div class="corner">
