@@ -9,7 +9,7 @@
   overflow: hidden;
   border-radius: 0.5rem;
   object-fit: cover;
-  filter: brightness(90%);
+  filter: brightness(85%);
 }
 
 .item p {
@@ -21,7 +21,7 @@
   align-items: center;
   background-color: var(--wht);
   color: var(--blk);
-  filter: brightness(90%);
+  filter: brightness(85%);
 }
 
 .item {
