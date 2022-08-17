@@ -21,15 +21,19 @@ const RentalCard = () => {
  
     {/* James's Card */}
     <motion.div 
-      className={`j-card ${isExpanded ? 'expanded' : 'initial'}`}
+      className={`j-card 
+      ${isExpanded ? 'expanded' : 'initial'}
+      `}
       // Variants & Animations
       // Initial Animations  
-      // variants={cardVariants}
       variants={cardVariants}
-
       animate={isExpanded ? 'active' : 'inactive'}
       // Required to prevent animations from running on page load
       initial="inactive"
+      
+      // onClick={() => setIsExpanded(!isExpanded)}
+
+      // onClick={() => setIsExpanded(true)}
       >
       <div className="j-content">
         <AnimatePresence
@@ -44,7 +48,7 @@ const RentalCard = () => {
         />
         ) : (
         <JamesExpandedContent
-          className="z-10"
+          className=""
           data={cardData}
           onClick={setIsExpanded}
           key="contentExpanded" // Children of AnimatePresence need a key

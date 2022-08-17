@@ -10,7 +10,7 @@ const AboutLina = () => {
   return (
     <section>
       <div id="about" className="l-main-about">
-        <h2 className="about-us-2">US</h2>
+        <h2 className="about-us-2 text-shadow-org">US</h2>
 
         {/* Card Components */}
         <LinaAboutCard/>

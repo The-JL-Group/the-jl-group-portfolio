@@ -41,19 +41,33 @@
   box-sizing: border-box;
 }
 
+html {
+  height: --webkit-fill-available;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  height: 100vh;
   font-family: 'Major Mono Display';
   background-color: var(--blk);
   color: var(--wht);
   line-height: 1.6;
   padding-bottom: 2em;
+
+  height: --webkit-fill-available;
+}
+
+#main {
+  flex: 1;
+  overflow: scroll;
 }
 
 h1 {
-  line-height: 1;
+  /* line-height: 1;
   font-size: 4.6rem;
-  margin: 0;
+  margin: 0; */
 }
 
 h2 {

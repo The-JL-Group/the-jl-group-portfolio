@@ -82,6 +82,7 @@ $cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 // --------------------------------------------
 /* Base */
+// Mobile
 .j-main-about {
     width: 100%;
     height: 42vh;
@@ -106,53 +107,80 @@ $cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     /* height: 100%; */
     position: relative;
     padding: 0em 0em 0em 0em;
-    border-bottom: 1px solid #fff;
+    // border-bottom: 1px solid #fff;
+}
+
+.about-us-2 {
+    display: none;
 }
 
 // --------------------------------------------
-/* Mobile */
+/* Height Queries */
+// Tablet
 @media screen and (min-height: 640px) {
+    .j-main-about {
+        height: 53vh;
+    }
+    
+    .l-main-about {  
+        height: 44vh;
+    }
+
+}
+
+@media screen and (min-height: 725px) {
     .j-main-about {
         height: 42vh;
     }
     
     .l-main-about {  
-        height: 37vh;
+        height: 38vh;
     }
 }
 
 @media screen and (min-height: 725px) {
+    .l-main-about {  
+        height: 40vh;
+    }
+}
+
+@media screen and (min-height: 800px) {
     .j-main-about {
         height: 38vh;
     }
     
     .l-main-about {  
-        height: 32vh;
-    }
-}
-
-@media screen and (min-height: 825px) {
-    .j-main-about {
-        height: 35vh;
-    }
-    
-    .l-main-about {  
-        height: 30vh;
+        height: 41vh;
     }
 }
 
 @media screen and (min-height: 896px) {
-    .j-main-about {
-        height: 33vh;
-    }
-    
     .l-main-about {  
-        height: 27vh;
+        height: 32vh;
+    }
+}
+
+@media screen and (min-height: 963px) {
+    .j-main-about {
+        height: 36vh;
+    }
+}
+
+@media screen and (min-height: 994px) {
+    .j-main-about {
+        height: 34vh;
+    }
+}
+
+@media screen and (min-height: 1080px) {
+    .j-main-about {
+        height: 32vh;
     }
 }
 
 // --------------------------------------------
-/* Tablet */
+/* Typography Queries */
+// Mobile/Tablet
 @media screen and (min-width: 601px) {
     .about-text-container {
         display: flex;
@@ -165,7 +193,6 @@ $cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
         left: 30px;
         top: 70px;
         font-size: 4rem;
-        z-index: 100;
         transform: rotate(-90deg) translateX(-20%) translateY(-50%);
         
     }
@@ -178,17 +205,18 @@ $cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     /* Bottom container `Us` in `AboutLina.js` */
     .about-us-2 {
         position: absolute;
-        right: 40px;
-        bottom: 70px;
+        right: 50px;
+        bottom: 120px;
         font-size: 4rem;
         /* transform: translateX(-50%); */
+        display: block;
     }
 }
 
 @media (min-width: 784px) {
     .about-us-2 {
-        right: 40px;
-        bottom: 70px;
+        right: 25px;
+        bottom: 110px;
         font-size: 4rem;
         transform: translateX(-50%);
     }
@@ -205,21 +233,21 @@ $cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
         font-size: 7rem;
         // z-index: 50;
         transform: rotate(0deg) translateX(-20%) translateY(-50%);
-        color: $color2;
-        @include shadow($color1);
-        animation: color 2s ease-in infinite;
-        -webkit-text-stroke: 2px rgb(255, 255, 255);
+        // color: $color2;
+        // @include shadow($color1);
+        // animation: color 2s ease-in infinite;
+        // -webkit-text-stroke: 2px rgb(255, 255, 255);
     }
 
     .about-us-2 {
         position: absolute;
         right: 100px;
-        bottom: 30px;
+        bottom: 60px;
         font-size: 7rem;
         // z-index: 50;
-        @include shadow($color1);
-        animation: color 2s ease-in infinite;
-        -webkit-text-stroke: 2px rgb(255, 255, 255);
+        // @include shadow($color1);
+        // animation: color 2s ease-in infinite;
+        // -webkit-text-stroke: 2px rgb(255, 255, 255);
     }
 }
 
