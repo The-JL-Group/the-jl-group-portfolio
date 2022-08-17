@@ -1,3 +1,5 @@
+/* Base Header */
+/* Logo + Toggle Bar */
 .logo-wrapper {
   padding: 0.6rem;
   display: flex;
@@ -8,60 +10,61 @@
   width: 15%;
 }
 
+.logo-img {
+  width: 2rem;
+  height: 2rem;
+}
+
 .toggle-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* ----------- */
+/* Main Header */
 .main-header {
   width: 100%;
   text-align: center;
 
-  /* THIS IS WHAT CAUSES THE CAROUSEL TO MOVE */
-
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
   overflow: hidden;
 }
 
+/* Header Img */
 .header-image {
-  transform: scale(3);
+  /* transform: scale(2.9); */
+  min-width: 700px;
+  width: 100%;
+  height: 700px;
+  /* height: 100vh; */
   position: absolute;
-  left: -200px;
-  top: 200px;
+  left: -370px;
+  top: -70px;
 }
 
-.header-img-wrapper {
-  /* width: 100%; */
-  /* top: -2rem;
-    left: -31rem;  */
-
-  /* position: absolute; */
-}
-
-.header-image {
-  /* width: 100%; */
-  /* transform: scale(2); */
-}
-
-.main-header h1 {
-  line-height: 1.05;
-}
-
-.main-header h5 {
-  /* line-height: 0; */
-  margin: 1.5rem 0 0 0;
-  letter-spacing: 0.119rem;
-}
-
+/* ----------- */
+/* Header Text + Btn */
 .text-wrapper {
   position: relative;
   /* margin-top: -90%; */
   padding: 0em 1em 0em 1em;
+}
+
+.text-wrapper h1 {
+  line-height: 1.05;
+  font-size: 4rem;
+}
+
+.text-wrapper h5 {
+  /* line-height: 0; */
+  margin: 1.5rem 0 0 0;
+  letter-spacing: 0.119rem;
+  line-height: 1.05;
 }
 
 .text-wrapper p {
@@ -85,7 +88,7 @@
   border: none;
   outline: none;
   border-radius: 4rem;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.4);
   font-family: Manrope, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
   overflow: hidden;
@@ -109,14 +112,121 @@
   background: rgba(57, 56, 56, 0.4);
 }
 
-/* @media (min-width: 500px) {
-    .text-wrapper {
-        position:initial;
-        margin-top: 0;
-        
+/* ----------------------------------- */
+/* Mobile Header */
+@media (min-width: 409px) {
+  /* Header Img */
+  .header-image {
+    height: 660px;
+    left: -300px;
+    top: -70px;
+  }
+}
+
+@media (min-width: 470px) {
+  /* Header Img */
+  .header-image {
+    height: 660px;
+    left: -240px;
+    top: -70px;
+  }
+}
+
+/* ----------------------------------- */
+/* Tablet Header */
+
+/* IMPLEMENT BOX SHANDOW ON TOP OF ABOUT SECTION WHILE CIRCLES ARE PLACED UNDERNEATH OVERFLOW */
+@media (min-width: 601px) {
+/* Main Header */
+    .main-header {
+      text-align: right;
     }
 
-    .header-img-wrapper {
-        position:initial;
+/* Header Img */
+    .header-image {
+      min-width: 0;
+      width: 100%;
+      height: 700px;
+      top: 5px;
+      left: 0px;
+     }
+
+/* Header Text + Btn */
+     .text-wrapper h1 {
+      font-size: 6rem;
     }
-} */
+
+     .text-wrapper h5 {
+      font-size: 1.6rem;
+      margin: 1.5rem 0 0 0;
+      letter-spacing: 0.119rem;
+      display: none;
+    }
+    
+    .text-wrapper p {
+      font-size: 1.3rem;
+      margin: 1rem 0 0 0;
+      padding-left: 80px;
+      display: none;
+    }
+
+    .cta-wrapper button {
+      font-size: 1.2rem;
+    }
+}
+
+/* Desktop Header */
+@media (min-width: 1029px) {
+/* Logo + Toggle Bar */
+
+  .logo-img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+/* Main Header */
+    .main-header {
+      height: 100vh;
+    }
+
+/* Header Img */
+  .header-image {
+     width: 100%;
+     height: 900px;
+  }
+
+/* Header Text + Btn */
+
+}
+
+@media (min-width: 1450px) {
+/* Header Img */
+  .header-image {
+    width: 90%;
+    height: 90vh;
+  }
+}
+
+@media (min-width: 1635px) {
+  /* Header Img */
+  .header-image {
+    width: 80%;
+    height: 90vh;
+  }
+}
+
+@media (min-width: 1920px) {
+/* Header Img */
+   .header-image {
+    width: 75%;
+    height: 85vh;
+  }
+}
+
+@media (min-width: 1950px) {
+/* Header Img */
+  .header-image {
+    width: 65%;
+    height: 85vh;
+  }
+}

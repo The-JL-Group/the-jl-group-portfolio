@@ -17,7 +17,7 @@ const CardContent = ({
     animate="active"
     initial="inactive"
 
-    onClick={() => onClick(true)}
+    // onClick={() => onClick(true)}
     >
       <motion.div 
       className="thumbnail-container"
@@ -38,7 +38,9 @@ const CardContent = ({
         <span className=""></span>
         <span className="price">{data.price}</span>
         <p>{data.shortDescription}</p>
-        <button className="j-info-btn" onClick={() => onClick(true)}>click me!</button>
+        <button className="j-info-btn" 
+        onClick={() => onClick(true)}
+        >click me!</button>
       </motion.div>
     </motion.div>
   );

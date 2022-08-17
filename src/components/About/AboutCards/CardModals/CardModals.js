@@ -11,7 +11,7 @@ import { ReactComponent as Close } from "../../../../assets/icons/x-icon-light.s
 export default class JModal extends Component {
   render() {
     return (
-      <div className="j-modal z-50">
+      <div className="j-modal">
         <div className='modal-btn-close-container'>
           <button type="button" className='modal-btn-close' onClick={this.props.hide}>
             <Close/>
@@ -44,7 +44,7 @@ export default class JModal extends Component {
               </div>
 
               <div className='modal-action-btn'>
-                <button>Follow GitHub</button>
+                <a href="https://github.com/jimbolikesgithub" target="_blank"><button>Follow GitHub</button></a>
               </div>
             </div>
           </div>

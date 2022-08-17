@@ -10,7 +10,7 @@ import { ReactComponent as Close } from "../../../../assets/icons/x-icon-light.s
 export default class LModal extends Component {
   render() {
     return (
-      <div className="l-modal z-50">
+      <div className="l-modal">
         <div className='modal-btn-close-container'>
           <button type="button" className='modal-btn-close' onClick={this.props.hide}>
             <Close/>
@@ -43,7 +43,7 @@ export default class LModal extends Component {
               </div>
 
               <div className='modal-action-btn'>
-                <button>Follow GitHub</button>
+                <a href="https://github.com/choilina16" target="_blank"><button>Follow GitHub</button></a>
               </div>
             </div>
           </div>

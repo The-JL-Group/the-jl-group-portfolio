@@ -34,3 +34,17 @@
   opacity: 1;
   transform: scale3d(1, 1, 1);
 }
+
+@media (min-width: 601px) {
+  .owl-carousel-hide {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1029px) {
+  .project-carousel {
+    position: absolute;
+    top: 20rem;
+  }
+}
