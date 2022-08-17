@@ -5,6 +5,9 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
+import { FaHandHoldingMedical } from 'react-icons/fa';
+import { MdConstruction } from 'react-icons/md';
+
 function CardSlider() {
   const cardSliderDetails = [
     {
@@ -12,12 +15,14 @@ function CardSlider() {
       url: 'https://www.allamericandoorsandwindowsinc.com/',
       image: 'card-slider-1',
       class: 'object-left-top',
+      icon: <FaHandHoldingMedical size={'3rem'} />,
     },
     {
       project: 'Medcare Healthcert',
       url: 'https://medcare-healthcert.herokuapp.com/',
       image: 'card-slider-2',
       class: 'object-left-top',
+      icon: <MdConstruction size={'3rem'} />,
     },
   ];
 
@@ -45,14 +50,10 @@ function CardSlider() {
     <div>
       <OwlCarousel className="owl-theme project-carousel" {...settings}>
         {workSliderList.map((item, index) => (
-          <div>
-            <div className="item drop-shadow-xl p-2">
-              <img
-                src={require('../../../assets/' + item.image + '.png')}
-                alt={item.project}
-                className={item.class}
-              ></img>
-            </div>
+          <div className="item drop-shadow-xl p-2">
+            <a href={item.url} target="_blank" rel="noreferrer">
+              <p>{item.icon}</p>
+            </a>
           </div>
         ))}
         <div className="item drop-shadow-xl p-2">

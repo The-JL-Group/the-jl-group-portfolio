@@ -16,6 +16,8 @@ const linaCardContent = ({
     exit="inactive"
     animate="active"
     initial="inactive"
+
+    onClick={() => onClick(true)}
     >
       <motion.div 
       className="thumbnail-container"

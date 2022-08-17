@@ -19,7 +19,7 @@ const Navbar = () => {
               {regIcons.map((nav, index) => (
                 <a
                   href={nav.pathway}
-                  className="nav-link  justify-center text-center pt-2 pb-1"
+                  className="nav-link justify-center text-center pt-2 pb-1"
                 >
                   {/* Nav List */}
                   <li key={index} className="nav-list">
@@ -49,7 +49,7 @@ const Navbar = () => {
         </div>
 
         {/* Nav Inner Socials Container */}
-        <div className={`${open ? 'h-full' : 'h-0'}  nav-inner-reg`}>
+        <div className={`${open ? 'h-full' : 'h-0'} nav-inner-reg`}>
           {/* Nav List Container */}
           <div>
             <ul className="flex justify-around">

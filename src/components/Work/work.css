@@ -60,7 +60,8 @@
 }
 
 .work-card:hover:before {
-  transform: scale(40);
+  /* this moves the white on hover */
+  transform: scale(60);
 }
 
 /* ARROW + CORNER IN CARD */

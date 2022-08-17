@@ -24,8 +24,6 @@ module.exports = {
         'header-dark': "url('/src/assets/header-image-dark.svg')",
         'logo-light': "url('/src/assets/jl-logo-light.svg')",
         'logo-dark': "url('/src/assets/jl-logo-dark.svg')",
-        // 'eye-light': "url('/src/assets/icons/eye-icon-light')",
-        // 'eye-dark': "url('/src/assets/icons/eye-icon-dark')",
 
         // ABOUT IMAGES
         // Dark

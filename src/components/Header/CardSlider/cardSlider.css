@@ -3,15 +3,6 @@
   margin-top: 2rem;
 }
 
-.project-carousel img {
-  height: 150px;
-  max-width: 100%;
-  overflow: hidden;
-  border-radius: 0.5rem;
-  object-fit: cover;
-  filter: brightness(85%);
-}
-
 .item p {
   height: 150px;
   width: 100%;
@@ -19,18 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--wht);
-  color: var(--blk);
-  filter: brightness(85%);
-}
-
-.item {
-  opacity: 0.9;
-  transform: scale3d(1, 0.8, 1);
-  transition: all 0.3s ease-in-out;
-}
-
-.project-carousel .owl-item.active.center .item {
-  opacity: 1;
-  transform: scale3d(1, 1, 1);
+  background-color: var(--blk);
+  color: var(--wht);
+  opacity: 0.8;
 }

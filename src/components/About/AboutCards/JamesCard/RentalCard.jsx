@@ -21,7 +21,7 @@ const RentalCard = () => {
  
     {/* James's Card */}
     <motion.div 
-      className={`card ${isExpanded ? 'expanded' : 'initial'}`}
+      className={`j-card ${isExpanded ? 'expanded' : 'initial'}`}
       // Variants & Animations
       // Initial Animations  
       // variants={cardVariants}
@@ -31,7 +31,7 @@ const RentalCard = () => {
       // Required to prevent animations from running on page load
       initial="inactive"
       >
-      <div className="content">
+      <div className="j-content">
         <AnimatePresence
           initial={false}
           exitBeforeEnter

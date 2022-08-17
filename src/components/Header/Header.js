@@ -3,6 +3,8 @@ import './header.css';
 import Toggle from '../../components/Header/Toggle';
 import CardSlider from './CardSlider/CardSlider';
 
+import { BsFillEyeFill } from 'react-icons/bs';
+
 const Header = () => {
   return (
     <header id="header" className="z-0 header font-['Major Mono Display']">
@@ -40,14 +42,9 @@ const Header = () => {
           <div className="cta-wrapper">
             <button>
               <span className="cta-icon-wrapper">
-                {/* <img
-                  src={eyeIcon}
-                  alt="View Work Button"
-                  className="cta-icon"
-                ></img> */}
-                {/* <div className="bg-eye-light"></div> */}
+                <BsFillEyeFill size={'1.5rem'} />
               </span>
-              <span className="cta-text dark:text-white">View Work</span>
+              <span className="cta-text">View Work</span>
             </button>
           </div>
         </div>

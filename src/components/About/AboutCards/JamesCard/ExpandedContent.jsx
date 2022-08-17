@@ -43,8 +43,15 @@ export const ModalBtn = (props) => {
   )
 };
 
-// Lina Modal
-
+const PortfolioBtn = () => {
+  return (
+    <div>
+      <button class="j-portfolio-btn">
+        my portfolio
+      </button>
+    </div>
+  )
+}
 
 // Utility component to assist w/animations that will be repeated
 const AnimatedContentBlock = ({ children }) => (
@@ -73,42 +80,32 @@ const JamesExpandedContent = ({
       >
         <Close />
       </button>
-        <motion.div className="card-content-flex">
-            <motion.div 
-                className="jimbo-image-container"
-                variants={mainImageVariants}
-                >
-                {/* <img
-                src={data.jamesImgSrc}
-                alt={data.imgAlt}
-                className="james-main-image"
-                /> */}
-            </motion.div>
-            {/* Expanded Content */}
-            <motion.div className="j-expanded-content">
-                <AnimatedContentBlock>
-                    {/* <span className="title-large">{data.expandedTitle}</span> */}
-                    <span className="location">{data.location}</span>
-                    <span className="price">{data.price}</span>
-                    <p>{data.longDescription}</p>
-                </AnimatedContentBlock>
-                <AnimatedContentBlock>
-                    {/* <ul className="amenities-list card-content-flex">
-                    {data.amenities.map((amenity) => (
-                        <li key={amenity.name}>
-                        <amenity.icon />
-                        <span>{amenity.name}</span>
-                        </li>
-                    ))}
-                    </ul> */}
-                </AnimatedContentBlock>
-                {/* <AnimatedContentBlock>
-                    <button className="j-portfolio-btn">My Portfolio</button>
-                </AnimatedContentBlock> */}
-                <AnimatedContentBlock>
-                  <ModalBtn/>
-                </AnimatedContentBlock>
-            </motion.div>
+        <motion.div className="card-content-flex j-float-container j-expanded-content j-float-child">
+          <div className="j-inner-card">
+
+            <div className="j-profile-sidebar">
+              <img className="j-profile-img" src={data.jamesImgSrc}></img>
+              <ul className="j-social-list">
+                <li className="j-social-item">
+                  <a href="#" className="j-social-link"></a>{data.github}
+                </li>
+                <li className="j-social-item">
+                  <a href="#" className="j-social-link"></a>{data.email}
+                </li>
+                <li className="j-social-item">
+                  <a href="#" className="j-social-link"></a>{data.linkedIn}
+                </li>
+              </ul>
+            </div>
+            <div className="j-profile-main">
+              <p className="j-profile-name">{data.expandedTitle}</p>
+              <p className="j-profile-position">UX/UI Developer</p>
+              <p className="j-profile-body">{data.longDescription}</p>
+              <ModalBtn/>
+              {/* <PortfolioBtn/> */}
+            </div>
+          </div>
+            
         </motion.div>
     </motion.div>
   );
@@ -117,3 +114,50 @@ const JamesExpandedContent = ({
 // Lina 
 
 export default JamesExpandedContent;
+
+
+
+
+
+
+
+{/* Float Child */}
+<motion.div 
+className="jimbo-image-container"
+variants={mainImageVariants}
+>
+{/* <img
+src={data.jamesImgSrc}
+alt={data.imgAlt}
+className="james-main-image"
+/> */}
+</motion.div>
+
+{/* Expanded Content */}
+// {/* <motion.div className="j-expanded-content j-float-child j-expanded-txt">
+// <AnimatedContentBlock>
+//     {/* <span className="title-large">{data.expandedTitle}</span> */}
+//     <span className="location">{data.location}</span>
+//     <span className="price">{data.price}</span>
+//     <p>{data.longDescription}</p>
+// </AnimatedContentBlock>
+// <AnimatedContentBlock>
+//   <ModalBtn/>
+// </AnimatedContentBlock>
+// </motion.div>
+
+// {/* Float Child */}
+// <motion.div 
+// className="j-expanded-content j-float-child"
+
+// >
+// <AnimatedContentBlock>
+//     {/* <span className="title-large">{data.expandedTitle}</span> */}
+//     <span className="location">{data.location}</span>
+//     <span className="price">{data.price}</span>
+//     {/* <p>{data.portfolioDescription}</p> */}
+// </AnimatedContentBlock>
+// <AnimatedContentBlock>
+//   <PortfolioBtn/>
+// </AnimatedContentBlock>
+// </motion.div> */}

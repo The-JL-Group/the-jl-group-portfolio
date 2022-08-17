@@ -27,17 +27,20 @@ const Work = () => {
       </div>
 
       {/* WORK CARD CONTAINER */}
-      <div class="work-card-section">
+      <div className="work-card-section">
         {workList.map((item, index) => (
-          <a class="work-card" href={item.url}>
+          <a
+            className="work-card dark:bg-ltPnk dark:before:bg-blk"
+            href={item.url}
+          >
             <img
               src={require('../../assets/' + item.image + '.png')}
               alt={item.project}
               className={item.class}
             ></img>
-            <h3>{item.project}</h3>
-            <div class="corner">
-              <div class="arrow">→</div>
+            <h3 className="dark:text-white">{item.project}</h3>
+            <div className="corner dark:bg-blk">
+              <div className="arrow dark:text-ltPnk">→</div>
             </div>
           </a>
         ))}
