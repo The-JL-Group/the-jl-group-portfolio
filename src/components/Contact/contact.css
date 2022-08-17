@@ -33,17 +33,3 @@
 .contact-text {
   padding: 2em 0;
 }
-
-/* MEDIA QUERY */
-/* @media (min-width: 1024px) {
-  .contact-image-large {
-    display: normal;
-  }
-} */
-
-/* tailwind */
-/* sm = 640 */
-/* md = 768 */
-/* lg = 1024 */
-/* xl = 1280 */
-/* 2xl = 1536 */

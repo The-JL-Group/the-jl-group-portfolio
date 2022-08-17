@@ -100,7 +100,7 @@ const InputBox = () => {
         {/* INPUT BOX MESSAGE */}
         <div className="flex justify-center">
           <div className="mb-3 sm:w-2/3 lg:w-3/4">
-            <textarea
+            <input
               name="message"
               id="inputMessage"
               className="
@@ -121,9 +121,8 @@ const InputBox = () => {
               focus:text-gray-700 focus:bg-white focus:border-org focus:ring-org focus:ring-1 focus:outline-none
               dark:focus:border-pnk dark:focus:ring-pnk
               "
-              rows="1"
               placeholder="your message"
-            ></textarea>
+            />
           </div>
         </div>
 
