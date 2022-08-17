@@ -9,27 +9,28 @@ const Header = () => {
       {/* Logo + Day/Night Btn */}
       <div className="logo-wrapper">
         <a href="#header">
-          <div className="bg-logo-dark dark:bg-logo-light bg-cover object-cover bg-left h-10 w-10"></div>
+          <div className="bg-logo-dark dark:bg-logo-light bg-cover object-cover bg-left logo-img"></div>
         </a>
         <div className="toggle-container">
           <Toggle />
         </div>
       </div>
 
-      {/* Header Img + Main Text */}
+      {/* Main Header */}
       <div className="main-header">
-        {/* Img */}
-        <div className="header-img-wrapper bg-header-dark dark:bg-header-light bg-cover object-cover bg-center h-56 w-full header-image"></div>
+        {/* Header Img */}
+
+        <div className="header-image bg-header-dark dark:bg-header-light bg-cover object-cover bg-center h-56 w-full"></div>
 
         {/* Text */}
         <div className="text-wrapper">
-          <div className="text-header-org dark:text-header-pnk">
+          <div className="text-header-org dark:text-header-pnk text-header">
             <h1>THE</h1>
             <h1>JL</h1>
             <h1>GROUP</h1>
           </div>
+          
           {/* Plain Text 'Carats' must be written as HTML entities */}
-
           <h5 className="dark:text-black">&lt;ux/ui developers/&gt;</h5>
           <p className="dark:text-white">
             Giving your website a more experienced{' '}

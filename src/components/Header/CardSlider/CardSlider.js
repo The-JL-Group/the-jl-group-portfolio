@@ -42,7 +42,7 @@ function CardSlider() {
   };
 
   return (
-    <div>
+    <div className='owl-carousel-hide'>
       <OwlCarousel className="owl-theme project-carousel" {...settings}>
         {workSliderList.map((item, index) => (
           <div>

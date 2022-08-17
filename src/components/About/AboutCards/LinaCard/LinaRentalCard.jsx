@@ -24,12 +24,12 @@ const LinaRentalCard = () => {
       className={`l-card ${isExpanded ? 'expanded' : 'initial'}`}
       // Variants & Animations
       // Initial Animations  
-      // variants={cardVariants}
       variants={cardVariants}
-
       animate={isExpanded ? 'active' : 'inactive'}
       // Required to prevent animations from running on page load
       initial="inactive"
+      
+      // onClick={() => setIsExpanded(!isExpanded)}
       >
       <div className="l-content">
         <AnimatePresence
@@ -44,7 +44,7 @@ const LinaRentalCard = () => {
         />
         ) : (
         <LinaExpandedContent
-         className="z-10"
+         className=""
           data={cardData}
           onClick={setIsExpanded}
           key="contentExpanded" // Children of AnimatePresence need a key

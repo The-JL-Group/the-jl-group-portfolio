@@ -17,7 +17,7 @@ const linaCardContent = ({
     animate="active"
     initial="inactive"
 
-    onClick={() => onClick(true)}
+    // onClick={() => onClick(true)}
     >
       <motion.div 
       className="thumbnail-container"
@@ -37,7 +37,9 @@ const linaCardContent = ({
         <span className="location">{data.location}</span>
         <span className="price">{data.price}</span>
         <p>{data.shortDescription}</p>
-        <button className="l-info-btn" onClick={() => onClick(true)}>click me!</button>
+        <button className="l-info-btn" 
+        onClick={() => onClick(true)}
+        >click me!</button>
       </motion.div>
     </motion.div>
   );

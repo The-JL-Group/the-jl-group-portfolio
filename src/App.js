@@ -10,7 +10,7 @@ import RentalCard from './components/About/AboutCards/JamesCard/RentalCard';
 
 function App() {
   return (
-    <div className="dark:bg-white dark:text-blk">
+    <div id="main" className="dark:bg-white dark:text-blk">
       <Navbar />
       <Header />
       <AboutJames />
