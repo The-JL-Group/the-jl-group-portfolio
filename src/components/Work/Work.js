@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './work.css';
+import DesktopNavbar from '../Header/Navbar/DesNav/DesktopNavbar';
 
 const Work = () => {
   const workDetails = [
