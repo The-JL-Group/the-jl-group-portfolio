@@ -32,3 +32,9 @@ nav {
 .nav-link.active {
   background-color: rgb(73, 133, 189);
 }
+
+@media (min-width: 1029px) {
+  .nav-outer {
+    display: none;
+  }
+}
