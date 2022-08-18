@@ -362,7 +362,6 @@
     .j-card:hover:not(.expanded)::before {
       transform: translate(-215px, -.5rem);
     }
-
   }
   
   @media (min-width: 1101px) {
@@ -428,7 +427,6 @@
     .j-social-list {
       right: 10%;
     }
-
   }
 
   @media (min-width: 1580px) {
@@ -448,7 +446,6 @@
     .j-card:hover:not(.expanded)::before {
       transform: translate(-251px, -.5rem);
     }
-
   }
 
   @media (min-width: 1655px) {

@@ -17,7 +17,7 @@ function App() {
      
       <Navbar />
       <Header />
-      <DesktopNavbar/>
+      {/* <DesktopNavbar/> */}
     
       <AboutJames />
       <AboutLina />
