@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { regIcons, socialsIcons } from '../navIcons';
+import { regIcons, socialsIcons } from './navIcons';
+
 import './navbar.css';
 
 const Navbar = () => {
@@ -19,10 +20,10 @@ const Navbar = () => {
               {regIcons.map((nav, index) => (
                 <a
                   href={nav.pathway}
-                  className="nav-link justify-center text-center pt-2 pb-1"
+                  className="nav-link justify-center text-center pt-2 pb-1 "
                 >
                   {/* Nav List */}
-                  <li key={index} className="nav-list">
+                  <li key={index} className="nav-list dark:text-white">
                     <span>
                       <span className="reg-icon-images">{nav.icon}</span>
                       <span>{nav.title}</span>

@@ -40,7 +40,7 @@ const Header = () => {
             <h1>JL</h1>
             <h1>GROUP</h1>
           </div>
-          
+
           {/* Plain Text 'Carats' must be written as HTML entities */}
           <h5 className="dark:text-black">&lt;ux/ui developers/&gt;</h5>
           <p className="dark:text-white">
@@ -51,8 +51,9 @@ const Header = () => {
           {/* Call-To-Action Btn */}
           <div className="cta-wrapper">
             <button>
+              {/* Eye Icon */}
               <span className="cta-icon-wrapper">
-                <BsFillEyeFill size={'1.5rem'} />
+                <BsFillEyeFill size={'1.5rem'} className="cta-icon" />
               </span>
               <span className="cta-text">View Work</span>
             </button>

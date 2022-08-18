@@ -19,6 +19,7 @@
   position: relative;
   /* stops it from growing any further */
   max-width: 50em;
+  /* max-height: 50em; */
   background-color: #f8724c;
   border-radius: 4px;
   padding: 1em;
@@ -88,4 +89,10 @@
   font-size: 1.5em;
   -webkit-text-stroke-width: 0.3px;
   -webkit-text-stroke-color: black;
+}
+
+@media (min-width: 1440px) {
+  .work-card img {
+    height: 20em;
+  }
 }

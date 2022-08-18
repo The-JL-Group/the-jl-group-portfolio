@@ -20,10 +20,8 @@ function App() {
       <DesktopNavbar/>
     
       <AboutJames />
-
       <AboutLina />
       <Work />
-
       <Contact />
     </div>
   );
