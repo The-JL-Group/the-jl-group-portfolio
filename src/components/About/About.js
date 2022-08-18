@@ -8,19 +8,10 @@ import AboutCards from './AboutCards/JamesCard/AboutCards'
 const AboutJames = () => {
 
   return (
-    <section>
-      <div id="about" className="j-main-about">
-        {/* Component Title */}
-        <div className="text-shadow-org dark:text-shadow-pnk">
-          <div className="about-text-container">
-            <h2 className="about-about">ABOUT</h2>
-          </div>
-         
-        </div>
-
-        {/* Card Components */}
-        <AboutCards/>
-        {/* <LinaAboutCard /> */}
+    <section id="about" className="j-main-about">
+      <div className="j-card-flex">
+        <h2 className="about-about text-shadow-org dark:text-shadow-pnk">ABOUT</h2>
+        <AboutCards/>      
       </div>
     </section>
   );

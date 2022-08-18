@@ -152,7 +152,7 @@
     }
 
     .j-card {
-      width: 80%;
+       width: 450px;
     }
 
     .j-card::before {
@@ -166,7 +166,7 @@
       top: 0;
       /* Moves div behind */
       /* 5px, 11px */
-      transform: translate(17px, .388rem);
+      transform: translate(-180px, .388rem);
       transition: transform 0.4s ease;
     }
 
@@ -206,16 +206,13 @@
   /* 601px Media Query - Tablet */
   @media (min-width: 601px) {
     .j-card {
-      width: 75%;
-      position: absolute;
-      right: 5px;
+      width: 500px;
     }
 
     .j-card {
-      margin: auto;
       max-height: 700px;
       min-height: 318px;
-      max-width: 800px;
+      max-width: 1000px;
     }
 
     .j-card::before {
@@ -223,12 +220,12 @@
       height: 69%;
       top: 0;
 
-      transform: translate(30px, 0.4rem);
+      transform: translate(-200px, 0.4rem);
       transition: transform 0.4s ease;
     }
 
     .j-card:hover:not(.expanded)::before {
-      transform: translate(35px, 0rem);
+      transform: translate(-235px, 0rem);
     }
 
     .j-content {
@@ -242,7 +239,6 @@
     
     
     /* New Expanded Content */
-
     .j-inner-card {
       text-align: left;
       margin-top: 5px;
@@ -286,9 +282,7 @@
 
   @media (min-width: 801px) {
     .j-card {
-      width: 65%;
-      position: absolute;
-      right: 20px;
+      width: 500px;
     }
 
     .j-content {
@@ -300,12 +294,12 @@
       height: 69%;
       top: 0;
 
-      transform: translate(36px, 0.4rem);
+      transform: translate(-200px, 0.4rem);
       transition: transform 0.4s ease;
     }
 
     .j-card:hover:not(.expanded)::before {
-      transform: translate(40px, 0rem);
+      transform: translate(-235px, 0rem);
     }
 
     /* Expanded Content */
@@ -324,9 +318,7 @@
 
   @media (min-width: 901px) {
     .j-card {
-      width: 55%;
-      position: absolute;
-      right: 20px;
+      width: 500px;
     }
 
     .j-content {
@@ -338,8 +330,12 @@
       height: 69%;
       top: 0;
 
-      transform: translate(32px, 0.4rem);
+      transform: translate(-200px, 0.4rem);
       transition: transform 0.4s ease;
+    }
+
+    .j-card:hover:not(.expanded)::before {
+      transform: translate(-235px, 0rem);
     }
   }
   
@@ -347,8 +343,7 @@
 
   @media (min-width: 1029px) {
     .j-card {
-      width: 52%;
-      right: 5px;
+      width: 500px;
     }
 
     .j-content {
@@ -360,20 +355,19 @@
       height: 69%;
       top: 0;
 
-      transform: translate(40px, 0.4rem);
+      transform: translate(-200px, 0.4rem);
       transition: transform 0.4s ease;
     }
 
     .j-card:hover:not(.expanded)::before {
-      transform: translate(45px, -.5rem);
+      transform: translate(-215px, -.5rem);
     }
 
   }
   
   @media (min-width: 1101px) {
     .j-card {
-      width: 48%;
-      right: 5px;
+      width: 500px;
     }
 
     .j-content {
@@ -385,15 +379,18 @@
       height: 69%;
       top: 0;
 
-      transform: translate(39px, 0.4rem);
+      transform: translate(-200px, 0.4rem);
       transition: transform 0.4s ease;
+    }
+
+    .j-card:hover:not(.expanded)::before {
+      transform: translate(-215px, -.5rem);
     }
   }
 
   @media (min-width: 1235px) {
     .j-card {
-      width: 43%;
-      right: 5%;
+      width: 500px;
     }
 
     .j-content {
@@ -405,15 +402,18 @@
       height: 69%;
       top: 0;
 
-      transform: translate(38px, 0.4rem);
+      transform: translate(-200px, 0.4rem);
       transition: transform 0.4s ease;
+    }
+
+    .j-card:hover:not(.expanded)::before {
+      transform: translate(-215px, -.5rem);
     }
   }
 
   @media (min-width: 1401px) {
     .j-card {
-      width: 39%;
-      right: 5%;
+      width: 500px;
     }
 
     .j-content {
@@ -433,8 +433,7 @@
 
   @media (min-width: 1580px) {
     .j-card {
-      width: 35%;
-      right: 10%;
+      width: 600px;
     }
 
     .j-card::before {
@@ -442,40 +441,40 @@
       height: 69%;
       top: 0;
 
-      transform: translate(41px, 0.4rem);
+      transform: translate(-241px, 0.4rem);
       transition: transform 0.4s ease;
     }
 
     .j-card:hover:not(.expanded)::before {
-      transform: translate(48px, -.5rem);
+      transform: translate(-251px, -.5rem);
     }
 
   }
 
   @media (min-width: 1655px) {
     .j-card {
-      width: 40%;
+      width: 700px;
       height: 200px;
-      right: 5%;
+      /* right: 5%; */
     }
 
     .j-card::before {
       width: 90%;
-      height: 86%;
+      height: 89%;
       top: 0;
 
-      transform: translate(51px, .3rem);
+      transform: translate(-270px, 0.1rem);
       transition: transform 0.4s ease;
     }
 
     .j-card:hover:not(.expanded)::before {
-      transform: translate(66px, -.7rem);
+      transform: translate(-291px, -.5rem);
     }
 
 
     .j-content {
       /* padding: 84px 16px; */
-      width: 100%;
+      /* width: 100%; */
       display: block;
     }
 
@@ -550,11 +549,6 @@
     }
   }
 
-  @media (min-width: 1655px) {
-    .j-card::before {
-      transform: translate(58px, .3rem);
-    }
-  }
 
   @media (min-width: 1905px) {
     .j-card {
@@ -575,11 +569,5 @@
     .j-social-list {
       top: 5%;
       left: -2%;
-    }
-  }
-
-  @media (min-width: 1945px) {
-    .j-card::before {
-      transform: translate(63px, 0rem);
     }
   }

@@ -4,6 +4,10 @@
   padding: 0.6rem;
   display: flex;
   justify-content: space-between;
+  /* display: none; */
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 }
 
 .logo-wrapper img {
@@ -18,7 +22,6 @@
 .toggle-container {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 /* ----------- */
@@ -27,8 +30,8 @@
   width: 100%;
   text-align: center;
 
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  /* border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff; */
 
   /* height: 100vh; */
   position: relative;
@@ -47,11 +50,16 @@
   top: -70px;
 }
 
+/* Header Dev Text */
+.developers-txt {
+  display: none;
+}
+
 /* ----------- */
 /* Header Text + Btn */
 .text-wrapper {
   position: relative;
-  /* margin-top: -90%; */
+  margin-top: 4rem;
   padding: 0em 1em 0em 1em;
 }
 
@@ -115,7 +123,7 @@
 /* ----------------------------------- */
 /* Mobile Header */
 @media (min-width: 409px) {
-  /* Header Img */
+/* Header Img */
   .header-image {
     height: 660px;
     left: -300px;
@@ -124,10 +132,19 @@
 }
 
 @media (min-width: 470px) {
-  /* Header Img */
+/* Header Img */
   .header-image {
     height: 660px;
-    left: -240px;
+    left: -200px;
+    top: -70px;
+  }
+}
+
+@media (min-width: 575px) {
+/* Header Img */
+  .header-image {
+    height: 660px;
+    left: -130px;
     top: -70px;
   }
 }
@@ -152,6 +169,10 @@
      }
 
 /* Header Text + Btn */
+    .text-wrapper  {
+      margin-top: 2rem;
+    }
+
      .text-wrapper h1 {
       font-size: 6rem;
     }
@@ -172,61 +193,143 @@
 
     .cta-wrapper button {
       font-size: 1.2rem;
+      margin: 0px 0 15px 0px;
     }
 }
 
 /* Desktop Header */
 @media (min-width: 1029px) {
 /* Logo + Toggle Bar */
-
-  .logo-img {
-    width: 5rem;
-    height: 5rem;
-  }
+    .logo-img {
+      width: 3rem;
+      height: 3rem;
+    }
 
 /* Main Header */
     .main-header {
-      height: 100vh;
+      /* height: 100vh; */
+      /* height: 700px; */
+      height: 1000px;
+      overflow: hidden;
+    }
+
+    /* Main Header */
+
+/* Header Img */
+    .header-image {
+      width: 800px;
+      height: 800px;
+      left: 130px;
+      transform: scale(1.1);
+      position: absolute;
+    }
+
+/* Header Dev Text */
+    .developers-txt {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+    }
+
+/* Header Text + Btn */
+    .text-wrapper  {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      width: 100%;
+      height: 60%;
+      top: 40px
+    }
+
+    .text-wrapper h1 {
+      font-size: 10rem;
+      letter-spacing: 3rem;
+      line-height: 14rem;
+    }
+
+    .cta-wrapper button {
+      display: none;
+    }
+}
+
+/* Macbook Pro 2020 13in */
+@media (min-width: 1440px) {
+/* Header Text + Btn */
+    .text-wrapper h1 {
+      font-size: 12rem;
+      letter-spacing: 3.5rem;
+      line-height: 13rem;
+    }
+}
+
+@media (min-width: 1570px) {
+/* Header Img */
+    .header-image {
+      width: 800px;
+      height: 800px;
+      top: 40px;
+      left: 200px;
+      transform: scale(1.3);
+    }
+
+/* Header Text + Btn */
+    .text-wrapper h1 {
+      font-size: 15rem;
+      letter-spacing: 3.5rem;
+      line-height: 13rem;
+    }
+}
+
+@media (min-width: 1715px) {
+/* Main Header */
+    .main-header {
+      /* height: 100vh; */
+      height: 1100px;
+      overflow: hidden;
     }
 
 /* Header Img */
-  .header-image {
-     width: 100%;
-     height: 900px;
-  }
+    .header-image {
+      width: 800px;
+      height: 800px;
+      top: 130px;
+      left: 300px;
+      transform: scale(1.6);
+    }
 
 /* Header Text + Btn */
+    .text-wrapper  {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      width: 100%;
+      height: 60%;
+      top: 170px
+    }
 
-}
-
-@media (min-width: 1450px) {
-/* Header Img */
-  .header-image {
-    width: 90%;
-    height: 90vh;
-  }
-}
-
-@media (min-width: 1635px) {
-  /* Header Img */
-  .header-image {
-    width: 80%;
-    height: 90vh;
-  }
+    .text-wrapper h1 {
+      font-size: 15rem;
+      letter-spacing: 3.5rem;
+      line-height: 17rem;
+    }
 }
 
 @media (min-width: 1920px) {
-/* Header Img */
-   .header-image {
-    width: 75%;
-    height: 85vh;
-  }
-}
+/* Header Text + Btn */
+    .text-wrapper  {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      width: 100%;
+      height: 60%;
+      top: 170px
+    }
 
-@media (min-width: 1950px) {
-/* Header Img */
-  .header-image {
-    width: 65%;
-    height: 85vh;
-  }
+    .text-wrapper h1 {
+      font-size: 18rem;
+      letter-spacing: 4rem;
+      line-height: 17rem;
+    }
 }

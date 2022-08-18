@@ -8,7 +8,8 @@ const Toggle = () => {
     <div>
       <label
         for="default-toggle"
-        class="inline-flex relative items-center cursor-pointer"
+        // inline-flex
+        class=" relative items-center cursor-pointer"
       >
         <input
           type="checkbox"

@@ -22,7 +22,7 @@
     text-shadow: 4px 0 #ffffff;
   }
   .nav-light {
-    background: rgba(31, 29, 29, 0.9);
+    background: rgba(31, 29, 29, 1);
   }
 }
 
@@ -56,13 +56,15 @@ body {
   line-height: 1.6;
   padding-bottom: 2em;
 
-  height: --webkit-fill-available;
+  /* height: --webkit-fill-available; */
+  height: 100vh;
 }
 
-#main {
+/* This messes with the sticky property */
+/* #main {
   flex: 1;
   overflow: scroll;
-}
+} */
 
 h1 {
   /* line-height: 1;

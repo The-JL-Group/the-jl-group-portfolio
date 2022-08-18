@@ -22,7 +22,6 @@
   position: relative;
   /* margin-bottom: 50px; */
   padding: 1rem;
-  z-index: 200;
 }
 
 .l-card::before {
@@ -143,7 +142,7 @@
     }
 
     .l-card {
-      width: 80%;
+      width: 450px;
     }
 
     .l-card::before {
@@ -152,17 +151,17 @@
       background: #fff;
       border-radius: 0.313rem;
       position: absolute;
-      width: 90%;
+      width: 91%;
       height: 80%;
       top: 0;
       /* Moves div behind */
       /* 5px, 11px */
-      transform: translate(21px, 2.1rem);
+      transform: translate(-180px, .388rem);
       transition: transform 0.4s ease;
     }
 
     .l-card:hover:not(.expanded)::before {
-      transform: translate(25px, 2.5rem);
+      transform: translate(20px, .188rem);
     }
 
     .l-info-btn {
@@ -196,29 +195,27 @@
   /* 601px Media Query - Tablet */
   @media (min-width: 601px) {
     .l-card {
-      width: 75%;
-      position: absolute;
-      left: 5px;
+      width: 500px;
     }
 
     .l-card {
       margin: auto;
       max-height: 700px;
       min-height: 318px;
-      max-width: 800px;
+      max-width: 1000px;
     }
 
     .l-card::before {
       width: 90%;
-      height: 64%;
+      height: 69%;
       top: 0;
 
-      transform: translate(28px, 1.4rem);
+      transform: translate(-200px, 0.4rem);
       transition: transform 0.4s ease;
     }
 
     .l-card:hover:not(.expanded)::before {
-      transform: translate(34px, 2.2rem);
+      transform: translate(-235px, 0rem);
     }
 
     .l-content {
@@ -271,33 +268,9 @@
     
   }
 
-  @media (min-width: 695px) {
-    .l-card::before {
-      transform: translate(34px, 1.5rem);
-    }
-
-    .l-card:hover:not(.expanded)::before {
-      transform: translate(40px, 2.5rem);
-    }
-  }
-
-  @media (min-width: 767px) {
-    .l-social-list {
-      top: 76%;
-    }
-
-    .l-profile-img {
-      top: 17%;
-      width: 140px;
-      right: 9%;
-    }
-  }
-
   @media (min-width: 801px) {
     .l-card {
-      width: 65%;
-      position: absolute;
-      left: 20px;
+      width: 500px;
     }
 
     .l-content {
@@ -309,8 +282,12 @@
       height: 69%;
       top: 0;
 
-      transform: translate(33px, 1.8rem);
+      transform: translate(-200px, 0.4rem);
       transition: transform 0.4s ease;
+    }
+
+    .l-card:hover:not(.expanded)::before {
+      transform: translate(-235px, 0rem);
     }
 
     /* Expanded Content */
