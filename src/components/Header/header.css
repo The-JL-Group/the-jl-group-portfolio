@@ -84,6 +84,7 @@
 
 .cta-wrapper button {
   display: inline-flex;
+  align-items: center;
   padding: 0.563rem;
   border: none;
   outline: none;
@@ -95,8 +96,7 @@
   cursor: pointer;
 }
 
-.cta-text,
-.cta-icon {
+.cta-text {
   /* display: inline-flex; */
   align-items: center;
   padding: 0 0.4rem;
@@ -137,70 +137,69 @@
 
 /* IMPLEMENT BOX SHANDOW ON TOP OF ABOUT SECTION WHILE CIRCLES ARE PLACED UNDERNEATH OVERFLOW */
 @media (min-width: 601px) {
-/* Main Header */
-    .main-header {
-      text-align: right;
-    }
+  /* Main Header */
+  .main-header {
+    text-align: right;
+  }
 
-/* Header Img */
-    .header-image {
-      min-width: 0;
-      width: 100%;
-      height: 700px;
-      top: 5px;
-      left: 0px;
-     }
+  /* Header Img */
+  .header-image {
+    min-width: 0;
+    width: 100%;
+    height: 700px;
+    top: 5px;
+    left: 0px;
+  }
 
-/* Header Text + Btn */
-     .text-wrapper h1 {
-      font-size: 6rem;
-    }
+  /* Header Text + Btn */
+  .text-wrapper h1 {
+    font-size: 6rem;
+  }
 
-     .text-wrapper h5 {
-      font-size: 1.6rem;
-      margin: 1.5rem 0 0 0;
-      letter-spacing: 0.119rem;
-      display: none;
-    }
-    
-    .text-wrapper p {
-      font-size: 1.3rem;
-      margin: 1rem 0 0 0;
-      padding-left: 80px;
-      display: none;
-    }
+  .text-wrapper h5 {
+    font-size: 1.6rem;
+    margin: 1.5rem 0 0 0;
+    letter-spacing: 0.119rem;
+    display: none;
+  }
 
-    .cta-wrapper button {
-      font-size: 1.2rem;
-    }
+  .text-wrapper p {
+    font-size: 1.3rem;
+    margin: 1rem 0 0 0;
+    padding-left: 80px;
+    display: none;
+  }
+
+  .cta-wrapper button {
+    font-size: 1.2rem;
+  }
 }
 
 /* Desktop Header */
 @media (min-width: 1029px) {
-/* Logo + Toggle Bar */
+  /* Logo + Toggle Bar */
 
   .logo-img {
     width: 5rem;
     height: 5rem;
   }
 
-/* Main Header */
-    .main-header {
-      height: 100vh;
-    }
-
-/* Header Img */
-  .header-image {
-     width: 100%;
-     height: 900px;
+  /* Main Header */
+  .main-header {
+    height: 100vh;
   }
 
-/* Header Text + Btn */
+  /* Header Img */
+  .header-image {
+    width: 100%;
+    height: 900px;
+  }
 
+  /* Header Text + Btn */
 }
 
 @media (min-width: 1450px) {
-/* Header Img */
+  /* Header Img */
   .header-image {
     width: 90%;
     height: 90vh;
@@ -216,15 +215,15 @@
 }
 
 @media (min-width: 1920px) {
-/* Header Img */
-   .header-image {
+  /* Header Img */
+  .header-image {
     width: 75%;
     height: 85vh;
   }
 }
 
 @media (min-width: 1950px) {
-/* Header Img */
+  /* Header Img */
   .header-image {
     width: 65%;
     height: 85vh;

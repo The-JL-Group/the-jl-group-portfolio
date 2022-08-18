@@ -74,7 +74,7 @@ const Contact = () => {
         </a>
       </div>
 
-      <div className="lg:p-8">
+      <div className="lg:p-8 mb-10">
         <InputBox />
       </div>
     </section>
