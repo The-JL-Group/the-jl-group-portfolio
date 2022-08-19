@@ -47,7 +47,6 @@
 }
 
 .j-content {
-  background: url('../../../../assets/jimbo-card-dark.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.313rem;
@@ -61,11 +60,11 @@
 
 /* Expanded Content (James) */
 .j-expanded-close {
-   /* background: #222; */
-    padding: 0.313rem;
-    position: absolute;
-    right: 0;
-    top: 0;
+  /* background: #222; */
+  padding: 0.313rem;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .close svg {
@@ -130,7 +129,7 @@
 }
 
 .j-profile-main {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .j-profile-name {
@@ -142,429 +141,419 @@
   margin-bottom: 5px;
 }
 
- /* ------------------ */
-  /* 500px Media Query */
-  @media (min-width: 500px) {
-    /* Card Content */
-    .j-card-content-flex {
-      margin: auto 0;
-      /* padding: 0; */
-    }
-
-    .j-card {
-       width: 450px;
-    }
-
-    .j-card::before {
-      content: '';
-      overflow: hidden;
-      background: #fff;
-      border-radius: 0.313rem;
-      position: absolute;
-      width: 91%;
-      height: 80%;
-      top: 0;
-      /* Moves div behind */
-      /* 5px, 11px */
-      transform: translate(-180px, .388rem);
-      transition: transform 0.4s ease;
-    }
-
-    .j-card:hover:not(.expanded)::before {
-      transform: translate(20px, .188rem);
-    }
-    
-    .j-info-btn {
-      display:block;
-      height: 100px;
-      width: 100px;
-      border-radius: 50%;
-      color: #fff;
-      border: 1px solid rgb(255, 255, 255);
-      background: rgb(33, 32, 32, 1);
-      margin-top: 0;
-    }
-
-    .j-title {
-      /* margin: 0 0 10px; */
-      font-size: 3.5rem;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding: 0px 0.625rem 0px 0px;
-    }
-
-    .j-content {
-      height: 100%;
-      width: 100%;
-      padding: 0.875rem 1rem;
-    }
-
+/* ------------------ */
+/* 500px Media Query */
+@media (min-width: 500px) {
+  /* Card Content */
+  .j-card-content-flex {
+    margin: auto 0;
+    /* padding: 0; */
   }
 
-   /* ------------------ */
-  /* 601px Media Query - Tablet */
-  @media (min-width: 601px) {
-    .j-card {
-      width: 500px;
-    }
-
-    .j-card {
-      max-height: 700px;
-      min-height: 318px;
-      max-width: 1000px;
-    }
-
-    .j-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-200px, 0.4rem);
-      transition: transform 0.4s ease;
-    }
-
-    .j-card:hover:not(.expanded)::before {
-      transform: translate(-235px, 0rem);
-    }
-
-    .j-content {
-      padding: 44px 16px;
-    }
-
-    .j-about-btn {
-      width: 50%
-    }
-
-    
-    
-    /* New Expanded Content */
-    .j-inner-card {
-      text-align: left;
-      margin-top: 5px;
-      width: 100%;
-    }
-
-    .j-profile-img {
-      display: flex;
-      position: absolute;
-      /* display: none; */
-      top: 18%;
-      right: 8%;
-      width: 150px;
-      /* height: 30px;  */
-    }
-   
-    .j-social-list {
-      display: flex;
-      position: absolute;
-      top: 76%;
-      right: 10%;
-    }
-
-    .j-profile-main {
-        
-    }
-
-    .j-profile-name {
-      font-size: 1rem;
-    }
-
-    .j-profile-position {
-      
-    }
-
-    .j-profile-body {
-     width: 55%;
-    }
-
+  .j-card {
+    width: 450px;
   }
 
-  @media (min-width: 801px) {
-    .j-card {
-      width: 500px;
-    }
-
-    .j-content {
-      padding: 44px 16px;
-    }
-
-    .j-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-200px, 0.4rem);
-      transition: transform 0.4s ease;
-    }
-
-    .j-card:hover:not(.expanded)::before {
-      transform: translate(-235px, 0rem);
-    }
-
-    /* Expanded Content */
-
-    .j-profile-img {
-      top: 20%;
-    }
-
-    .j-social-list {
-      display: flex;
-      position: absolute;
-      top: 74%;
-      right: 10%;
-    }
+  .j-card::before {
+    content: '';
+    overflow: hidden;
+    background: #fff;
+    border-radius: 0.313rem;
+    position: absolute;
+    width: 91%;
+    height: 80%;
+    top: 0;
+    /* Moves div behind */
+    /* 5px, 11px */
+    transform: translate(-180px, 0.388rem);
+    transition: transform 0.4s ease;
   }
 
-  @media (min-width: 901px) {
-    .j-card {
-      width: 500px;
-    }
-
-    .j-content {
-      padding: 46px 16px;
-    }
-
-    .j-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-200px, 0.4rem);
-      transition: transform 0.4s ease;
-    }
-
-    .j-card:hover:not(.expanded)::before {
-      transform: translate(-235px, 0rem);
-    }
-  }
-  
-
-
-  @media (min-width: 1029px) {
-    .j-card {
-      width: 500px;
-    }
-
-    .j-content {
-      padding: 46px 16px;
-    }
-
-    .j-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-200px, 0.4rem);
-      transition: transform 0.4s ease;
-    }
-
-    .j-card:hover:not(.expanded)::before {
-      transform: translate(-215px, -.5rem);
-    }
-  }
-  
-  @media (min-width: 1101px) {
-    .j-card {
-      width: 500px;
-    }
-
-    .j-content {
-      padding: 48px 16px;
-    }
-
-    .j-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-200px, 0.4rem);
-      transition: transform 0.4s ease;
-    }
-
-    .j-card:hover:not(.expanded)::before {
-      transform: translate(-215px, -.5rem);
-    }
+  .j-card:hover:not(.expanded)::before {
+    transform: translate(20px, 0.188rem);
   }
 
-  @media (min-width: 1235px) {
-    .j-card {
-      width: 500px;
-    }
-
-    .j-content {
-      padding: 50px 16px;
-    }
-
-    .j-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-200px, 0.4rem);
-      transition: transform 0.4s ease;
-    }
-
-    .j-card:hover:not(.expanded)::before {
-      transform: translate(-215px, -.5rem);
-    }
+  .j-info-btn {
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(33, 32, 32, 1);
+    margin-top: 0;
   }
 
-  @media (min-width: 1401px) {
-    .j-card {
-      width: 500px;
-    }
-
-    .j-content {
-      padding: 55px 16px;
-    }
-
-    /* Expanded Content */
-    .j-profile-img {
-      top: 22%;
-    }
-
-    .j-social-list {
-      right: 10%;
-    }
+  .j-title {
+    /* margin: 0 0 10px; */
+    font-size: 3.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0px 0.625rem 0px 0px;
   }
 
-  @media (min-width: 1580px) {
-    .j-card {
-      width: 600px;
-    }
+  .j-content {
+    height: 100%;
+    width: 100%;
+    padding: 0.875rem 1rem;
+  }
+}
 
-    .j-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-241px, 0.4rem);
-      transition: transform 0.4s ease;
-    }
-
-    .j-card:hover:not(.expanded)::before {
-      transform: translate(-251px, -.5rem);
-    }
+/* ------------------ */
+/* 601px Media Query - Tablet */
+@media (min-width: 601px) {
+  .j-card {
+    width: 500px;
   }
 
-  @media (min-width: 1655px) {
-    .j-card {
-      width: 700px;
-      height: 200px;
-      /* right: 5%; */
-    }
-
-    .j-card::before {
-      width: 90%;
-      height: 89%;
-      top: 0;
-
-      transform: translate(-270px, 0.1rem);
-      transition: transform 0.4s ease;
-    }
-
-    .j-card:hover:not(.expanded)::before {
-      transform: translate(-291px, -.5rem);
-    }
-
-
-    .j-content {
-      /* padding: 84px 16px; */
-      /* width: 100%; */
-      display: block;
-    }
-
-    .j-title {
-      font-size: 8rem;
-    }
-
-    .j-about-btn {
-      width: 50%;
-      margin-top: 5px;
-      background: var(--blk);
-      border: 1px solid white;
-      border-radius: 5px;
-      padding: 3px;
-      font-size: 18px;
-      color: #fff;
-      position: relative;
-      left: 25%;
-    }
-
-    /* New Expanded Content */
-    .j-expanded-content {
-      padding: 0;
-      margin: 0;
-      /* margin-left: 30px; */
-      /* display: block; */
-    }
-
-    .j-inner-card {
-      padding: 0;
-      margin: 0;
-      width: 100%;
-    }
-
-    .j-profile-img {
-      position: relative;
-      top: 1%;
-      left: 10%;
-      width: 60%; 
-    }
-
-    .j-social-list {
-      position: relative;
-      top: 5%;
-    }
-
-    .j-profile-body {
-      width: 100%;
-     }
-
-    .j-profile-name {
-      font-size: 1.5rem;
-      text-align: center;
-    }
-
-    .j-profile-position {
-      text-align: center;
-    }
-
-    .j-profile-body {
-      text-align: center;
-    }
-
-    .j-profile-name::after {
-      content: '';
-      display: block;
-      height: 1px;
-      width: 2em;
-      background: #fff;
-      margin: 0.7em 0.5em auto;
-      opacity: .35;
-    }
+  .j-card {
+    max-height: 700px;
+    min-height: 318px;
+    max-width: 1000px;
   }
 
+  .j-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
 
-  @media (min-width: 1905px) {
-    .j-card {
-      height: 370px;
-    }
-
-    .j-inner-card {
-      padding: 10px;
-    }
-
-    .j-profile-img {
-      position: relative;
-      top: 1%;
-      left: 10%;
-      width: 75%; 
-    }
-
-    .j-social-list {
-      top: 5%;
-      left: -2%;
-    }
+    transform: translate(-200px, 0.4rem);
+    transition: transform 0.4s ease;
   }
+
+  .j-card:hover:not(.expanded)::before {
+    transform: translate(-235px, 0rem);
+  }
+
+  .j-content {
+    padding: 44px 16px;
+  }
+
+  .j-about-btn {
+    width: 50%;
+  }
+
+  /* New Expanded Content */
+  .j-inner-card {
+    text-align: left;
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .j-profile-img {
+    display: flex;
+    position: absolute;
+    /* display: none; */
+    top: 18%;
+    right: 8%;
+    width: 150px;
+    /* height: 30px;  */
+  }
+
+  .j-social-list {
+    display: flex;
+    position: absolute;
+    top: 76%;
+    right: 10%;
+  }
+
+  .j-profile-main {
+  }
+
+  .j-profile-name {
+    font-size: 1rem;
+  }
+
+  .j-profile-position {
+  }
+
+  .j-profile-body {
+    width: 55%;
+  }
+}
+
+@media (min-width: 801px) {
+  .j-card {
+    width: 500px;
+  }
+
+  .j-content {
+    padding: 44px 16px;
+  }
+
+  .j-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
+
+    transform: translate(-200px, 0.4rem);
+    transition: transform 0.4s ease;
+  }
+
+  .j-card:hover:not(.expanded)::before {
+    transform: translate(-235px, 0rem);
+  }
+
+  /* Expanded Content */
+
+  .j-profile-img {
+    top: 20%;
+  }
+
+  .j-social-list {
+    display: flex;
+    position: absolute;
+    top: 74%;
+    right: 10%;
+  }
+}
+
+@media (min-width: 901px) {
+  .j-card {
+    width: 500px;
+  }
+
+  .j-content {
+    padding: 46px 16px;
+  }
+
+  .j-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
+
+    transform: translate(-200px, 0.4rem);
+    transition: transform 0.4s ease;
+  }
+
+  .j-card:hover:not(.expanded)::before {
+    transform: translate(-235px, 0rem);
+  }
+}
+
+@media (min-width: 1029px) {
+  .j-card {
+    width: 500px;
+  }
+
+  .j-content {
+    padding: 46px 16px;
+  }
+
+  .j-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
+
+    transform: translate(-200px, 0.4rem);
+    transition: transform 0.4s ease;
+  }
+
+  .j-card:hover:not(.expanded)::before {
+    transform: translate(-215px, -0.5rem);
+  }
+}
+
+@media (min-width: 1101px) {
+  .j-card {
+    width: 500px;
+  }
+
+  .j-content {
+    padding: 48px 16px;
+  }
+
+  .j-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
+
+    transform: translate(-200px, 0.4rem);
+    transition: transform 0.4s ease;
+  }
+
+  .j-card:hover:not(.expanded)::before {
+    transform: translate(-215px, -0.5rem);
+  }
+}
+
+@media (min-width: 1235px) {
+  .j-card {
+    width: 500px;
+  }
+
+  .j-content {
+    padding: 50px 16px;
+  }
+
+  .j-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
+
+    transform: translate(-200px, 0.4rem);
+    transition: transform 0.4s ease;
+  }
+
+  .j-card:hover:not(.expanded)::before {
+    transform: translate(-215px, -0.5rem);
+  }
+}
+
+@media (min-width: 1401px) {
+  .j-card {
+    width: 500px;
+  }
+
+  .j-content {
+    padding: 55px 16px;
+  }
+
+  /* Expanded Content */
+  .j-profile-img {
+    top: 22%;
+  }
+
+  .j-social-list {
+    right: 10%;
+  }
+}
+
+@media (min-width: 1580px) {
+  .j-card {
+    width: 600px;
+  }
+
+  .j-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
+
+    transform: translate(-241px, 0.4rem);
+    transition: transform 0.4s ease;
+  }
+
+  .j-card:hover:not(.expanded)::before {
+    transform: translate(-251px, -0.5rem);
+  }
+}
+
+@media (min-width: 1655px) {
+  .j-card {
+    width: 700px;
+    height: 200px;
+    /* right: 5%; */
+  }
+
+  .j-card::before {
+    width: 90%;
+    height: 89%;
+    top: 0;
+
+    transform: translate(-270px, 0.1rem);
+    transition: transform 0.4s ease;
+  }
+
+  .j-card:hover:not(.expanded)::before {
+    transform: translate(-291px, -0.5rem);
+  }
+
+  .j-content {
+    /* padding: 84px 16px; */
+    /* width: 100%; */
+    display: block;
+  }
+
+  .j-title {
+    font-size: 8rem;
+  }
+
+  .j-about-btn {
+    width: 50%;
+    margin-top: 5px;
+    background: var(--blk);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    left: 25%;
+  }
+
+  /* New Expanded Content */
+  .j-expanded-content {
+    padding: 0;
+    margin: 0;
+    /* margin-left: 30px; */
+    /* display: block; */
+  }
+
+  .j-inner-card {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .j-profile-img {
+    position: relative;
+    top: 1%;
+    left: 10%;
+    width: 60%;
+  }
+
+  .j-social-list {
+    position: relative;
+    top: 5%;
+  }
+
+  .j-profile-body {
+    width: 100%;
+  }
+
+  .j-profile-name {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .j-profile-position {
+    text-align: center;
+  }
+
+  .j-profile-body {
+    text-align: center;
+  }
+
+  .j-profile-name::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 2em;
+    background: #fff;
+    margin: 0.7em 0.5em auto;
+    opacity: 0.35;
+  }
+}
+
+@media (min-width: 1905px) {
+  .j-card {
+    height: 370px;
+  }
+
+  .j-inner-card {
+    padding: 10px;
+  }
+
+  .j-profile-img {
+    position: relative;
+    top: 1%;
+    left: 10%;
+    width: 75%;
+  }
+
+  .j-social-list {
+    top: 5%;
+    left: -2%;
+  }
+}
