@@ -47,6 +47,7 @@
 }
 
 .j-content {
+  background: url('../../../../assets/jimbo-card-dark.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.313rem;
@@ -137,6 +138,7 @@
 .j-profile-position {
   margin-bottom: 5px;
 }
+
 /* ------------------ */
 /* 500px Media Query */
 @media (min-width: 500px) {
@@ -341,6 +343,42 @@
   .j-content {
     padding: 46px 16px;
   }
+
+  .j-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
+
+    transform: translate(-200px, 0.4rem);
+    transition: transform 0.4s ease;
+  }
+
+  .j-card:hover:not(.expanded)::before {
+    transform: translate(-185px, 0rem);
+  }
+}
+
+@media (min-width: 1101px) {
+  .j-card {
+    width: 500px;
+  }
+
+  .j-content {
+    padding: 48px 16px;
+  }
+
+  .j-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
+
+    transform: translate(-200px, 0.4rem);
+    transition: transform 0.4s ease;
+  }
+
+  .j-card:hover:not(.expanded)::before {
+    transform: translate(-185px, 0rem);
+  }
 }
 
 @media (min-width: 1235px) {
@@ -356,16 +394,14 @@
     width: 90%;
     height: 69%;
     top: 0;
+
     transform: translate(-200px, 0.4rem);
     transition: transform 0.4s ease;
   }
 
   .j-card:hover:not(.expanded)::before {
-    transform: translate(-185px, 0rem);
+    transform: translate(-185, 0rem);
   }
-  /* .j-card:hover:not(.expanded)::before {
-    transform: translate(-215px, -0.5rem);
-  } */
 }
 
 @media (min-width: 1401px) {
@@ -380,193 +416,6 @@
   /* Expanded Content */
   .j-profile-img {
     top: 22%;
-    /* .j-card:hover:not(.expanded)::before {
-      transform: translate(-185px, 0rem);
-    } */
-  }
-
-  .j-card:hover:not(.expanded)::before {
-    transform: translate(-185px, 0rem);
-  }
-
-  @media (min-width: 1235px) {
-    .j-card {
-      width: 500px;
-    }
-
-    .j-content {
-      padding: 50px 16px;
-    }
-
-    .j-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-200px, 0.4rem);
-      transition: transform 0.4s ease;
-    }
-
-    .j-card:hover:not(.expanded)::before {
-      transform: translate(-185, 0rem);
-    }
-  }
-
-  @media (min-width: 1401px) {
-    .j-card {
-      width: 500px;
-    }
-
-    .j-content {
-      padding: 55px 16px;
-    }
-
-    /* Expanded Content */
-    .j-profile-img {
-      top: 22%;
-    }
-
-    .j-social-list {
-      right: 10%;
-    }
-  }
-
-  @media (min-width: 1580px) {
-    .j-card {
-      width: 600px;
-    }
-
-    .j-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-240px, 0.4rem);
-      transition: transform 0.4s ease;
-    }
-
-    .j-card:hover:not(.expanded)::before {
-      transform: translate(-225px, 0rem);
-    }
-  }
-
-  @media (min-width: 1655px) {
-    .j-card {
-      width: 700px;
-      height: 200px;
-      /* right: 5%; */
-    }
-
-    .j-card::before {
-      width: 90%;
-      height: 89%;
-      top: 0;
-
-      transform: translate(-270px, 0.1rem);
-      transition: transform 0.4s ease;
-    }
-
-    .j-card:hover:not(.expanded)::before {
-      transform: translate(-255px, -0.3rem);
-    }
-
-    .j-content {
-      /* padding: 84px 16px; */
-      /* width: 100%; */
-      display: block;
-    }
-
-    .j-title {
-      font-size: 8rem;
-    }
-
-    .j-about-btn {
-      width: 50%;
-      margin-top: 5px;
-      background: var(--blk);
-      border: 1px solid white;
-      border-radius: 5px;
-      padding: 3px;
-      font-size: 18px;
-      color: #fff;
-      position: relative;
-      left: 25%;
-    }
-
-    /* New Expanded Content */
-    .j-expanded-content {
-      padding: 0;
-      margin: 0;
-      /* margin-left: 30px; */
-      /* display: block; */
-    }
-
-    .j-inner-card {
-      padding: 0;
-      margin: 0;
-      width: 100%;
-    }
-
-    .j-profile-img {
-      position: relative;
-      top: 1%;
-      left: 10%;
-      width: 60%;
-    }
-
-    .j-social-list {
-      position: relative;
-      top: 5%;
-    }
-
-    .j-profile-body {
-      width: 100%;
-    }
-
-    .j-profile-name {
-      font-size: 1.5rem;
-      text-align: center;
-    }
-
-    .j-profile-position {
-      text-align: center;
-    }
-
-    .j-profile-body {
-      text-align: center;
-    }
-
-    .j-profile-name::after {
-      content: '';
-      display: block;
-      height: 1px;
-      width: 2em;
-      background: #fff;
-      margin: 0.7em 0.5em auto;
-      opacity: 0.35;
-    }
-  }
-
-  @media (min-width: 1905px) {
-    .j-card {
-      height: 370px;
-    }
-
-    .j-inner-card {
-      padding: 10px;
-    }
-
-    .j-profile-img {
-      position: relative;
-      top: 1%;
-      left: 10%;
-      width: 75%;
-    }
-
-    .j-social-list {
-      top: 5%;
-      left: -2%;
-    }
   }
 
   .j-social-list {
@@ -584,12 +433,12 @@
     height: 69%;
     top: 0;
 
-    transform: translate(-241px, 0.4rem);
+    transform: translate(-240px, 0.4rem);
     transition: transform 0.4s ease;
   }
 
   .j-card:hover:not(.expanded)::before {
-    transform: translate(-251px, -0.5rem);
+    transform: translate(-225px, 0rem);
   }
 }
 
@@ -610,7 +459,7 @@
   }
 
   .j-card:hover:not(.expanded)::before {
-    transform: translate(-291px, -0.5rem);
+    transform: translate(-255px, -0.3rem);
   }
 
   .j-content {
