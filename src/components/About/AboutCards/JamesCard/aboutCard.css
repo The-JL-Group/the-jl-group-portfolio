@@ -409,7 +409,7 @@
       transform: translate(-185, 0rem);
     }
   }
-
+ 
   @media (min-width: 1401px) {
     .j-card {
       width: 500px;
