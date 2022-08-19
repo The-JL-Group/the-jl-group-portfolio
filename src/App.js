@@ -22,10 +22,8 @@ function App() {
       <TabletSlider />
     
       <AboutJames />
-
       <AboutLina />
       <Work />
-
       <Contact />
     </div>
   );
