@@ -1,7 +1,7 @@
 /* Base - Mobile */
 /* Card Content */
 .j-card-content-flex {
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   margin: 0 auto;
 }
 
@@ -9,17 +9,18 @@
   background: white;
   color: var(--blk);
   padding: 10px 22px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   border-radius: 0.5rem;
-  margin-top: 60%;
 }
 
 /* Rental Card */
 .j-card {
-  margin: auto;
+  /* margin: auto; */
   max-height: 500px;
   min-height: 50%;
   max-width: 800px;
+  width: 300px;
+  height: 300px;
   position: relative;
   /* margin-bottom: 50px; */
   padding: 1rem;
@@ -32,17 +33,16 @@
   border-radius: 0.313rem;
   position: absolute;
   width: 90%;
-  height: 80%;
+  height: 85%;
   top: 0;
   /* Moves div behind */
-  /* 5px, 11px */
-  transform: translate(8px, 0.488rem);
+  transform: translate(-120px, 0.488rem);
   transition: transform 0.4s ease;
+
+  display: none;
 }
 
 .j-card:hover:not(.expanded)::before {
-  /* 8px, 8px */
-  /* transform: translate(0.5rem, 0.5rem); */
   transform: translate(0.25, 0.488rem);
 }
 
@@ -61,22 +61,21 @@
 
 /* Expanded Content (James) */
 .j-expanded-close {
-   /* background: #222; */
+    background: none;
     padding: 0.313rem;
     position: absolute;
     right: 0;
     top: 0;
 }
 
+.j-title {
+  font-size: 3.5rem;
+}
+
 .close svg {
   height: 40px;
   width: 40px;
   color: #222;
-}
-
-.j-title {
-  /* margin: 0 10px 10px; */
-  font-size: 2rem;
 }
 
 .j-about-btn {
@@ -117,8 +116,6 @@
 }
 
 .j-social-list {
-  /* display: flex; */
-
   display: none;
   justify-content: space-around;
   list-style: none;
@@ -148,11 +145,12 @@
     /* Card Content */
     .j-card-content-flex {
       margin: auto 0;
-      /* padding: 0; */
+      padding: 1rem;
     }
 
     .j-card {
        width: 450px;
+       height: 100%;
     }
 
     .j-card::before {
@@ -168,14 +166,16 @@
       /* 5px, 11px */
       transform: translate(-180px, .388rem);
       transition: transform 0.4s ease;
+
+      display:inline;
     }
 
     .j-card:hover:not(.expanded)::before {
-      transform: translate(20px, .188rem);
+      transform: translate(-170px, -.188rem);
     }
     
     .j-info-btn {
-      display:block;
+      display: block;
       height: 100px;
       width: 100px;
       border-radius: 50%;
@@ -183,6 +183,7 @@
       border: 1px solid rgb(255, 255, 255);
       background: rgb(33, 32, 32, 1);
       margin-top: 0;
+      font-size: 1rem;
     }
 
     .j-title {
@@ -198,6 +199,7 @@
       height: 100%;
       width: 100%;
       padding: 0.875rem 1rem;
+      transform: scale(1);
     }
 
   }
@@ -225,7 +227,7 @@
     }
 
     .j-card:hover:not(.expanded)::before {
-      transform: translate(-235px, 0rem);
+      transform: translate(-170px, -.188rem);
     }
 
     .j-content {
@@ -299,7 +301,7 @@
     }
 
     .j-card:hover:not(.expanded)::before {
-      transform: translate(-235px, 0rem);
+      transform: translate(-185px, 0rem);
     }
 
     /* Expanded Content */
@@ -335,11 +337,9 @@
     }
 
     .j-card:hover:not(.expanded)::before {
-      transform: translate(-235px, 0rem);
+      transform: translate(-185px, 0rem);
     }
   }
-  
-
 
   @media (min-width: 1029px) {
     .j-card {
@@ -360,7 +360,7 @@
     }
 
     .j-card:hover:not(.expanded)::before {
-      transform: translate(-215px, -.5rem);
+      transform: translate(-185px, 0rem);
     }
   }
   
@@ -383,7 +383,7 @@
     }
 
     .j-card:hover:not(.expanded)::before {
-      transform: translate(-215px, -.5rem);
+      transform: translate(-185px, 0rem);
     }
   }
 
@@ -406,7 +406,7 @@
     }
 
     .j-card:hover:not(.expanded)::before {
-      transform: translate(-215px, -.5rem);
+      transform: translate(-185, 0rem);
     }
   }
 
@@ -439,12 +439,12 @@
       height: 69%;
       top: 0;
 
-      transform: translate(-241px, 0.4rem);
+      transform: translate(-240px, 0.4rem);
       transition: transform 0.4s ease;
     }
 
     .j-card:hover:not(.expanded)::before {
-      transform: translate(-251px, -.5rem);
+      transform: translate(-225px, 0rem);
     }
   }
 
@@ -465,7 +465,7 @@
     }
 
     .j-card:hover:not(.expanded)::before {
-      transform: translate(-291px, -.5rem);
+      transform: translate(-255px, -0.3rem);
     }
 
 
@@ -555,7 +555,7 @@
     .j-inner-card {
       padding: 10px;
     }
-
+ 
     .j-profile-img {
       position: relative;
       top: 1%;

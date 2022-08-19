@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 900;
+    z-index: 10000;
 }
 
 .l-modal {
@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 900;
+    z-index: 10000;
 }
 
 /* James Modal */

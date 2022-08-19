@@ -122,6 +122,20 @@
 
 /* ----------------------------------- */
 /* Mobile Header */
+@media (min-width: 329px) {
+    .text-wrapper p {
+      padding-top: 10px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+}
+
+@media (min-width: 354px) {
+  .text-wrapper p {
+   
+  }
+}
+
 @media (min-width: 409px) {
 /* Header Img */
   .header-image {
@@ -157,6 +171,7 @@
 /* Main Header */
     .main-header {
       text-align: right;
+      /* height: 100vh; */
     }
 
 /* Header Img */
@@ -240,7 +255,7 @@
       justify-content: right;
       width: 100%;
       height: 60%;
-      top: 40px
+      /* top: 40px */
     }
 
     .text-wrapper h1 {

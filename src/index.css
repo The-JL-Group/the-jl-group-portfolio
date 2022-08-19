@@ -43,6 +43,7 @@
 
 html {
   height: --webkit-fill-available;
+  scroll-behavior: smooth;
 }
 
 body {
