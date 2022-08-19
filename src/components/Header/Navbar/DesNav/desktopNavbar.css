@@ -1,13 +1,30 @@
-.desktop-nav {
-    position: sticky;
-    top: 0;
+.desktopNav {
+    position: fixed;
+    /* position: sticky; */
+    /* top: 0; */
+    bottom: 0;
     z-index: 999;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    transition: 0.4s ease-in;
 }
 
-.desktop-nav ul {
+.desktopNav ul {
     list-style: none;
-    display: flex;
-    justify-content: space-around;
+    display: inline-flex;
     padding: 10px;
-    background: pink;
+}
+
+.desktopNav ul li {
+    font-size: 1.5rem;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (min-width: 1029px) {
+    .desktopNav {
+        display: inline-flex;
+    }
 }

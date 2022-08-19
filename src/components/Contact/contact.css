@@ -3,6 +3,7 @@
   width: 100%;
   text-align: center;
   padding: 2em 1em;
+  margin-bottom: 30px;
 }
 
 /* CONTACT CONTAINER */
@@ -32,4 +33,10 @@
 
 .contact-text {
   padding: 2em 0;
+}
+
+@media (min-width: 1024px) {
+  .contact-container {
+    margin-bottom: 0px;
+  }
 }
