@@ -58,14 +58,14 @@
   height: 100%;
   width: 100%;
 }
-  
+
 /* Expanded Content (James) */
 .l-expanded-close {
-    background: none;
-    padding: 0.313rem;
-    position: absolute;
-    right: 0;
-    top: 0;
+  background: none;
+  padding: 0.313rem;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .l-title {
@@ -121,7 +121,7 @@
 }
 
 .l-profile-main {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .l-profile-name {
@@ -133,417 +133,410 @@
   margin-bottom: 5px;
 }
 
-  /* ------------------ */
-  /* 500px Media Query */
-  @media (min-width: 500px) {
-    .l-card-content-flex {
-      margin: auto 0;
-      padding: 1rem;
-    }
-
-    .l-card {
-      width: 450px;
-      height: 100%;
-    }
-
-    .l-card::before {
-      content: '';
-      overflow: hidden;
-      background: #fff;
-      border-radius: 0.313rem;
-      position: absolute;
-      width: 91%;
-      height: 80%;
-      top: 0;
-      /* Moves div behind */
-      /* 5px, 11px */
-      transform: translate(-180px, 2.2rem);
-      transition: transform 0.4s ease;
-
-      display:inline;
-    }
-
-    .l-card:hover:not(.expanded)::before {
-      transform: translate(-170px, 3rem);
-    }
-
-    .l-info-btn {
-      display: block;
-      height: 100px;
-      width: 100px;
-      border-radius: 50%;
-      border: 1px solid rgb(255, 255, 255);
-      background: rgb(33, 32, 32, 1);
-      color: #fff;
-      font-size: 1rem;
-    }
-
-    .l-title {
-      /* margin: 0 0 10px; */
-      font-size: 3.5rem;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding: 0px 0.625rem 0px 0px;
-    }
-      
-    .l-content {
-      height: 100%;
-      width: 100%;
-      padding: 0.875rem 1rem;
-    }
-
+/* ------------------ */
+/* 500px Media Query */
+@media (min-width: 500px) {
+  .l-card-content-flex {
+    margin: auto 0;
+    padding: 1rem;
   }
 
-   /* ------------------ */
-  /* 601px Media Query - Tablet */
-  @media (min-width: 601px) {
-    .l-card {
-      width: 500px;
-    }
-
-    .l-card {
-      max-height: 700px;
-      min-height: 318px;
-      max-width: 1000px;
-    }
-
-    .l-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-200px, 2rem);
-      transition: transform 0.4s ease;
-    }
-
-    .l-card:hover:not(.expanded)::before {
-      transform: translate(-185px, 2.4rem);
-    }
-
-    .l-content {
-      padding: 44px 16px;
-    }
-
-    .l-about-btn {
-      width: 50%
-    }
-
-    /* New Expanded Content */
-    .l-inner-card {
-      text-align: left;
-      margin-top: 5px;
-      width: 100%;
-    }
-
-    .l-profile-img {
-      display: flex;
-      position: absolute;
-      /* display: none; */
-      top: 18%;
-      right: 8%;
-      width: 150px;
-      /* height: 30px;  */
-    }
-
-    .l-social-list {
-      display: flex;
-      position: absolute;
-      top: 76%;
-      right: 10%;
-    }
-
-    .l-profile-main {
-        
-    }
-
-    .l-profile-name {
-      font-size: 1rem;
-    }
-
-    .l-profile-position {
-      
-    }
-
-    .l-profile-body {
-     width: 55%;
-    }
-    
+  .l-card {
+    width: 450px;
+    height: 100%;
   }
 
-  @media (min-width: 801px) {
-    .l-card {
-      width: 500px;
-    }
+  .l-card::before {
+    content: '';
+    overflow: hidden;
+    background: #fff;
+    border-radius: 0.313rem;
+    position: absolute;
+    width: 91%;
+    height: 80%;
+    top: 0;
+    /* Moves div behind */
+    /* 5px, 11px */
+    transform: translate(-180px, 2.2rem);
+    transition: transform 0.4s ease;
 
-    .l-content {
-      padding: 44px 16px;
-    }
-
-    .l-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-200px, 2rem);
-      transition: transform 0.4s ease;
-    }
-
-    .l-card:hover:not(.expanded)::before {
-      transform: translate(-185px, 2.4rem);
-    }
-
-    /* Expanded Content */
-    .l-profile-img {
-      top: 20%;
-    }
-
-    .l-social-list {
-      display: flex;
-      position: absolute;
-      top: 74%;
-      right: 10%;
-    }
+    display: inline;
   }
 
-  @media (min-width: 901px) {
-    .l-card {
-      width: 500px;
-    }
-
-    .l-content {
-      padding: 46px 16px;
-    }
-
-    .l-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-200px, 2rem);
-      transition: transform 0.4s ease;
-    }
-
-    .l-card:hover:not(.expanded)::before {
-      transform: translate(-185px, 2.4rem);
-    }
+  .l-card:hover:not(.expanded)::before {
+    transform: translate(-170px, 3rem);
   }
 
-  @media (min-width: 1029px) {
-    .l-card {
-      width: 500px;
-    }
-
-    .l-content {
-      padding: 46px 16px;
-    }
-
-    .l-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-200px, 2rem);
-      transition: transform 0.4s ease;
-    }
-
-    .l-card:hover:not(.expanded)::before {
-      transform: translate(-185px, 2.4rem);
-    }
+  .l-info-btn {
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(33, 32, 32, 1);
+    color: #fff;
+    font-size: 1rem;
   }
 
-  @media (min-width: 1101px) {
-    .l-card {
-      width: 500px;
-    }
-
-    .l-content {
-      padding: 48px 16px;
-    }
-
-    .l-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-200px, 2rem);
-      transition: transform 0.4s ease;
-    }
-
-    .l-card:hover:not(.expanded)::before {
-      transform: translate(-185px, 2.4rem);
-    }
-
+  .l-title {
+    /* margin: 0 0 10px; */
+    font-size: 3.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0px 0.625rem 0px 0px;
   }
 
-  @media (min-width: 1235px) {
-    .l-card {
-      width: 500px;
-    }
+  .l-content {
+    height: 100%;
+    width: 100%;
+    padding: 0.875rem 1rem;
+  }
+}
 
-    .l-content {
-      padding: 50px 16px;
-    }
-
-    .l-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-200px, 3em);
-      transition: transform 0.4s ease;
-    }
-
-    .l-card:hover:not(.expanded)::before {
-      transform: translate(-185px, 3.4em);
-    }
+/* ------------------ */
+/* 601px Media Query - Tablet */
+@media (min-width: 601px) {
+  .l-card {
+    width: 500px;
   }
 
-  @media (min-width: 1401px) {
-    .l-card {
-      width: 500px;
-    }
-
-    .l-content {
-      padding: 55px 16px;
-    }
-
-    /* Expanded Content */
-    .jlprofile-img {
-      top: 22%;
-    }
-
-    .l-social-list {
-      right: 10%;
-    }
-
-    /* Expanded Content */
-    .l-profile-img {
-      top: 22%;
-    }
-
-    .l-social-list {
-      right: 10%;
-    }
+  .l-card {
+    max-height: 700px;
+    min-height: 318px;
+    max-width: 1000px;
   }
 
-  @media (min-width: 1580px) {
-    .l-card {
-      width: 600px;
-    }
+  .l-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
 
-    .l-card::before {
-      width: 90%;
-      height: 69%;
-      top: 0;
-
-      transform: translate(-240px, 3.4em);
-      transition: transform 0.4s ease;
-    }
-
-    .l-card:hover:not(.expanded)::before {
-      transform: translate(-225px, 3.8rem);
-    }
+    transform: translate(-200px, 2rem);
+    transition: transform 0.4s ease;
   }
 
-  @media (min-width: 1655px) {
-    .l-card {
-      width: 700px;
-      height: 200px;
-      /* right: 5%; */
-    }
-
-    .l-card::before {
-      width: 90%;
-      height: 89%;
-      top: 0;
-
-      transform: translate(-270px, 2.4rem);
-      transition: transform 0.4s ease;
-    }
-
-    .l-card:hover:not(.expanded)::before {
-      transform: translate(-255px, 2.8rem);
-    }
-
-
-
-    .l-content {
-      /* padding: 84px 16px; */
-      width: 100%;
-      display: block;
-    }
-
-    .l-title {
-      font-size: 8rem;
-    }
-
-    .l-about-btn {
-      width: 50%;
-      margin-top: 5px;
-      background: var(--blk);
-      border: 1px solid white;
-      border-radius: 5px;
-      padding: 3px;
-      font-size: 18px;
-      color: #fff;
-      position: relative;
-      left: 25%;
+  .l-card:hover:not(.expanded)::before {
+    transform: translate(-185px, 2.4rem);
   }
 
-    /* New Expanded Content */
-    .l-expanded-content {
-      padding: 0;
-      margin: 0;
-      /* margin-left: 30px; */
-      /* display: block; */
-    }
-
-    .l-inner-card {
-      padding: 0;
-      margin: 0;
-      width: 100%;
-    }
-
-    .l-profile-img {
-      position: relative;
-      top: 1%;
-      left: 10%;
-      width: 60%; 
-    }
-
-    .l-social-list {
-      position: relative;
-      top: 5%;
-    }
-
-    .l-profile-body {
-      width: 100%;
-    }
-
-    .l-profile-name {
-      font-size: 1.5rem;
-      text-align: center;
-    }
-
-    .l-profile-position {
-      text-align: center;
-    }
-
-    .l-profile-body {
-      text-align: center;
-    }
-
-    .l-profile-name::after {
-      content: '';
-      display: block;
-      height: 1px;
-      width: 2em;
-      background: rgb(0, 0, 0);
-      margin: 0.7em 0.5em auto;
-      opacity: .35;
-    }
+  .l-content {
+    padding: 44px 16px;
   }
+
+  .l-about-btn {
+    width: 50%;
+  }
+
+  /* New Expanded Content */
+  .l-inner-card {
+    text-align: left;
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .l-profile-img {
+    display: flex;
+    position: absolute;
+    /* display: none; */
+    top: 18%;
+    right: 8%;
+    width: 150px;
+    /* height: 30px;  */
+  }
+
+  .l-social-list {
+    display: flex;
+    position: absolute;
+    top: 76%;
+    right: 10%;
+  }
+
+  .l-profile-main {
+  }
+
+  .l-profile-name {
+    font-size: 1rem;
+  }
+
+  .l-profile-position {
+  }
+
+  .l-profile-body {
+    width: 55%;
+  }
+}
+
+@media (min-width: 801px) {
+  .l-card {
+    width: 500px;
+  }
+
+  .l-content {
+    padding: 44px 16px;
+  }
+
+  .l-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
+
+    transform: translate(-200px, 2rem);
+    transition: transform 0.4s ease;
+  }
+
+  .l-card:hover:not(.expanded)::before {
+    transform: translate(-185px, 2.4rem);
+  }
+
+  /* Expanded Content */
+  .l-profile-img {
+    top: 20%;
+  }
+
+  .l-social-list {
+    display: flex;
+    position: absolute;
+    top: 74%;
+    right: 10%;
+  }
+}
+
+@media (min-width: 901px) {
+  .l-card {
+    width: 500px;
+  }
+
+  .l-content {
+    padding: 46px 16px;
+  }
+
+  .l-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
+
+    transform: translate(-200px, 2rem);
+    transition: transform 0.4s ease;
+  }
+
+  .l-card:hover:not(.expanded)::before {
+    transform: translate(-185px, 2.4rem);
+  }
+}
+
+@media (min-width: 1029px) {
+  .l-card {
+    width: 500px;
+  }
+
+  .l-content {
+    padding: 46px 16px;
+  }
+
+  .l-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
+
+    transform: translate(-200px, 2rem);
+    transition: transform 0.4s ease;
+  }
+
+  .l-card:hover:not(.expanded)::before {
+    transform: translate(-185px, 2.4rem);
+  }
+}
+
+@media (min-width: 1101px) {
+  .l-card {
+    width: 500px;
+  }
+
+  .l-content {
+    padding: 48px 16px;
+  }
+
+  .l-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
+
+    transform: translate(-200px, 2rem);
+    transition: transform 0.4s ease;
+  }
+
+  .l-card:hover:not(.expanded)::before {
+    transform: translate(-185px, 2.4rem);
+  }
+}
+
+@media (min-width: 1235px) {
+  .l-card {
+    width: 500px;
+  }
+
+  .l-content {
+    padding: 50px 16px;
+  }
+
+  .l-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
+
+    transform: translate(-200px, 3em);
+    transition: transform 0.4s ease;
+  }
+
+  .l-card:hover:not(.expanded)::before {
+    transform: translate(-185px, 3.4em);
+  }
+}
+
+@media (min-width: 1401px) {
+  .l-card {
+    width: 500px;
+  }
+
+  .l-content {
+    padding: 55px 16px;
+  }
+
+  /* Expanded Content */
+  .jlprofile-img {
+    top: 22%;
+  }
+
+  .l-social-list {
+    right: 10%;
+  }
+
+  /* Expanded Content */
+  .l-profile-img {
+    top: 22%;
+  }
+
+  .l-social-list {
+    right: 10%;
+  }
+}
+
+@media (min-width: 1580px) {
+  .l-card {
+    width: 600px;
+  }
+
+  .l-card::before {
+    width: 90%;
+    height: 69%;
+    top: 0;
+
+    transform: translate(-240px, 3.4em);
+    transition: transform 0.4s ease;
+  }
+
+  .l-card:hover:not(.expanded)::before {
+    transform: translate(-225px, 3.8rem);
+  }
+}
+
+@media (min-width: 1655px) {
+  .l-card {
+    width: 700px;
+    height: 200px;
+    /* right: 5%; */
+  }
+
+  .l-card::before {
+    width: 90%;
+    height: 89%;
+    top: 0;
+
+    transform: translate(-270px, 2.4rem);
+    transition: transform 0.4s ease;
+  }
+
+  .l-card:hover:not(.expanded)::before {
+    transform: translate(-255px, 2.8rem);
+  }
+
+  .l-content {
+    /* padding: 84px 16px; */
+    width: 100%;
+    display: block;
+  }
+
+  .l-title {
+    font-size: 8rem;
+  }
+
+  .l-about-btn {
+    width: 50%;
+    margin-top: 5px;
+    background: var(--blk);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    left: 25%;
+  }
+
+  /* New Expanded Content */
+  .l-expanded-content {
+    padding: 0;
+    margin: 0;
+    /* margin-left: 30px; */
+    /* display: block; */
+  }
+
+  .l-inner-card {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .l-profile-img {
+    position: relative;
+    top: 1%;
+    left: 10%;
+    width: 60%;
+  }
+
+  .l-social-list {
+    position: relative;
+    top: 5%;
+  }
+
+  .l-profile-body {
+    width: 100%;
+  }
+
+  .l-profile-name {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .l-profile-position {
+    text-align: center;
+  }
+
+  .l-profile-body {
+    text-align: center;
+  }
+
+  .l-profile-name::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 2em;
+    background: rgb(0, 0, 0);
+    margin: 0.7em 0.5em auto;
+    opacity: 0.35;
+  }
+}
 
 @media (min-width: 1905px) {
   .l-card {
@@ -558,7 +551,7 @@
     position: relative;
     top: 1%;
     left: 10%;
-    width: 75%; 
+    width: 75%;
   }
 
   .l-social-list {
@@ -568,5 +561,5 @@
 
   .l-profile-body {
     margin-bottom: 20px;
-  }  
+  }
 }

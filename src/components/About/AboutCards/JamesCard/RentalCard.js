@@ -3,24 +3,26 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Components
-import cardData from './linaData';
-import CardContent from './linaCardContent';
-import LinaExpandedContent from './linaExpandedContent';
+import cardData from './data';
+import CardContent from './CardContent';
+import JamesExpandedContent from './ExpandedContent';
 
 // Stylesheet
-import './linaAboutCard.css';
+import './aboutCard.css';
 
 // Card Variants
-import { cardVariants } from './linaVariants';
+import { cardVariants } from './variants';
 
-const LinaRentalCard = () => {
+const RentalCard = () => {
   const [isExpanded, setIsExpanded] = useState();
 
   return (
     <div className="">
       {/* James's Card */}
       <motion.div
-        className={`l-card ${isExpanded ? 'expanded' : 'initial'}`}
+        className={`j-card 
+      ${isExpanded ? 'expanded' : 'initial'}
+      `}
         // Variants & Animations
         // Initial Animations
         variants={cardVariants}
@@ -29,8 +31,10 @@ const LinaRentalCard = () => {
         initial="inactive"
 
         // onClick={() => setIsExpanded(!isExpanded)}
+
+        // onClick={() => setIsExpanded(true)}
       >
-        <div className="l-content">
+        <div className="j-content bg-card-dark dark:bg-card-light">
           <AnimatePresence initial={false} exitBeforeEnter>
             {!isExpanded ? (
               <CardContent
@@ -39,7 +43,7 @@ const LinaRentalCard = () => {
                 key="content" // Children of AnimatePresence need a key
               />
             ) : (
-              <LinaExpandedContent
+              <JamesExpandedContent
                 className=""
                 data={cardData}
                 onClick={setIsExpanded}
@@ -53,4 +57,4 @@ const LinaRentalCard = () => {
   );
 };
 
-export default LinaRentalCard;
+export default RentalCard;

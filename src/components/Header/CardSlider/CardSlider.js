@@ -47,17 +47,21 @@ function CardSlider() {
   };
 
   return (
-    <div className='owl-carousel-hide'>
+    <div className="owl-carousel-hide">
       <OwlCarousel className="owl-theme project-carousel" {...settings}>
         {workSliderList.map((item, index) => (
           <div className="item drop-shadow-xl p-2">
             <a href={item.url} target="_blank" rel="noreferrer">
-              <p>{item.icon}</p>
+              <p className="bg-white text-blk dark:bg-blk dark:text-white">
+                {item.icon}
+              </p>
             </a>
           </div>
         ))}
-        <div className="item drop-shadow-xl p-2">
-          <p>COMING SOON!</p>
+        <div className="item drop-shadow-xl p-2 ">
+          <p className="bg-white text-blk dark:bg-blk dark:text-white">
+            COMING SOON!
+          </p>
         </div>
       </OwlCarousel>
     </div>

@@ -31,7 +31,7 @@ const Navbar = () => {
                   </li>
                 </a>
               ))}
-              <div className="">
+              <div>
                 <span
                   className="cursor-pointer nav-list"
                   onClick={() => setOpen(!open)}
@@ -39,8 +39,8 @@ const Navbar = () => {
                   <i
                     className={`openCloseIcon ${
                       open
-                        ? 'fa fa-times text-black text-lg'
-                        : 'fa fa-list text-black text-lg'
+                        ? 'fa fa-times text-black text-lg dark:text-white'
+                        : 'fa fa-list text-black text-lg dark:text-white'
                     }`}
                   ></i>
                 </span>
@@ -62,8 +62,10 @@ const Navbar = () => {
                   {/* Nav List */}
                   <li key={index} className={` ${!open && 'hidden'} nav-list`}>
                     <span>
-                      <span className="social-icon-images">{nav.icon}</span>
-                      <span>{nav.title}</span>
+                      <span className="social-icon-images dark:text-white">
+                        {nav.icon}
+                      </span>
+                      <span className="dark:text-white">{nav.title}</span>
                     </span>
                   </li>
                 </a>

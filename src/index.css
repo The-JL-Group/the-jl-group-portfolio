@@ -9,8 +9,6 @@
 @layer utilities {
   .text-shadow-org {
     text-shadow: 4px 0 #f8724c;
-    /* -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black; */
   }
   .text-shadow-pnk {
     text-shadow: 4px 0 #e09384;

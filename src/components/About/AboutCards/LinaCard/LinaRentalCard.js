@@ -30,7 +30,7 @@ const LinaRentalCard = () => {
 
         // onClick={() => setIsExpanded(!isExpanded)}
       >
-        <div className="l-content">
+        <div className="l-content bg-card-d dark:bg-card-l">
           <AnimatePresence initial={false} exitBeforeEnter>
             {!isExpanded ? (
               <CardContent

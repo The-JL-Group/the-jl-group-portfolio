@@ -33,6 +33,7 @@ const Work = () => {
           <a
             className="work-card dark:bg-ltPnk dark:before:bg-blk"
             href={item.url}
+            target="_blank"
           >
             <img
               src={require('../../assets/' + item.image + '.png')}
