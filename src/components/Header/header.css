@@ -122,6 +122,20 @@
 
 /* ----------------------------------- */
 /* Mobile Header */
+@media (min-width: 329px) {
+    .text-wrapper p {
+      padding-top: 10px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+}
+
+@media (min-width: 354px) {
+  .text-wrapper p {
+   
+  }
+}
+
 @media (min-width: 409px) {
   /* Header Img */
   .header-image {
@@ -154,10 +168,13 @@
 
 /* IMPLEMENT BOX SHANDOW ON TOP OF ABOUT SECTION WHILE CIRCLES ARE PLACED UNDERNEATH OVERFLOW */
 @media (min-width: 601px) {
+
+
   /* Main Header */
   .main-header {
     text-align: right;
   }
+
 
   /* Header Img */
   .header-image {
@@ -233,6 +250,7 @@
     transform: translate(-50%, -50%);
   }
 
+
   /* Header Text + Btn */
   .text-wrapper {
     display: flex;
@@ -252,6 +270,7 @@
   .cta-wrapper button {
     display: none;
   }
+
 }
 
 /* Macbook Pro 2020 13in */

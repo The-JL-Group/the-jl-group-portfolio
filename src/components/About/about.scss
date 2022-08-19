@@ -99,7 +99,7 @@ $cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 // AboutLina.js
 .l-main-about {
     width: 100%;
-    height: 37vh;
+    // height: 37vh;
     position: relative;
     padding: 0em 0em 0em 0em;
 }
@@ -116,7 +116,19 @@ $cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 // Tablet
 @media (min-width: 601px) {
     .j-main-about {
-        box-shadow: 0px 0px 0px rgb(255, 255, 255), -0px -7px 10px rgb(255, 255, 255);
+        // box-shadow: 0px 0px 0px rgb(255, 255, 255), -0px -7px 10px rgb(255, 255, 255);
+    }
+}
+
+@media (min-width: 768px) {
+    .about-about {
+        width: 50%;
+        font-size: 5rem;
+    }
+
+    .about-us {
+        width: 50%;
+        font-size: 5rem;
     }
 }
 
@@ -131,6 +143,7 @@ $cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     .about-about {
         width: 50%;
+        font-size: 4rem;
     }
 
     // Lina Card
@@ -143,6 +156,7 @@ $cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     .about-us {
         width: 50%;
+        font-size: 4rem;
     }
 }
 

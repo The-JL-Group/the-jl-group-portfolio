@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import './header.css';
+
+// Components
 import Toggle from '../../components/Header/Toggle';
 import CardSlider from './CardSlider/CardSlider';
-import DesktopNavbar from './Navbar/DesNav/DesktopNavbar';
+import { HeaderImageBlock } from '../Loader/Loader';
 
+// Icon(s)
 import { BsFillEyeFill } from 'react-icons/bs';
-import viewArrow from '../../assets/icons/chevron-down-circle-outline.svg';
+
 
 const Header = () => {
   return (
@@ -28,9 +31,8 @@ const Header = () => {
       <div className="main-header">
         {/* Header Img */}
 
-        <div className="header-image bg-header-dark dark:bg-header-light bg-cover object-cover bg-center ">
-          <p className='developers-txt'>developers.</p>
-        </div>
+        {/* Framer Motion Header Img */}
+        <HeaderImageBlock/>
 
 
         {/* Text */}
@@ -45,7 +47,7 @@ const Header = () => {
           <h5 className="dark:text-black">&lt;ux/ui developers/&gt;</h5>
           <p className="dark:text-white">
             Giving your website a more experienced{' '}
-            <span className="dark:text-black">experience</span>
+            <span className="dark:text-black">experience.</span>
           </p>
 
           {/* Call-To-Action Btn */}

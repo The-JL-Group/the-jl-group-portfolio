@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header/Header';
 import Sidebar from './components/Header/Sidebar/Sidebar';
 import Navbar from './components/Header/Navbar/navbar';
+import TabletSlider from './components/Header/CardSlider/TabletSlider/TabletSlider';
 import DesktopNavbar from './components/Header/Navbar/DesNav/DesktopNavbar';
 import AboutJames from './components/About/About';
 import AboutLina from './components/About/AboutLina';
@@ -17,7 +18,8 @@ function App() {
      
       <Navbar />
       <Header />
-      {/* <DesktopNavbar/> */}
+       <DesktopNavbar/>
+      <TabletSlider />
     
       <AboutJames />
       <AboutLina />
