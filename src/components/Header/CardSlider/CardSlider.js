@@ -7,22 +7,24 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 import { FaHandHoldingMedical } from 'react-icons/fa';
 import { MdConstruction } from 'react-icons/md';
+import { GrPersonalComputer } from 'react-icons/gr';
 
 function CardSlider() {
   const cardSliderDetails = [
     {
       project: 'All American',
       url: 'https://www.allamericandoorsandwindowsinc.com/',
-      image: 'card-slider-1',
-      class: 'object-left-top',
       icon: <FaHandHoldingMedical size={'3rem'} />,
     },
     {
       project: 'Medcare Healthcert',
       url: 'https://medcare-healthcert.herokuapp.com/',
-      image: 'card-slider-2',
-      class: 'object-left-top',
       icon: <MdConstruction size={'3rem'} />,
+    },
+    {
+      project: 'The-JL-Group-Portfolio',
+      url: '',
+      icon: <GrPersonalComputer size={'3rem'} />,
     },
   ];
 
@@ -58,11 +60,6 @@ function CardSlider() {
             </a>
           </div>
         ))}
-        <div className="item drop-shadow-xl p-2 ">
-          <p className="bg-white text-blk dark:bg-blk dark:text-white">
-            COMING SOON!
-          </p>
-        </div>
       </OwlCarousel>
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import { motion, AnimateSharedLayout, AnimatePresence } from 'framer-motion';
 
 import Loader from './components/Loader/Loader';
 import Header from './components/Header/Header';
@@ -13,34 +13,32 @@ import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
 
 function App() {
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    loading 
-      ? document.querySelector("body").classList.add("loading") 
-      : document.querySelector("body").classList.remove("loading");
+    loading
+      ? document.querySelector('body').classList.add('loading')
+      : document.querySelector('body').classList.remove('loading');
   }, [loading]);
 
   return (
     <div id="main" className="dark:bg-white dark:text-blk">
       {loading ? (
-        <Loader setLoading={setLoading}/>
+        <Loader setLoading={setLoading} />
       ) : (
         <div>
           <Sidebar />
           <Navbar />
           <Header />
-          <DesktopNavbar/>
+          <DesktopNavbar />
           <TabletSlider />
-        
+
           <AboutJames />
           <AboutLina />
           <Work />
           <Contact />
         </div>
       )}
-     
     </div>
   );
 }
