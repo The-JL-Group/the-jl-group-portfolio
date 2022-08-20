@@ -3,14 +3,14 @@
   width: 100%;
   text-align: center;
   padding: 2em 1em;
-  margin-bottom: 30px;
+  margin-bottom: 0.625rem;
 }
 
 /* CONTACT CONTAINER */
 .contact-header {
   text-align: center;
   padding-bottom: 1em;
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem;
 }
 
 .contact-image {
@@ -27,7 +27,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 600px;
+  height: 37.5rem;
   width: 83%;
 }
 
@@ -37,6 +37,6 @@
 
 @media (min-width: 1024px) {
   .contact-container {
-    margin-bottom: 0px;
+    margin-bottom: 0rem;
   }
 }

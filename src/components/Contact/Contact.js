@@ -1,27 +1,45 @@
-import React, { useEffect } from 'react';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
 import './contact.css';
-import './InputBox';
 import InputBox from './InputBox';
+import { motion, useMotionValue, useTransform } from 'framer-motion';
 
 const Contact = () => {
-  // SCROLL ANIMATION
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+  const blockVariants = {
+    initial: {
+      rotate: 0,
+    },
+    target: {
+      rotate: 360,
+    },
+  };
+
+  const rotate = useMotionValue(0);
+  const scale = useTransform(rotate, [0, 270], [0, 1]);
   return (
     <section id="contact" className="contact-container">
       <h2 className="contact-header text-shadow-org dark:text-shadow-pnk ">
         CONTACT
       </h2>
+      <motion.div
+        style={{
+          rotate,
+          scale,
+        }}
+        variants={blockVariants}
+        initial="initial"
+        animate="target"
+        transition={{
+          ease: 'easeInOut',
+          duration: 3,
+        }}
+      >
+        {/* IMAGE CONTAINER */}
+        {/* ON SMALLER SCREEN | HIDDEN ON LARGE AND UP */}
+        <div className="bg-contact-dark dark:bg-contact-light bg-cover object-cover contact-image lg:hidden"></div>
 
-      {/* IMAGE CONTAINER */}
-      {/* ON SMALLER SCREEN | HIDDEN ON LARGE AND UP */}
-      <div className="bg-contact-dark dark:bg-contact-light bg-cover object-cover contact-image lg:hidden"></div>
-
-      {/* ON LARGER SCREEN | HIDDEN ON MEDIUM AND DOWN*/}
-      <div className="bg-full-dark dark:bg-full-light bg-cover object-cover contact-image-large hidden lg:inline-flex"></div>
+        {/* ON LARGER SCREEN | HIDDEN ON MEDIUM AND DOWN*/}
+        <div className="bg-full-dark dark:bg-full-light bg-cover object-cover contact-image-large hidden lg:inline-flex"></div>
+      </motion.div>
 
       {/* TEXT ON SMALLER SCREEN / HIDDEN ON LARGE */}
       <div className="contact-text lg:hidden">
@@ -74,6 +92,7 @@ const Contact = () => {
         </a>
       </div>
 
+      {/* EMAIL JS */}
       <div className="lg:p-8 mb-10">
         <InputBox />
       </div>

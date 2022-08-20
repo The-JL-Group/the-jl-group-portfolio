@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './work.css';
-import DesktopNavbar from '../Header/Navbar/DesNav/DesktopNavbar';
 
 const Work = () => {
+  // ADD NEW PROJECTS HERE
   const workDetails = [
     {
       project: 'all american',
@@ -12,6 +12,12 @@ const Work = () => {
     },
     {
       project: 'medcare healthcert',
+      url: 'https://medcare-healthcert.herokuapp.com/',
+      image: 'work-card-2',
+      class: 'object-left-top',
+    },
+    {
+      project: 'the jl group portfolio',
       url: 'https://medcare-healthcert.herokuapp.com/',
       image: 'work-card-2',
       class: 'object-left-top',
@@ -34,6 +40,7 @@ const Work = () => {
             className="work-card dark:bg-ltPnk dark:before:bg-blk"
             href={item.url}
             target="_blank"
+            rel="noreferrer"
           >
             <img
               src={require('../../assets/' + item.image + '.png')}

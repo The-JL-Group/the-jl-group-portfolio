@@ -15,12 +15,10 @@ function App() {
   return (
     <div id="main" className="dark:bg-white dark:text-blk">
       <Sidebar />
-     
       <Navbar />
       <Header />
-       <DesktopNavbar/>
+      <DesktopNavbar />
       <TabletSlider />
-    
       <AboutJames />
       <AboutLina />
       <Work />

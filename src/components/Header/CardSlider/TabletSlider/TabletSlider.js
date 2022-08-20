@@ -7,22 +7,24 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 import { FaHandHoldingMedical } from 'react-icons/fa';
 import { MdConstruction } from 'react-icons/md';
+import { GrPersonalComputer } from 'react-icons/gr';
 
 function TabletSlider() {
   const cardSliderDetails = [
     {
       project: 'All American',
       url: 'https://www.allamericandoorsandwindowsinc.com/',
-      image: 'card-slider-1',
-      class: 'object-left-top',
       icon: <FaHandHoldingMedical size={'3rem'} />,
     },
     {
       project: 'Medcare Healthcert',
       url: 'https://medcare-healthcert.herokuapp.com/',
-      image: 'card-slider-2',
-      class: 'object-left-top',
       icon: <MdConstruction size={'3rem'} />,
+    },
+    {
+      project: 'The-JL-Group-Portfolio',
+      url: '',
+      icon: <GrPersonalComputer size={'3rem'} />,
     },
   ];
 
@@ -47,18 +49,17 @@ function TabletSlider() {
   };
 
   return (
-    <div className='tab-owl-carousel-hide'>
+    <div className="tab-owl-carousel-hide">
       <OwlCarousel className="owl-theme tab-project-carousel" {...settings}>
         {workSliderList.map((item, index) => (
           <div className="item drop-shadow-xl p-2">
             <a href={item.url} target="_blank" rel="noreferrer">
-              <p>{item.icon}</p>
+              <p className="bg-white text-blk dark:bg-blk dark:text-white">
+                {item.icon}
+              </p>
             </a>
           </div>
         ))}
-        <div className="item drop-shadow-xl p-2">
-          <p>COMING SOON!</p>
-        </div>
       </OwlCarousel>
     </div>
   );
