@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimateSharedLayout, AnimatePresence } from 'framer-motion';
+
+import Loader from './components/Loader/Loader';
 import Header from './components/Header/Header';
 import Sidebar from './components/Header/Sidebar/Sidebar';
 import Navbar from './components/Header/Navbar/navbar';
@@ -9,20 +12,33 @@ import AboutLina from './components/About/AboutLina';
 import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
 
-import RentalCard from './components/About/AboutCards/JamesCard/RentalCard';
-
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    loading
+      ? document.querySelector('body').classList.add('loading')
+      : document.querySelector('body').classList.remove('loading');
+  }, [loading]);
+
   return (
     <div id="main" className="dark:bg-white dark:text-blk">
-      <Sidebar />
-      <Navbar />
-      <Header />
-      <DesktopNavbar />
-      <TabletSlider />
-      <AboutJames />
-      <AboutLina />
-      <Work />
-      <Contact />
+      {loading ? (
+        <Loader setLoading={setLoading} />
+      ) : (
+        <div>
+          <Sidebar />
+          <Navbar />
+          <Header />
+          <DesktopNavbar />
+          <TabletSlider />
+
+          <AboutJames />
+          <AboutLina />
+          <Work />
+          <Contact />
+        </div>
+      )}
     </div>
   );
 }
