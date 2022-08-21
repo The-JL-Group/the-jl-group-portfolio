@@ -6,11 +6,12 @@ import { container, headerImg } from './loaderVariants';
 import SVGText from "./SVGText/SVGText";
 
 const Loader = ({ setLoading }) => {
+
     useEffect(() => {
         // Hook which updates setLoading state to false after 4sec
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 8000);
+        }, 3000);
         return () => clearTimeout(timer);
     });
 
@@ -23,16 +24,6 @@ const Loader = ({ setLoading }) => {
         </div>
     )
 };
-
-// Loader 
-export const LoaderAnimation = () => {
-    return (
-        <motion.div>
-
-        </motion.div>
-    )
-}
-
 
 // Header Img
 export const HeaderImageBlock = () => {

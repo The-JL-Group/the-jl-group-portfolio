@@ -150,3 +150,33 @@
     cursor: pointer;
 }
 
+@media (min-width: 801px) {
+    .modal-img-container {
+        top: -70px;
+    }
+    .modal-card .modal-content .modal-details h4 {
+        font-size: 2rem;
+    }
+    
+    .modal-card .modal-content .modal-details span {
+        font-size: 1rem;
+        position: relative;
+        top: 10px;
+    }
+
+    .modal-card .modal-content .modal-details {
+        transform: translateY(185px);
+    }
+
+    .modal-card .modal-content .modal-details .modal-data h3 {
+        font-size: 2rem;     
+    }
+
+    .modal-card .modal-content .modal-details .modal-data span {
+        font-size: 1rem;
+    }
+
+    .modal-card .modal-content .modal-details .modal-action-btn button {
+        font-size: 1.5rem;
+    }
+}
