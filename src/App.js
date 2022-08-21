@@ -11,6 +11,7 @@ import AboutJames from './components/About/About';
 import AboutLina from './components/About/AboutLina';
 import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
+import ScrollToTop from './components/Scroll/ScrollToTop';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -37,6 +38,7 @@ function App() {
           <AboutLina />
           <Work />
           <Contact />
+          <ScrollToTop />
         </div>
       )}
     </div>
