@@ -1,29 +1,4 @@
 /* Base Header */
-/* Logo + Toggle Bar */
-.logo-wrapper {
-  padding: 0.6rem;
-  display: flex;
-  justify-content: space-between;
-  /* display: none; */
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
-}
-
-.logo-wrapper img {
-  width: 15%;
-}
-
-.logo-img {
-  width: 2rem;
-  height: 2rem;
-}
-
-.toggle-container {
-  display: flex;
-  align-items: center;
-}
-
 /* ----------- */
 /* Main Header */
 .main-header {
@@ -61,6 +36,10 @@
   position: relative;
   margin-top: 4rem;
   padding: 0em 1em 0em 1em;
+}
+
+.text-header-div {
+  
 }
 
 .text-wrapper h1 {
@@ -258,7 +237,7 @@
     justify-content: right;
     width: 100%;
     height: 60%;
-    top: 40px;
+    /* top: 40px; */
   }
 
   .text-wrapper h1 {

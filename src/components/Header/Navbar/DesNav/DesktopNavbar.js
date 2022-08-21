@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './desktopNavbar.css';
 
 const DesktopNavbar = () => {
-  // Y-axis Header Scroll Animation
+  // Y-axis Nav Scroll Animation
   // state is `navbar`
   const [desktopNav, setNavbar] = useState(false);
 

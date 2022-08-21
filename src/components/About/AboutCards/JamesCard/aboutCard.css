@@ -199,7 +199,8 @@
     height: 100%;
     width: 100%;
     padding: 0.875rem 1rem;
-    transform: scale(1);
+    /* transform: scale(1);
+    z-index: 900; */
   }
 }
 
