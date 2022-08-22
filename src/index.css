@@ -63,11 +63,9 @@ body {
   height: 100vh;
 }
 
-/* This messes with the sticky property */
-/* #main {
-  flex: 1;
-  overflow: scroll;
-} */
+#main {
+  
+}
 
 h1 {
   /* line-height: 1;

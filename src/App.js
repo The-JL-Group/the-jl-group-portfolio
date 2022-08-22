@@ -7,6 +7,7 @@ import Sidebar from './components/Header/Sidebar/Sidebar';
 import Navbar from './components/Header/Navbar/navbar';
 import TabletSlider from './components/Header/CardSlider/TabletSlider/TabletSlider';
 import DesktopNavbar from './components/Header/Navbar/DesNav/DesktopNavbar';
+import AboutBoth from './components/AboutBoth';
 import AboutJames from './components/About/About';
 import AboutLina from './components/About/AboutLina';
 import Work from './components/Work/Work';
@@ -34,8 +35,9 @@ function App() {
           <DesktopNavbar />
           <TabletSlider />
 
-          <AboutJames />
-          <AboutLina />
+          {/* <AboutJames />
+          <AboutLina /> */}
+          <AboutBoth/>
           <Work />
           <Contact />
           <ScrollToTop />
