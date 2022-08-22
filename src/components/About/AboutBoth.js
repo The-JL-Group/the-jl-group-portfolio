@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import AboutJames from './About/About';
-import AboutLina from './About/AboutLina';
+import AboutJames from './About';
+import AboutLina from './AboutLina';
 
 const AboutBoth = () => {
 
@@ -28,7 +28,8 @@ const AboutBoth = () => {
 
   return (
     <motion.div
-         ref={ref}
+      className="overflow-hidden"
+      ref={ref}
       animate={animation}
     >
         <AboutJames/>
