@@ -53,7 +53,12 @@ function CardSlider() {
       <OwlCarousel className="owl-theme project-carousel" {...settings}>
         {workSliderList.map((item, index) => (
           <div className="item drop-shadow-xl p-2">
-            <a href={item.url} target="_blank" rel="noreferrer">
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noreferrer"
+              key={item.project}
+            >
               <p className="bg-white text-blk dark:bg-blk dark:text-white">
                 {item.icon}
               </p>

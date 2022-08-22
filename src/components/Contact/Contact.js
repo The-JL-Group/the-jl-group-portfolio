@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './contact.css';
 import InputBox from './InputBox';
-import { motion, useMotionValue, useTransform } from 'framer-motion';
+import {
+  motion,
+  useMotionValue,
+  useTransform,
+  useAnimation,
+} from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Contact = () => {
   const blockVariants = {
@@ -13,25 +19,58 @@ const Contact = () => {
     },
   };
 
+  // Framer Motion Hook
   const rotate = useMotionValue(0);
   const scale = useTransform(rotate, [0, 270], [0, 1]);
+
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+  });
+  const animation = useAnimation();
+  const motionVariants = {
+    visible: {
+      opacity: 1,
+      scale: 1,
+      style: { rotate, scale },
+      variants: { blockVariants },
+      initial: 'initial',
+      animate: 'target',
+      transition: {
+        duration: 1,
+        ease: 'easeInOut',
+      },
+    },
+    hidden: { opacity: 0, scale: 0.5 },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      animation.start('visible');
+    }
+  }, [animation, inView]);
+
   return (
     <section id="contact" className="contact-container">
       <h2 className="contact-header text-shadow-org dark:text-shadow-pnk ">
         CONTACT
       </h2>
       <motion.div
-        style={{
-          rotate,
-          scale,
-        }}
-        variants={blockVariants}
-        initial="initial"
-        animate="target"
-        transition={{
-          ease: 'easeInOut',
-          duration: 3,
-        }}
+        ref={ref}
+        animate={animation}
+        initial="hidden"
+        variants={motionVariants}
+        // // animate={animation}
+        // style={{
+        //   rotate,
+        //   scale,
+        // }}
+        // variants={blockVariants}
+        // initial="initial"
+        // animate="target"
+        // transition={{
+        //   ease: 'easeInOut',
+        //   duration: 3,
+        // }}
       >
         {/* IMAGE CONTAINER */}
         {/* ON SMALLER SCREEN | HIDDEN ON LARGE AND UP */}

@@ -58,13 +58,13 @@ body {
   color: var(--wht);
   line-height: 1.6;
   padding-bottom: 2em;
-
+  /* overflow: hidden; */
   /* height: --webkit-fill-available; */
   height: 100vh;
+  overflow-x: hidden;
 }
 
 #main {
-  
 }
 
 h1 {
