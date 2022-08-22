@@ -24,22 +24,22 @@ function App() {
 
   return (
     <div id="main" className="dark:bg-white dark:text-blk">
-      {loading ? (
+      {/* {loading ? (
         <Loader setLoading={setLoading} />
-      ) : (
-        <div>
-          <Sidebar />
-          <Navbar />
-          <Header />
-          <DesktopNavbar />
-          <TabletSlider />
+      ) : ( */}
+      <div>
+        <Sidebar />
+        <Navbar />
+        <Header />
+        <DesktopNavbar />
+        <TabletSlider />
 
-          <AboutJames />
-          <AboutLina />
-          <Work />
-          <Contact />
-          <ScrollToTop />
-        </div>
+        <AboutJames />
+        <AboutLina />
+        <Work />
+        <Contact />
+        <ScrollToTop />
+      </div>
       )}
     </div>
   );

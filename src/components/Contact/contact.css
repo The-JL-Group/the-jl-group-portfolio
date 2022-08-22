@@ -11,6 +11,7 @@
   text-align: center;
   padding-bottom: 1em;
   letter-spacing: 0.25rem;
+  font-size: 4em;
 }
 
 .contact-image {
@@ -38,5 +39,17 @@
 @media (min-width: 1024px) {
   .contact-container {
     margin-bottom: 0rem;
+  }
+}
+
+@media (min-width: 1029px) {
+  .contact-header {
+    font-size: 6.5em;
+  }
+}
+
+@media (min-width: 1655px) {
+  .contact-header {
+    font-size: 8em;
   }
 }

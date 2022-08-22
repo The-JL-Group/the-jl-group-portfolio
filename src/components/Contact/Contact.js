@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './contact.css';
 import InputBox from './InputBox';
-import { motion, useMotionValue, useTransform } from 'framer-motion';
+import {
+  motion,
+  useMotionValue,
+  useTransform,
+  useAnimation,
+} from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Contact = () => {
   const blockVariants = {
@@ -15,22 +21,67 @@ const Contact = () => {
 
   const rotate = useMotionValue(0);
   const scale = useTransform(rotate, [0, 270], [0, 1]);
+
+  // Framer Motion Hook
+  // const { ref, inView } = useInView({
+  //   threshold: 0.2,
+  // });
+  // const animation = useAnimation();
+
+  // useEffect(() => {
+  //   if (inView) {
+  //     animation.start({
+  //       x: 0,
+  //       style: {
+  //         rotate,
+  //         scale,
+  //       },
+  //       variants: { blockVariants },
+  //       initial: 'initial',
+  //       animate: 'target',
+  //       transition: {
+  //         ease: 'easeInOut',
+  //         duration: 3,
+  //       },
+  //     });
+  //   }
+  //   if (!inView) {
+  //     animation.start({ x: '-100vw' });
+  //   }
+  //   console.log('use effect hook, inView =', inView);
+  // }, [inView]);
+
   return (
     <section id="contact" className="contact-container">
       <h2 className="contact-header text-shadow-org dark:text-shadow-pnk ">
         CONTACT
       </h2>
       <motion.div
-        style={{
-          rotate,
-          scale,
-        }}
-        variants={blockVariants}
-        initial="initial"
-        animate="target"
+        // animate={animation}
+        // style={{
+        //   rotate,
+        //   scale,
+        // }}
+        // variants={blockVariants}
+        // initial="initial"
+        // animate="target"
+        // transition={{
+        //   ease: 'easeInOut',
+        //   duration: 3,
+        // }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{
-          ease: 'easeInOut',
-          duration: 3,
+          default: {
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          },
+          scale: {
+            type: 'spring',
+            damping: 8,
+            stiffness: 100,
+            restDelta: 0.001,
+          },
         }}
       >
         {/* IMAGE CONTAINER */}
