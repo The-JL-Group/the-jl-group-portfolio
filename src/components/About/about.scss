@@ -1,91 +1,11 @@
-$color1: #ffffff;
-$color2: #212020;
-$color3: #212020;
-$color4: #212020;
-$cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-
-@function textShadow($color){
-	//value variable: x-value, y-value, color value;
-	$val: 0px 0px $color;
-	//loop to create text-shadow variables moving 1px to the left and 1 down
-	@for $i from 1 through 50{
-		$val: #{$val}, #{$i}px #{$i}px #{$color};
-	}
-	//return value
-	@return $val;
-}
-
-@function textAnimationShadow($color1, $color2,$color3,$color4,$color5){
-	$val1: 0px 0px $color1;
-	$val2: 0px 0px $color2;
-	$val3: 0px 0px $color3;
-	$val4: 0px 0px $color4;
-	$val5: 0px 0px $color5;
-	@for $i from 1 through 10{
-		$val1: #{$val1}, #{$i}px #{$i}px #{$color1};
-	}
-	@for $i from 11 through 20{
-		$val2: #{$val2}, #{$i}px #{$i}px #{$color2};
-	}
-	@for $i from 21 through 30{
-		$val3: #{$val3}, #{$i}px #{$i}px #{$color3};
-	}
-	@for $i from 31 through 40{
-		$val4: #{$val4}, #{$i}px #{$i}px #{$color4};
-	}
-	@for $i from 41 through 50{
-		$val5: #{$val5}, #{$i}px #{$i}px #{$color5};
-	}
-	@return $val1, $val2, $val3, $val4, $val5;
-}
-
-//mixin to create initial text-shadow
-@mixin shadow($shadow-color){
-	text-shadow: textShadow($shadow-color);
-}
-//mixin to create animation shadow, can enter 5 color variables
-@mixin animationShadow($shadow-color1, $shadow-color2,$shadow-color3, $shadow-color4, $shadow-color5){
-	text-shadow: textAnimationShadow($shadow-color1, $shadow-color2,$shadow-color3, $shadow-color4, $shadow-color5);
-}
-
-@keyframes color{
-	0%,10%{
-		color: $color1;
-		@include shadow($color3);
-	}
-	11%,20%{
-		color: $color1;
-		@include animationShadow($color3,$color3,$color3,$color3,$color1);
-	}
-	21%, 30%{
-		color: $color1;
-		@include animationShadow($color3,$color3,$color3,$color1,$color1);
-	}
-	31%, 40%{
-		color: $color1;
-		@include animationShadow($color3,$color3,$color1,$color1,$color1);
-	}
-	41%, 50%{
-		color: $color1;
-		@include animationShadow($color3,$color1,$color1,$color1,$color1);
-	}
-	51%,60%{
-		color: $color2;
-		@include animationShadow($color1,$color1,$color1,$color1,$color1);
-	}
-	61%,100%{
-		color: $color2;
-		@include animationShadow($color1,$color1,$color1,$color1,$color1);
-	}
-}
-
 // --------------------------------------------
 /* Base / Mobile */
 // About.js
+
+
 .j-main-about {
     width: 100%;
-    height: 42vh;
+    height: 48vh;
     padding: 0em 0em 0em 0em;
 }
  
@@ -97,11 +17,17 @@ $cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 // AboutLina.js
+#about-lina {
+    height: 500px;
+}
+
 .l-main-about {
     width: 100%;
     // height: 37vh;
     position: relative;
     padding: 0em 0em 0em 0em;
+
+    
 }
 
 .l-card-flex {
@@ -110,25 +36,48 @@ $cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     text-align: center;
     align-items: center;
 }
+
+.about-about {
+    // width: 50%;
+    font-size: 4em;
+}
+
+.about-us {
+    // width: 50%;
+    font-size: 4em;
+}
  
 
 // --------------------------------------------
 // Tablet
+
 @media (min-width: 601px) {
     .j-main-about {
         // box-shadow: 0px 0px 0px rgb(255, 255, 255), -0px -7px 10px rgb(255, 255, 255);
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1029px) {
     .about-about {
-        width: 50%;
-        font-size: 5rem;
+        // width: 50%;
+        font-size: 6.5em;
     }
-
+    
     .about-us {
-        width: 50%;
-        font-size: 5rem;
+        // width: 50%;
+        font-size: 6.5em;
+    }
+}
+
+@media (min-width: 1655px) {
+    .about-about {
+        // width: 50%;
+        font-size: 8em;
+    }
+    
+    .about-us {
+        // width: 50%;
+        font-size: 8em;
     }
 }
 
@@ -143,7 +92,7 @@ $cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     .about-about {
         width: 50%;
-        font-size: 4rem;
+        // font-size: 4rem;
         position: relative;
     }
 
@@ -157,70 +106,11 @@ $cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     .about-us {
         width: 50%;
-        font-size: 4rem;
+        // font-size: 4rem;
     }
 }
+
+
 
 // --------------------------------------------
 /* Height Queries */
-@media screen and (min-height: 640px) {
-    .j-main-about {
-        height: 53vh;
-    }
-    
-    .l-main-about {  
-        height: 44vh;
-    }
-
-}
-
-@media screen and (min-height: 725px) {
-    .j-main-about {
-        height: 42vh;
-    }
-    
-    .l-main-about {  
-        height: 38vh;
-    }
-}
-
-@media screen and (min-height: 725px) {
-    .l-main-about {  
-        height: 40vh;
-    }
-}
-
-@media screen and (min-height: 800px) {
-    .j-main-about {
-        height: 38vh;
-    }
-    
-    .l-main-about {  
-        height: 41vh;
-    }
-}
-
-@media screen and (min-height: 896px) {
-    .l-main-about {  
-        height: 32vh;
-    }
-}
-
-@media screen and (min-height: 963px) {
-    .j-main-about {
-        height: 36vh;
-    }
-}
-
-@media screen and (min-height: 994px) {
-    .j-main-about {
-        height: 34vh;
-    }
-}
-
-
-@media screen and (min-height: 1080px) {
-    .j-main-about {
-        height: 32vh;
-    }
-}

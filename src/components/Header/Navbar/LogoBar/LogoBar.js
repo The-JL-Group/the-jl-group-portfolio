@@ -10,7 +10,7 @@ const LogoBar = () => {
   const [logoWrapper, setLogoBar] = useState(false);
 
   const changeBackground = () => {
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
 
     if (window.scrollY >= 180) {
       setLogoBar(true);
