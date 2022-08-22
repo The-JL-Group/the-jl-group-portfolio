@@ -16,6 +16,7 @@ module.exports = {
         org: '#f8724c',
         ltOrg: '#ee8d72',
         blk: '#212020',
+        blkRgba: 'rgba(32, 32, 32, 1)',
       },
       // ONLY TWO DASHES
       backgroundImage: {
