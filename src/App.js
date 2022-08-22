@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useAnimation, motion, useScroll } from 'framer-motion';
 
 import Loader from './components/Loader/Loader';
 import ProgressionBar from './components/ProgressionBar';
@@ -8,14 +7,12 @@ import Sidebar from './components/Header/Sidebar/Sidebar';
 import Navbar from './components/Header/Navbar/navbar';
 import TabletSlider from './components/Header/CardSlider/TabletSlider/TabletSlider';
 import DesktopNavbar from './components/Header/Navbar/DesNav/DesktopNavbar';
-import AboutBoth from './components/AboutBoth';
+import AboutBoth from './components/About/AboutBoth';
 import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
 import ScrollToTop from './components/Scroll/ScrollToTop';
 
 function App() {
-  // const { scrollYProgress } = useScroll();
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -25,26 +22,24 @@ function App() {
   }, [loading]);
 
   return (
-    <div id="main" className="dark:bg-white dark:text-blk">
-      {/* {loading ? (
+    <div id="main" className="dark:bg-white dark:text-blk overflow-hidden">
+      {loading ? (
         <Loader setLoading={setLoading} />
-      ) : ( */}
-      {/* <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }}> */}
-      <div>
-        <ProgressionBar />
-        <Sidebar />
-        <Navbar />
-        <Header />
-        <DesktopNavbar />
-        <TabletSlider />
+      ) : (
+        <div>
+          <ProgressionBar />
+          <Sidebar />
+          <Navbar />
+          <Header />
+          <DesktopNavbar />
+          <TabletSlider />
 
-        <AboutBoth />
-        <Work />
-        <Contact />
-        <ScrollToTop />
-      </div>
-      {/* </motion.div> */}
-      {/* )} */}
+          <AboutBoth />
+          <Work />
+          <Contact />
+          <ScrollToTop />
+        </div>
+      )}
     </div>
   );
 }

@@ -14,13 +14,13 @@ import { BsFillEyeFill } from 'react-icons/bs';
 const Header = () => {
 
   return (
-    <header id="header" className="z-0 header font-['Major Mono Display']">
+    <header id="header" className="z-0 header font-['Major Mono Display'] overflow-hidden">
 
       {/* Logo + Day/Night Btn */}
       <LogoBar />
 
       {/* Main Header */}
-      <div className="main-header">
+      <div className="main-header overflow-hidden">
         {/* Header Img */}
 
         {/* Framer Motion Header Img */}
