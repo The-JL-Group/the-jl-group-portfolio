@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useAnimation, motion, useScroll } from 'framer-motion';
+
 import Loader from './components/Loader/Loader';
+import ProgressionBar from './components/ProgressionBar';
 import Header from './components/Header/Header';
 import Sidebar from './components/Header/Sidebar/Sidebar';
 import Navbar from './components/Header/Navbar/navbar';
@@ -11,6 +14,8 @@ import Contact from './components/Contact/Contact';
 import ScrollToTop from './components/Scroll/ScrollToTop';
 
 function App() {
+  // const { scrollYProgress } = useScroll();
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -21,24 +26,25 @@ function App() {
 
   return (
     <div id="main" className="dark:bg-white dark:text-blk">
-      {loading ? (
+      {/* {loading ? (
         <Loader setLoading={setLoading} />
-      ) : (
-        <div>
-          <Sidebar />
-          <Navbar />
-          <Header />
-          <DesktopNavbar />
-          <TabletSlider />
+      ) : ( */}
+      {/* <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }}> */}
+      <div>
+        <ProgressionBar />
+        <Sidebar />
+        <Navbar />
+        <Header />
+        <DesktopNavbar />
+        <TabletSlider />
 
-          {/* <AboutJames />
-          <AboutLina /> */}
-          <AboutBoth />
-          <Work />
-          <Contact />
-          <ScrollToTop />
-        </div>
-      )}
+        <AboutBoth />
+        <Work />
+        <Contact />
+        <ScrollToTop />
+      </div>
+      {/* </motion.div> */}
+      {/* )} */}
     </div>
   );
 }

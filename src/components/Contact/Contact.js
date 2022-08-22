@@ -19,37 +19,35 @@ const Contact = () => {
     },
   };
 
+  // Framer Motion Hook
   const rotate = useMotionValue(0);
   const scale = useTransform(rotate, [0, 270], [0, 1]);
 
-  // Framer Motion Hook
-  // const { ref, inView } = useInView({
-  //   threshold: 0.2,
-  // });
-  // const animation = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+  });
+  const animation = useAnimation();
+  const motionVariants = {
+    visible: {
+      opacity: 1,
+      scale: 1,
+      style: { rotate, scale },
+      variants: { blockVariants },
+      initial: 'initial',
+      animate: 'target',
+      transition: {
+        duration: 1,
+        ease: 'easeInOut',
+      },
+    },
+    hidden: { opacity: 0, scale: 0.5 },
+  };
 
-  // useEffect(() => {
-  //   if (inView) {
-  //     animation.start({
-  //       x: 0,
-  //       style: {
-  //         rotate,
-  //         scale,
-  //       },
-  //       variants: { blockVariants },
-  //       initial: 'initial',
-  //       animate: 'target',
-  //       transition: {
-  //         ease: 'easeInOut',
-  //         duration: 3,
-  //       },
-  //     });
-  //   }
-  //   if (!inView) {
-  //     animation.start({ x: '-100vw' });
-  //   }
-  //   console.log('use effect hook, inView =', inView);
-  // }, [inView]);
+  useEffect(() => {
+    if (inView) {
+      animation.start('visible');
+    }
+  }, [animation, inView]);
 
   return (
     <section id="contact" className="contact-container">
@@ -57,7 +55,11 @@ const Contact = () => {
         CONTACT
       </h2>
       <motion.div
-        // animate={animation}
+        ref={ref}
+        animate={animation}
+        initial="hidden"
+        variants={motionVariants}
+        // // animate={animation}
         // style={{
         //   rotate,
         //   scale,
@@ -69,20 +71,6 @@ const Contact = () => {
         //   ease: 'easeInOut',
         //   duration: 3,
         // }}
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          default: {
-            duration: 0.3,
-            ease: [0, 0.71, 0.2, 1.01],
-          },
-          scale: {
-            type: 'spring',
-            damping: 8,
-            stiffness: 100,
-            restDelta: 0.001,
-          },
-        }}
       >
         {/* IMAGE CONTAINER */}
         {/* ON SMALLER SCREEN | HIDDEN ON LARGE AND UP */}
