@@ -11,7 +11,7 @@ const Loader = ({ setLoading }) => {
         // Hook which updates setLoading state to false after 4sec
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 3000);
+        }, 2700);
         return () => clearTimeout(timer);
     });
 

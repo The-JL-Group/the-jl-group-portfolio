@@ -7,7 +7,7 @@ const DesktopNavbar = () => {
   const [desktopNav, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
 
     if (window.scrollY >= 180) {
       setNavbar(true);

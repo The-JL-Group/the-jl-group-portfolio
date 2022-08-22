@@ -54,13 +54,3 @@ export default class JModal extends Component {
   }
 }
             
-//  <button type="button" className='j-modal-btn-close border' onClick={this.props.hide}>Exit</button>
-
-// Lina Modal
-// const LinaCardModal = () => {
-//   return (
-//     <div>Hi</div>
-//   )
-// }
-
-// export { JamesCardModal, LinaCardModal };

@@ -6,11 +6,13 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(32, 32, 32, 1);
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10000;
+    z-index: 1000000;
+    height: 100vh;
+    width: 100vw;
 }
 
 .l-modal {
@@ -19,19 +21,20 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(32, 32, 32, 1);
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10000;
+    z-index: 1000000;
 }
 
 /* James Modal */
 /* ------------------------ */
 .modal-btn-close-container {
     position: fixed;
-    top: 0;
+    top: 10%;
     right: 0;
+    padding: 1rem;
 }
 
 .modal-card {
