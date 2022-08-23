@@ -1,53 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 // React Router Dom
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Loader from './components/Loader/Loader';
-import ProgressBar from './components/ProgressBar/ProgressBar';
-import Header from './components/Header/Header';
-import Sidebar from './components/Header/Sidebar/Sidebar';
-import Navbar from './components/Header/Navbar/navbar';
-import TabletSlider from './components/Header/CardSlider/TabletSlider/TabletSlider';
-import DesktopNavbar from './components/Header/Navbar/DesNav/DesktopNavbar';
-import AboutBoth from './components/About/AboutBoth';
-import Work from './components/Work/Work';
-import Contact from './components/Contact/Contact';
-import ScrollToTop from './components/Scroll/ScrollToTop';
-
-import Error from './components/Error/Error';
+import Home from './Pages/Home';
+import Error from './Pages/Error';
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    loading
-      ? document.querySelector('body').classList.add('loading')
-      : document.querySelector('body').classList.remove('loading');
-  }, [loading]);
-
   return (
-    <div id="main" className="dark:bg-white dark:text-blk overflow-hidden">
-      {loading ? (
-        <Loader setLoading={setLoading} />
-      ) : (
+    <Router>
+      <div id="main" className="dark:bg-white dark:text-blk overflow-hidden">
         <div>
-          <ProgressBar />
-          <Sidebar />
-          <Navbar />
-          <Header />
-          <DesktopNavbar />
-          <TabletSlider />
-          <AboutBoth />
-          <Work />
-          <Contact />
-          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Home />} />
 
-          {/* Error Page */}
-          <Error />
+            {/* Error Page */}
+            <Route path="*" element={<Error />} />
+          </Routes>
         </div>
-      )}
-    </div>
+      </div>
+    </Router>
   );
 }
 
