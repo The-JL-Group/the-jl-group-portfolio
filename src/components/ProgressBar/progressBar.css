@@ -7,7 +7,6 @@
 }
 
 #progressBar {
-  background: linear-gradient(to left, #ee8d72, #f8724c);
   transform-origin: top left;
   transform: scale(0, 0);
   opacity: 0;

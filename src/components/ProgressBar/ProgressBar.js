@@ -25,6 +25,7 @@ const ProgressBarComponent = () => {
     <div id="progressBarContainer">
       <div
         id="progressBar"
+        className="bg-gradient-to-r from-ltOrg to-org dark:bg-gradient-to-r dark:from-ltPnk dark:to-pnk"
         style={{ transform: `scale(${scroll}, 1)`, opacity: `${scroll}` }}
       />
     </div>
