@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+
+// React Router Dom
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Loader from './components/Loader/Loader';
@@ -13,6 +15,8 @@ import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
 import ScrollToTop from './components/Scroll/ScrollToTop';
 
+import Error from './components/Error/Error';
+
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -24,24 +28,25 @@ function App() {
 
   return (
     <div id="main" className="dark:bg-white dark:text-blk overflow-hidden">
-      {/* {loading ? (
+      {loading ? (
         <Loader setLoading={setLoading} />
-      ) : ( */}
-      <div>
-        <ProgressBar />
-        <Sidebar />
-        <Navbar />
-        <Header />
-        <DesktopNavbar />
-        <TabletSlider />
+      ) : (
+        <div>
+          <ProgressBar />
+          <Sidebar />
+          <Navbar />
+          <Header />
+          <DesktopNavbar />
+          <TabletSlider />
+          <AboutBoth />
+          <Work />
+          <Contact />
+          <ScrollToTop />
 
-        <AboutBoth />
-        <Work />
-        <Contact />
-        <ScrollToTop />
-      </div>
-
-      {/* )} */}
+          {/* Error Page */}
+          <Error />
+        </div>
+      )}
     </div>
   );
 }
