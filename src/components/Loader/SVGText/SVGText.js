@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import './svgtext.scss';
 
 // SVG Data
-const svgTxt = ["three", "one", "two"];
+// const svgTxt = ["three", "one", "two"];
+const svgTxt = ["James", "JL", "Lina"];
 
 const JamesSVG = () => {
 
@@ -17,7 +18,7 @@ const JamesSVG = () => {
                 return prevIndex + 1;
             })
         };
-        setInterval(txtTimer, 1000);
+        setInterval(txtTimer, 1500);
 
         // A "cleanup" function which will clear the interval timer when the component unmounts
         return () => { clearInterval(txtTimer); }

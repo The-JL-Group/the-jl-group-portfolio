@@ -12,16 +12,16 @@
 
 @layer utilities {
   .text-shadow-org {
-    text-shadow: 4px 0 #f8724c;
+    text-shadow: 0.25rem 0 #f8724c;
   }
   .text-shadow-pnk {
-    text-shadow: 4px 0 #e09384;
+    text-shadow: 0.25rem 0 #e09384;
   }
   .text-header-org {
-    text-shadow: 4px 0 #212020;
+    text-shadow: 0.25rem 0 #212020;
   }
   .text-header-pnk {
-    text-shadow: 4px 0 #ffffff;
+    text-shadow: 0.25rem 0 #ffffff;
   }
   .nav-light {
     background: rgba(31, 29, 29, 1);
@@ -62,15 +62,6 @@ body {
   /* height: --webkit-fill-available; */
   height: 100vh;
   overflow-x: hidden;
-}
-
-#main {
-}
-
-h1 {
-  /* line-height: 1;
-  font-size: 4.6rem;
-  margin: 0; */
 }
 
 h2 {

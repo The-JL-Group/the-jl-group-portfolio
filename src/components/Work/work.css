@@ -16,7 +16,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15rem;
 }
 
 .work-card {
@@ -91,6 +90,12 @@
   font-size: 1.5em;
   -webkit-text-stroke-width: 0.3px;
   -webkit-text-stroke-color: var(--blk);
+}
+
+@media (min-width: 801px) {
+  .work-card-section {
+    margin-bottom: 15rem;
+  }
 }
 
 @media (min-width: 1029px) {

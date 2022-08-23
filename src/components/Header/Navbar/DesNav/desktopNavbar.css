@@ -13,14 +13,14 @@
 .desktopNav ul {
     list-style: none;
     display: inline-flex;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .desktopNav ul li {
     font-size: 1.5rem;
     display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
 }
 
 @media (min-width: 1029px) {

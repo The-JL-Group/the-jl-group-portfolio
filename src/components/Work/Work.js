@@ -53,7 +53,8 @@ const Work = () => {
   }, [animation, inView]);
 
   return (
-    <section className="work-container">
+    <section className="work-container"
+    id="work">
       {/* HEADER CONTAINER */}
       <motion.div
         ref={ref}

@@ -2,6 +2,7 @@ nav {
   bottom: 0;
   left: 0;
   z-index: 1000;
+  transition: 0.4s ease-in;
 }
 
 .nav-outer {
@@ -12,6 +13,7 @@ nav {
   color: var(--blk);
   font-size: 0.625rem;
   width: 100%;
+  transition: 0.4s ease-in;
 }
 
 .reg-icon-images {
@@ -26,7 +28,7 @@ nav {
 }
 
 .openCloseIcon {
-  padding-top: 10px;
+  padding-top: 0.625rem;
 }
 
 .nav-link.active {

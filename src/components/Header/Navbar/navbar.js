@@ -57,7 +57,9 @@ const Navbar = () => {
               {socialsIcons.map((nav, index) => (
                 <a
                   href={nav.pathway}
-                  className="nav-link  justify-center text-center"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="nav-link justify-center text-center"
                 >
                   {/* Nav List */}
                   <li key={index} className={` ${!open && 'hidden'} nav-list`}>
@@ -70,6 +72,20 @@ const Navbar = () => {
                   </li>
                 </a>
               ))}
+              <div>
+                <span
+                  className="cursor-pointer nav-list"
+                  onClick={() => setOpen(!open)}
+                >
+                  <i
+                    className={`openCloseIcon ${
+                      open
+                        ? 'fa fa-times text-white text-lg dark:text-blk'
+                        : 'fa fa-list text-black text-lg dark:text-white'
+                    }`}
+                  ></i>
+                </span>
+              </div>
             </ul>
           </div>
         </div>
