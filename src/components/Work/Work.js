@@ -53,21 +53,20 @@ const Work = () => {
   }, [animation, inView]);
 
   return (
-    <section className="work-container"
-    id="work">
+    <section className="work-container" id="work">
       {/* HEADER CONTAINER */}
+      <div className="work-container-header">
+        <h2 className="work-header text-shadow-org dark:text-shadow-pnk">
+          VIEW OUR WORK
+        </h2>
+      </div>
+
       <motion.div
         ref={ref}
         animate={animation}
         initial="hidden"
         variants={motionVariants}
       >
-        <div className="work-container-header">
-          <h2 className="work-header text-shadow-org dark:text-shadow-pnk">
-            VIEW OUR WORK
-          </h2>
-        </div>
-
         {/* WORK CARD CONTAINER */}
         <div className="work-card-section">
           {workList.map((item, index) => (
