@@ -6,8 +6,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 import { FaHandHoldingMedical } from 'react-icons/fa';
-import { MdConstruction } from 'react-icons/md';
-import { GrPersonalComputer } from 'react-icons/gr';
+import { MdConstruction, MdComputer } from 'react-icons/md';
 
 function CardSlider() {
   const cardSliderDetails = [
@@ -24,7 +23,7 @@ function CardSlider() {
     {
       project: 'The-JL-Group-Portfolio',
       url: '',
-      icon: <GrPersonalComputer size={'3rem'} />,
+      icon: <MdComputer size={'3rem'} />,
     },
   ];
 
