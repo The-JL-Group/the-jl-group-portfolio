@@ -30,7 +30,7 @@ export const regIcons = [
 // Social Icons
 export const socialsIcons = [
   {
-    title: 'github',
+    title: 'our github',
     icon: <AiOutlineGithub size={'1.4rem'} />,
     pathway: 'https://github.com/The-JL-Group',
   },

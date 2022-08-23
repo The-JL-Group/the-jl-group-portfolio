@@ -12,19 +12,19 @@
     }
     
     .social-sidebar li:first-child a { 
-        border-top-right-radius: 5px; 
+        border-top-right-radius: 0.313rem; 
     }
     .social-sidebar li:last-child a {   
-        border-bottom-right-radius: 5px; 
+        border-bottom-right-radius: 0.313rem; 
     }
     
     .social-sidebar a {
         text-decoration: none;
         display: block;
-        height: 50px;
-        width: 50px;  
-        font-size: 24px;
-        line-height: 50px;
+        height: 3.125rem;
+        width: 3.125rem;  
+        font-size: 1.5rem;
+        line-height: 3.125rem;
         position: relative;
         text-align: center;
         cursor: pointer;

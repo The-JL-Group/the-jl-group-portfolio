@@ -8,7 +8,7 @@
 .l-info-btn {
   background: white;
   color: var(--blk);
-  padding: 10px 22px;
+  padding: 0.625rem 1.375rem;
   font-size: 1.5rem;
   border-radius: 0.5rem;
 }
@@ -16,11 +16,11 @@
 /* Rental Card */
 .l-card {
   /* margin: auto; */
-  max-height: 500px;
+  max-height: 31.25rem;
   min-height: 50%;
-  max-width: 800px;
-  width: 300px;
-  height: 300px;
+  max-width: 50rem;
+  width: 18.75rem;
+  height: 18.75rem;
   position: relative;
   /* margin-bottom: 50px; */
   padding: 1rem;
@@ -36,7 +36,7 @@
   height: 85%;
   top: 0;
   /* Moves div behind */
-  transform: translate(-120px, 0.488rem);
+  transform: translate(-7.5rem, 0.488rem);
   transition: transform 0.4s ease;
 
   display: none;
@@ -51,7 +51,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.313rem;
-  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1.563rem 1.563rem rgba(0, 0, 0, 0.6);
   padding: 0.875rem 1rem;
   position: relative;
   display: flex;
@@ -74,12 +74,12 @@
 
 .l-about-btn {
   width: 100%;
-  margin-top: 5px;
+  margin-top: 0.313rem;
   background: var(--blk);
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 3px;
-  font-size: 18px;
+  border: 0.063rem solid white;
+  border-radius: 0.313rem;
+  padding: 0.188rem;
+  font-size: 1.125rem;
   color: #fff;
 }
 
@@ -91,20 +91,20 @@
 
 .l-inner-card {
   width: 100%;
-  max-width: 600px;
+  max-width: 37.5rem;
   display: flex;
   flex-direction: row;
   background: #ffffff;
   color: #222;
   text-align: center;
   /* padding: 2em; */
-  margin-top: 25px;
-  border-radius: 5px;
+  margin-top: 1.563rem;
+  border-radius: 0.313rem;
 }
 
 .l-profile-img {
   border-radius: 50%;
-  border: 4px solid #222;
+  border: 0.25rem solid #222;
 
   display: none;
 }
@@ -115,7 +115,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 125px;
+  width: 7.813rem;
   /* border: 3px solid red; */
   margin: 0 auto;
 }
@@ -126,11 +126,11 @@
 
 .l-profile-name {
   font-size: 1.4rem;
-  margin-bottom: 5px;
+  margin-bottom: 0.313rem;
 }
 
 .l-profile-position {
-  margin-bottom: 5px;
+  margin-bottom: 0.313rem;
 }
 
 /* ------------------ */
@@ -142,7 +142,7 @@
   }
 
   .l-card {
-    width: 450px;
+    width: 28.125rem;
     height: 100%;
   }
 
@@ -157,22 +157,22 @@
     top: 0;
     /* Moves div behind */
     /* 5px, 11px */
-    transform: translate(-180px, 2.2rem);
+    transform: translate(-11.25rem, 2.2rem);
     transition: transform 0.4s ease;
 
     display: inline;
   }
 
   .l-card:hover:not(.expanded)::before {
-    transform: translate(-170px, 3rem);
+    transform: translate(-10.625rem, 3rem);
   }
 
   .l-info-btn {
     display: block;
-    height: 100px;
-    width: 100px;
+    height: 6.25rem;
+    width: 6.25rem;
     border-radius: 50%;
-    border: 1px solid rgb(255, 255, 255);
+    border: 0.063rem solid rgb(255, 255, 255);
     background: rgb(33, 32, 32, 1);
     color: #fff;
     font-size: 1rem;
@@ -184,7 +184,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 0px 0.625rem 0px 0px;
+    padding: 0rem 0.625rem 0rem 0rem;
   }
 
   .l-content {
@@ -200,13 +200,13 @@
 /* 601px Media Query - Tablet */
 @media (min-width: 601px) {
   .l-card {
-    width: 500px;
+    width: 31.25rem;
   }
 
   .l-card {
-    max-height: 700px;
-    min-height: 318px;
-    max-width: 1000px;
+    max-height: 43.75rem;
+    min-height: 19.875rem;
+    max-width: 62.5rem;
   }
 
   .l-card::before {
@@ -214,16 +214,16 @@
     height: 69%;
     top: 0;
 
-    transform: translate(-200px, 2rem);
+    transform: translate(-12.5rem, 2rem);
     transition: transform 0.4s ease;
   }
 
   .l-card:hover:not(.expanded)::before {
-    transform: translate(-185px, 2.4rem);
+    transform: translate(-11.563rem, 2.4rem);
   }
 
   .l-content {
-    padding: 44px 16px;
+    padding: 2.75rem 1rem;
   }
 
   .l-about-btn {
@@ -233,7 +233,7 @@
   /* New Expanded Content */
   .l-inner-card {
     text-align: left;
-    margin-top: 5px;
+    margin-top: 0.313rem;
     width: 100%;
   }
 
@@ -243,7 +243,7 @@
     /* display: none; */
     top: 18%;
     right: 8%;
-    width: 150px;
+    width: 9.375rem;
     /* height: 30px;  */
   }
 
@@ -271,11 +271,11 @@
 
 @media (min-width: 801px) {
   .l-card {
-    width: 500px;
+    width: 31.25rem;
   }
 
   .l-content {
-    padding: 44px 16px;
+    padding: 2.75rem 1rem;
   }
 
   .l-card::before {
@@ -283,12 +283,12 @@
     height: 69%;
     top: 0;
 
-    transform: translate(-200px, 2rem);
+    transform: translate(-12.5rem, 2rem);
     transition: transform 0.4s ease;
   }
 
   .l-card:hover:not(.expanded)::before {
-    transform: translate(-185px, 2.4rem);
+    transform: translate(-11.563rem, 2.4rem);
   }
 
   /* Expanded Content */
@@ -306,11 +306,11 @@
 
 @media (min-width: 901px) {
   .l-card {
-    width: 500px;
+    width: 31.25rem;
   }
 
   .l-content {
-    padding: 46px 16px;
+    padding: 2.875rem 1rem;
   }
 
   .l-card::before {
@@ -318,22 +318,22 @@
     height: 69%;
     top: 0;
 
-    transform: translate(-200px, 2rem);
+    transform: translate(-12.5rem, 2rem);
     transition: transform 0.4s ease;
   }
 
   .l-card:hover:not(.expanded)::before {
-    transform: translate(-185px, 2.4rem);
+    transform: translate(-11.563rem, 2.4rem);
   }
 }
 
 @media (min-width: 1029px) {
   .l-card {
-    width: 500px;
+    width: 31.25rem;
   }
 
   .l-content {
-    padding: 46px 16px;
+    padding: 2.875rem 1rem;
   }
 
   .l-card::before {
@@ -341,22 +341,22 @@
     height: 69%;
     top: 0;
 
-    transform: translate(-200px, 2rem);
+    transform: translate(-12.5rem, 2rem);
     transition: transform 0.4s ease;
   }
 
   .l-card:hover:not(.expanded)::before {
-    transform: translate(-185px, 2.4rem);
+    transform: translate(-11.563rem, 2.4rem);
   }
 }
 
 @media (min-width: 1101px) {
   .l-card {
-    width: 500px;
+    width: 31.25rem;
   }
 
   .l-content {
-    padding: 48px 16px;
+    padding: 3rem 1rem;
   }
 
   .l-card::before {
@@ -364,22 +364,22 @@
     height: 69%;
     top: 0;
 
-    transform: translate(-200px, 2rem);
+    transform: translate(-12.5rem, 2rem);
     transition: transform 0.4s ease;
   }
 
   .l-card:hover:not(.expanded)::before {
-    transform: translate(-185px, 2.4rem);
+    transform: translate(-11.563rem, 2.4rem);
   }
 }
 
 @media (min-width: 1235px) {
   .l-card {
-    width: 500px;
+    width: 31.25rem;
   }
 
   .l-content {
-    padding: 50px 16px;
+    padding: 3.125rem 1rem;
   }
 
   .l-card::before {
@@ -387,22 +387,22 @@
     height: 69%;
     top: 0;
 
-    transform: translate(-200px, 3em);
+    transform: translate(-12.5rem, 3em);
     transition: transform 0.4s ease;
   }
 
   .l-card:hover:not(.expanded)::before {
-    transform: translate(-185px, 3.4em);
+    transform: translate(-11.563rem, 3.4em);
   }
 }
 
 @media (min-width: 1401px) {
   .l-card {
-    width: 500px;
+    width: 31.25rem;
   }
 
   .l-content {
-    padding: 55px 16px;
+    padding: 3.438rem 1rem;
   }
 
   /* Expanded Content */
@@ -426,7 +426,7 @@
 
 @media (min-width: 1580px) {
   .l-card {
-    width: 600px;
+    width: 37.5rem;
   }
 
   .l-card::before {
@@ -434,19 +434,19 @@
     height: 69%;
     top: 0;
 
-    transform: translate(-240px, 3.4em);
+    transform: translate(-15rem, 3.4em);
     transition: transform 0.4s ease;
   }
 
   .l-card:hover:not(.expanded)::before {
-    transform: translate(-225px, 3.8rem);
+    transform: translate(-14.063rem, 3.8rem);
   }
 }
 
 @media (min-width: 1655px) {
   .l-card {
-    width: 700px;
-    height: 200px;
+    width: 43.75rem;
+    height: 12.5rem;
     /* right: 5%; */
   }
 
@@ -455,12 +455,12 @@
     height: 89%;
     top: 0;
 
-    transform: translate(-270px, 2.4rem);
+    transform: translate(-16.875rem, 2.4rem);
     transition: transform 0.4s ease;
   }
 
   .l-card:hover:not(.expanded)::before {
-    transform: translate(-255px, 2.8rem);
+    transform: translate(-15.938rem, 2.8rem);
   }
 
   .l-content {
@@ -475,12 +475,12 @@
 
   .l-about-btn {
     width: 50%;
-    margin-top: 5px;
+    margin-top: 0.313rem;
     background: var(--blk);
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 3px;
-    font-size: 18px;
+    border: 0.063rem solid white;
+    border-radius: 0.313rem;
+    padding: 0.188rem;
+    font-size: 1.125rem;
     color: #fff;
     position: relative;
     left: 25%;
@@ -532,7 +532,7 @@
   .l-profile-name::after {
     content: '';
     display: block;
-    height: 1px;
+    height: 0.063rem;
     width: 2em;
     background: rgb(0, 0, 0);
     margin: 0.7em 0.5em auto;
@@ -542,11 +542,11 @@
 
 @media (min-width: 1905px) {
   .l-card {
-    height: 370px;
+    height: 23.125rem;
   }
 
   .l-inner-card {
-    padding: 10px;
+    padding: 0.625rem;
   }
 
   .l-profile-img {
@@ -562,6 +562,6 @@
   }
 
   .l-profile-body {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 }
