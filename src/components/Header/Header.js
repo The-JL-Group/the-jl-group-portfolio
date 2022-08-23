@@ -44,13 +44,15 @@ const Header = () => {
 
           {/* Call-To-Action Btn */}
           <div className="cta-wrapper">
-            <button>
-              {/* Eye Icon */}
-              <span className="cta-icon-wrapper">
-                <BsFillEyeFill size={'1.5rem'} className="cta-icon" />
-              </span>
-              <span className="cta-text">View Work</span>
-            </button>
+            <a href={`#work`}>
+              <button>
+                {/* Eye Icon */}
+                <span className="cta-icon-wrapper">
+                  <BsFillEyeFill size={'1.5rem'} className="cta-icon" />
+                </span>
+                <span className="cta-text">View Work</span>
+              </button>
+            </a>
           </div>
         </div>
 

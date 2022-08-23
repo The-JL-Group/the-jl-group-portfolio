@@ -18,7 +18,7 @@ export const headerImg = {
         y: 0,
         transition: {
             ease: [.6, .01, -.05, .95],
-            duration: 1.6,
+            duration: 2.6,
         },
     },
     exit: {

@@ -28,16 +28,16 @@ const DesktopNavbar = () => {
     >
       <ul>
         <li>
-          <a href="#">home</a>
+          <a href="#header">home</a>
         </li>
         <li>
-          <a href="#">about</a>
+          <a href="#about">about</a>
         </li>
         <li className="text-org dark:text-pnk">
-          <a href="#">work</a>
+          <a href="#work">work</a>
         </li>
         <li>
-          <a href="#">contact</a>
+          <a href="#contact">contact</a>
         </li>
       </ul>
     </div>

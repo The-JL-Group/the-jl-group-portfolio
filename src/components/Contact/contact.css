@@ -3,14 +3,14 @@
   width: 100%;
   text-align: center;
   padding: 2em 1em;
-  margin-bottom: 0.625rem;
+  /* margin-bottom: 0.625rem;  */
 }
 
 /* CONTACT CONTAINER */
 .contact-header {
   text-align: center;
   letter-spacing: 0.25rem;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .contact-image {
@@ -33,6 +33,12 @@
 
 .contact-text {
   padding: 2em 0;
+}
+
+@media (min-width: 801px) {
+  .contact-header {
+    font-size: 4em;
+  }
 }
 
 @media (min-width: 1024px) {
