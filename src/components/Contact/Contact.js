@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './contact.css';
 import InputBox from './InputBox';
+import Copyright from '../Copyright/Copyright';
 import {
   motion,
   useMotionValue,
@@ -135,6 +136,8 @@ const Contact = () => {
       <div className="lg:p-8 mb-10">
         <InputBox />
       </div>
+      
+      <Copyright/>
     </section>
   );
 };
