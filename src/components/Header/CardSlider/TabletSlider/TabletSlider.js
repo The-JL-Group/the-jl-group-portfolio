@@ -13,12 +13,12 @@ function TabletSlider() {
     {
       project: 'All American',
       url: 'https://www.allamericandoorsandwindowsinc.com/',
-      icon: <FaHandHoldingMedical size={'3rem'} />,
+      icon: <MdConstruction size={'3rem'} />,
     },
     {
       project: 'Medcare Healthcert',
       url: 'https://medcare-healthcert.herokuapp.com/',
-      icon: <MdConstruction size={'3rem'} />,
+      icon: <FaHandHoldingMedical size={'3rem'} />,
     },
     {
       project: 'The-JL-Group-Portfolio',
