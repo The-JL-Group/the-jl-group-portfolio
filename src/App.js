@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import Loader from './components/Loader/Loader';
-import ProgressionBar from './components/ProgressionBar';
+import ProgressBar from './components/ProgressBar/ProgressBar';
 import Header from './components/Header/Header';
 import Sidebar from './components/Header/Sidebar/Sidebar';
 import Navbar from './components/Header/Navbar/navbar';
@@ -23,23 +23,24 @@ function App() {
 
   return (
     <div id="main" className="dark:bg-white dark:text-blk overflow-hidden">
-      {loading ? (
+      {/* {loading ? (
         <Loader setLoading={setLoading} />
-      ) : (
-        <div>
-          <ProgressionBar />
-          <Sidebar />
-          <Navbar />
-          <Header />
-          <DesktopNavbar />
-          <TabletSlider />
+      ) : ( */}
+      <div>
+        <ProgressBar />
+        <Sidebar />
+        <Navbar />
+        <Header />
+        <DesktopNavbar />
+        <TabletSlider />
 
-          <AboutBoth />
-          <Work />
-          <Contact />
-          <ScrollToTop />
-        </div>
-      )}
+        <AboutBoth />
+        <Work />
+        <Contact />
+        <ScrollToTop />
+      </div>
+
+      {/* )} */}
     </div>
   );
 }

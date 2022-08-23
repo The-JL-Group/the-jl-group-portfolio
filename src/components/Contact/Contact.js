@@ -32,8 +32,8 @@ const Contact = () => {
       opacity: 1,
       scale: 1,
       style: { rotate, scale },
-      variants: { blockVariants },
-      initial: 'initial',
+      initial: { rotate: 0 },
+      target: { rotate: 360 },
       animate: 'target',
       transition: {
         duration: 1,
