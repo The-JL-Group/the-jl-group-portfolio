@@ -1,28 +1,11 @@
 import React, { useEffect } from 'react';
 import './contact.css';
 import InputBox from './InputBox';
-import {
-  motion,
-  useMotionValue,
-  useTransform,
-  useAnimation,
-} from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const Contact = () => {
-  const blockVariants = {
-    initial: {
-      rotate: 0,
-    },
-    target: {
-      rotate: 360,
-    },
-  };
-
   // Framer Motion Hook
-  const rotate = useMotionValue(0);
-  const scale = useTransform(rotate, [0, 270], [0, 1]);
-
   const { ref, inView } = useInView({
     threshold: 0.3,
   });
@@ -31,10 +14,7 @@ const Contact = () => {
     visible: {
       opacity: 1,
       scale: 1,
-      style: { rotate, scale },
-      initial: { rotate: 0 },
-      target: { rotate: 360 },
-      animate: 'target',
+      rotate: 360,
       transition: {
         duration: 1,
         ease: 'easeInOut',
@@ -59,18 +39,6 @@ const Contact = () => {
         animate={animation}
         initial="hidden"
         variants={motionVariants}
-        // // animate={animation}
-        // style={{
-        //   rotate,
-        //   scale,
-        // }}
-        // variants={blockVariants}
-        // initial="initial"
-        // animate="target"
-        // transition={{
-        //   ease: 'easeInOut',
-        //   duration: 3,
-        // }}
       >
         {/* IMAGE CONTAINER */}
         {/* ON SMALLER SCREEN | HIDDEN ON LARGE AND UP */}
