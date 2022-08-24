@@ -50,10 +50,10 @@
 
 // Width
 @media (min-width: 801px) {
-    #about-lina {
-        // height: 500px;
-        margin-bottom: 15rem;
-      }
+  #about-lina {
+    // height: 500px;
+    margin-bottom: 15rem;
+  }
 }
 
 @media (min-width: 1029px) {
@@ -87,7 +87,7 @@
     flex-direction: row;
     text-align: center;
     align-items: flex-end;
-    justify-content: end;
+    justify-content: flex-end;
     right: 1rem;
   }
 
@@ -104,7 +104,7 @@
     flex-direction: row-reverse;
     text-align: center;
     align-items: baseline;
-    justify-content: start;
+    justify-content: flex-end;
     left: 1rem;
   }
 
@@ -123,11 +123,11 @@
     flex-direction: row;
     text-align: center;
     align-items: flex-end;
-    justify-content: end;
+    justify-content: flex-end;
     right: 1rem;
     margin-right: 2rem;
   }
- 
+
   .about-about {
     width: 50%;
     position: absolute;
@@ -141,7 +141,7 @@
     flex-direction: row-reverse;
     text-align: center;
     align-items: baseline;
-    justify-content: start;
+    justify-content: flex-end;
     margin-left: 2rem;
   }
 
@@ -183,9 +183,8 @@
   }
 }
 
-
 @media (max-height: 800px) {
-    .j-main-about {
-        margin-bottom: 3rem;
-    }
+  .j-main-about {
+    margin-bottom: 3rem;
+  }
 }

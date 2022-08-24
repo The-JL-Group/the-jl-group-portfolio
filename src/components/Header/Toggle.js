@@ -7,7 +7,7 @@ const Toggle = () => {
   return (
     <div>
       <label
-        for="default-toggle"
+        htmlFor="default-toggle"
         // inline-flex
         className=" relative items-center cursor-pointer"
       >

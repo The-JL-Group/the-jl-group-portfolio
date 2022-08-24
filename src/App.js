@@ -3,8 +3,8 @@ import React from 'react';
 // React Router Dom
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './Pages/Home';
-import Error from './Pages/Error';
+import Home from './pages/Home';
+import Error from './pages/Error';
 
 function App() {
   return (
