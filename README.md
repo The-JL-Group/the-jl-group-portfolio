@@ -9,9 +9,9 @@ As our agile methodology continues to improve, so do our projects, and likewise,
 
 ## Table of Contents
 1. [Description](#description)
-2. [Installation](#installation)
-3. [Visuals](#visuals)
-4. [Technologies](#technologies)
+2. [Technologies](#technologies)
+3. [Installation](#installation)
+4. [Visuals](#visuals)
 5. [License](#license)
 6. [Authors](#authors)
 7. [Deployment](#deployment)
@@ -25,21 +25,6 @@ Some of the frameworks we used to make this site come alive include:</br>
 * Tailwind
 * Web Vitals
 ... and more
-
-## Installation
- 
- ```bash
- npm install
- npm run start
- ```
- 
-## Visuals
-- Wireframe on Figma
-<img width="748" alt="Screen Shot 2022-08-24 at 1 38 28 PM" src="https://user-images.githubusercontent.com/100983245/186486695-8371493f-4927-4d58-aafe-94415475eb4d.png">
-
-- Finished Project
-<img width="748" alt="Screen Shot 2022-08-24 at 1 44 42 PM" src="https://user-images.githubusercontent.com/100983245/186487723-6e223c3d-87e6-4059-96e3-0b1891f1a587.png">
-
 
 ## Technologies
 
@@ -59,6 +44,21 @@ Some of the frameworks we used to make this site come alive include:</br>
 - [EmailJS](https://www.emailjs.com/)
 - [AOS Animated Scroll](https://michalsnik.github.io/aos/)
 - [SCSS](https://sass-lang.com/)
+
+
+## Installation
+ 
+ ```bash
+ npm install
+ npm run start
+ ```
+ 
+## Visuals
+- Wireframe on Figma
+<img width="748" alt="Screen Shot 2022-08-24 at 1 38 28 PM" src="https://user-images.githubusercontent.com/100983245/186486695-8371493f-4927-4d58-aafe-94415475eb4d.png">
+
+- Finished Project
+<img width="748" alt="Screen Shot 2022-08-24 at 1 44 42 PM" src="https://user-images.githubusercontent.com/100983245/186487723-6e223c3d-87e6-4059-96e3-0b1891f1a587.png">
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
