@@ -3,7 +3,7 @@
 ## Description  
 The JL Group is a team of freelance web developers who are looking to give your website a more experienced <b>experience</b>.</br>
 
-This portfolio was made in React, and includes a host of modern web design trends, including motion designs, elnarged + kinetic typography, and page loader.</br>
+This portfolio was made in React, and includes a host of modern web design trends, including motion designs, enlarged + kinetic typography, and page loader.</br>
 
 As our agile methodology continues to improve, so do our projects, and likewise, our skills! Be sure to check out our work on our site, and let our experienced team give your website a greater experience.
 
