@@ -38,11 +38,12 @@ Some of the frameworks we used to make this site come alive include:</br>
 ![Figma Icon](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![Unsplash Icon](https://img.shields.io/badge/Unsplash-000000?style=for-the-badge&logo=Unsplash&logoColor=white)
 
+Some of the frameworks we used:<br/>
+- [AOS Animated Scroll](https://michalsnik.github.io/aos/)
 - [Owl-React-Carousel](https://www.npmjs.com/package/react-owl-carousel)
 - [React-Intersection-Observer](https://www.npmjs.com/package/react-intersection-observer)
 - [React-Scroll-Progress-Bar](https://www.npmjs.com/package/react-scroll-progress-bar)
 - [EmailJS](https://www.emailjs.com/)
-- [AOS Animated Scroll](https://michalsnik.github.io/aos/)
 - [SCSS](https://sass-lang.com/)
 
 
