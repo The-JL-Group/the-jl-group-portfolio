@@ -37,7 +37,25 @@ Some of the frameworks we used to make this site come alive include:</br>
 
 ## Technologies
 
+![React Icon](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Router Icon](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![JS Icon](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![HTML Icon](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS Icon](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Tailwind Icon](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion Icon](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
+![Figma Icon](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![Unsplash Icon](https://img.shields.io/badge/Unsplash-000000?style=for-the-badge&logo=Unsplash&logoColor=white)
+
+- [Owl-React-Carousel](https://www.npmjs.com/package/react-owl-carousel)
+- [React-Intersection-Observer](https://www.npmjs.com/package/react-intersection-observer)
+- [React-Scroll-Progress-Bar](https://www.npmjs.com/package/react-scroll-progress-bar)
+- [EmailJS](https://www.emailjs.com/)
+- [AOS Animated Scroll](https://michalsnik.github.io/aos/)
+- [SCSS](https://sass-lang.com/)
+
 ## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 ## Authors
 * James Edwards 
