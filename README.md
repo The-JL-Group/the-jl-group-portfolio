@@ -7,6 +7,15 @@ This portfolio was made in React, and includes a host of modern web design trend
 
 As our agile methodology continues to improve, so do our projects, and likewise, our skills! Be sure to check out our work on our site, and let our experienced team give your website a greater experience.
 
+## Table of Contents
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Visuals](#visuals)
+4. [Technologies](#technologies)
+5. [License](#license)
+6. [Authors](#authors)
+7. [Deployment](#deployment)
+
 Some of the frameworks we used to make this site come alive include:</br>
 * AOS (Animate on Scroll)
 * Framer Motion
@@ -16,15 +25,6 @@ Some of the frameworks we used to make this site come alive include:</br>
 * Tailwind
 * Web Vitals
 ... and more
-
-## Table of Contents
-1. [Description](#description)
-2. [Installation](#installation)
-3. [Visuals](#visuals)
-4. [Technologies](#technologies)
-5. [License](#license)
-6. [Authors](#authors)
-7. [Deployment](#deployment)
 
 ## Installation
  
