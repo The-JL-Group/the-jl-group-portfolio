@@ -56,8 +56,8 @@ export default class JModal extends Component {
               </div>
 
               <div className="modal-action-btn">
-                <a href="https://github.com/jimbolikesgithub" target="_blank">
-                  <button className="bg-blk text-white dark:bg-white dark:text-blk">
+                <a href="https://github.com/jimbolikesgithub" target="_blank" rel="noreferrer">
+                  <button className="bg-blk text-white hover:bg-org hover:text-blk dark:bg-white dark:text-blk dark:hover:bg-pnk dark:hover:text-white">
                     Follow GitHub
                   </button>
                 </a>

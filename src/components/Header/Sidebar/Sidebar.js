@@ -9,8 +9,8 @@ const Sidebar = () => {
       {/* Sidebar */}
       <ul className="social-sidebar">
         {socialsIcons.map((sidebar, index) => (
-          <li href={sidebar.pathway}>
-            <a key={index} className="text-white dark:text-blk">
+          <li>
+            <a key={index} href={sidebar.pathway} className="text-white dark:text-blk" target="_blank" rel="noreferrer">
               {sidebar.icon}
             </a>
           </li>

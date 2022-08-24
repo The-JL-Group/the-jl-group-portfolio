@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import './contact.css';
 import InputBox from './InputBox';
 import Copyright from '../Copyright/Copyright';
+
+// Framer Motion
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 

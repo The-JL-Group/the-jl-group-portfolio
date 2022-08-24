@@ -71,16 +71,19 @@ const LinaExpandedContent = ({ data, onClick }) => (
           <img className="l-profile-img" src={data.linaImgSrc}></img>
           <ul className="l-social-list">
             <li className="l-social-item">
-              <a href="#" className="l-social-link"></a>
-              {data.github}
+              <a href="https://github.com/choilina16" className="l-social-link" target="_blank" rel="noreferrer">
+                {data.github}
+              </a>
             </li>
             <li className="l-social-item">
-              <a href="#" className="l-social-link"></a>
-              {data.email}
+              <a href="mailto:choilina16@gmail.com" className="l-social-link" target="_blank" rel="noreferrer">
+                {data.email}
+              </a>
             </li>
             <li className="l-social-item">
-              <a href="#" className="l-social-link"></a>
-              {data.linkedIn}
+              <a href="https://www.linkedin.com/in/lina-choi-0bb7547b/" className="l-social-link" target="_blank" rel="noreferrer">
+                {data.linkedIn}
+              </a>
             </li>
           </ul>
         </div>

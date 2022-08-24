@@ -195,7 +195,7 @@
     }
     
     .modal-card .modal-content .modal-details {
-        transform: translateY(11.875rem);
+        transform: translateY(10rem);
     }
 }
 
