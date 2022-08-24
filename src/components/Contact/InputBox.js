@@ -134,8 +134,8 @@ const InputBox = () => {
             data-mdb-ripple="true"
             data-mdb-ripple-color="light"
             className="
-              inline-block py-3 px-8 lg:px-3 bg-org text-white font-medium text-sm leading-tight rounded shadow-md hover:bg-org hover:shadow-lg focus:bg-ltOrg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-org active:shadow-lg transition duration-150 ease-in-out
-              dark:bg-pnk dark:hover:bg-pnk dark:focus:bg-ltPnk dark:active:bg-pnk
+              inline-block py-3 px-8 lg:px-3 bg-org text-white font-medium text-sm leading-tight rounded shadow-md hover:bg-white hover:text-blk hover:shadow-lg focus:bg-ltOrg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-org active:shadow-lg transition duration-150 ease-in-out
+              dark:bg-pnk dark:hover:bg-blk dark:hover:text-white dark:focus:bg-ltPnk dark:active:bg-pnk
               "
           >
             send

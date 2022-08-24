@@ -27,7 +27,7 @@ export const ModalBtn = (props) => {
   };
 
   return (
-    <div>
+    <div className='j-about-btn-container'>
       {/* Show Modal */}
       <button
         className="j-about-btn"
@@ -71,16 +71,19 @@ const JamesExpandedContent = ({ data, onClick }) => (
           <img className="j-profile-img" src={data.jamesImgSrc}></img>
           <ul className="j-social-list">
             <li className="j-social-item">
-              <a href="#" className="j-social-link"></a>
-              {data.github}
+              <a href="https://github.com/jimbolikesgithub" className="j-social-link" target="_blank" rel="noreferrer">
+                {data.github}
+              </a>
             </li>
             <li className="j-social-item">
-              <a href="#" className="j-social-link"></a>
-              {data.email}
+              <a href="mailto:edwards.econn@gmail.com" className="j-social-link" target="_blank" rel="noreferrer">
+                {data.email}
+              </a>
             </li>
             <li className="j-social-item">
-              <a href="#" className="j-social-link"></a>
-              {data.linkedIn}
+              <a href="https://www.linkedin.com/in/james-edwards-4b820422b/" className="j-social-link" target="_blank" rel="noreferrer">
+                {data.linkedIn}
+              </a>
             </li>
           </ul>
         </div>
@@ -96,49 +99,6 @@ const JamesExpandedContent = ({ data, onClick }) => (
   </motion.div>
 );
 
-// Main expanded content component
-// Lina
-
 export default JamesExpandedContent;
 
-{
-  /* Float Child */
-}
-<motion.div className="jimbo-image-container" variants={mainImageVariants}>
-  {/* <img
-src={data.jamesImgSrc}
-alt={data.imgAlt}
-className="james-main-image"
-/> */}
-</motion.div>;
 
-{
-  /* Expanded Content */
-}
-// {/* <motion.div className="j-expanded-content j-float-child j-expanded-txt">
-// <AnimatedContentBlock>
-//     {/* <span className="title-large">{data.expandedTitle}</span> */}
-//     <span className="location">{data.location}</span>
-//     <span className="price">{data.price}</span>
-//     <p>{data.longDescription}</p>
-// </AnimatedContentBlock>
-// <AnimatedContentBlock>
-//   <ModalBtn/>
-// </AnimatedContentBlock>
-// </motion.div>
-
-// {/* Float Child */}
-// <motion.div
-// className="j-expanded-content j-float-child"
-
-// >
-// <AnimatedContentBlock>
-//     {/* <span className="title-large">{data.expandedTitle}</span> */}
-//     <span className="location">{data.location}</span>
-//     <span className="price">{data.price}</span>
-//     {/* <p>{data.portfolioDescription}</p> */}
-// </AnimatedContentBlock>
-// <AnimatedContentBlock>
-//   <PortfolioBtn/>
-// </AnimatedContentBlock>
-// </motion.div> */}

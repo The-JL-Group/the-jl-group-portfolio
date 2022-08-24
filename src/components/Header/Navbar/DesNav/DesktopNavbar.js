@@ -27,16 +27,16 @@ const DesktopNavbar = () => {
       }
     >
       <ul>
-        <li>
+        <li className='hover:text-org dark:hover:text-pnk transition duration-150 ease-in-out'>
           <a href="#header">home</a>
         </li>
-        <li>
+        <li className='hover:text-org dark:hover:text-pnk transition duration-150 ease-in-out'>
           <a href="#about">about</a>
         </li>
         <li className="text-org dark:text-pnk">
           <a href="#work">work</a>
         </li>
-        <li>
+        <li className='hover:text-org dark:hover:text-pnk transition duration-150 ease-in-out'>
           <a href="#contact">contact</a>
         </li>
       </ul>

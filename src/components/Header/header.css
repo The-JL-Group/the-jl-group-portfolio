@@ -105,12 +105,6 @@
     }
 }
 
-@media (min-width: 354px) {
-  .text-wrapper p {
-   
-  }
-}
-
 @media (min-width: 409px) {
   /* Header Img */
   .header-image {

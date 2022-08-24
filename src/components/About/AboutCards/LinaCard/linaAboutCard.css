@@ -83,6 +83,10 @@
   color: #fff;
 }
 
+.l-about-btn:hover {
+  background: rgb(49, 49, 49);
+}
+
 /* New Expanded Content */
 .l-expanded-content {
   display: grid;

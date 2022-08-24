@@ -82,11 +82,16 @@
   width: 100%;
   margin-top: 0.313rem;
   background: var(--blk);
-  border: 0.063rem solid white;
+  border: 0.063rem solid #fff;
   border-radius: 0.313rem;
-  padding: 3px;
+  padding: 0.188rem;
   font-size: 1.125rem;
   color: #fff;
+  /* transition: all .4s ease-in-out; */
+}
+
+.j-about-btn:hover  {
+  background: rgb(49, 49, 49);
 }
 
 /* New Expanded Content */
@@ -104,7 +109,7 @@
   color: #222;
   text-align: center;
   /* padding: 2em; */
-  margin-top: 25rem;
+  margin-top: 1.563rem;
   border-radius: 0.313rem;
 }
 
@@ -232,6 +237,16 @@
 
   .j-content {
     padding: 2.75rem 1rem;
+  }
+
+  .j-social-list {
+    /* z-index: 11; */
+  }
+
+  .j-about-btn-container {
+    /* width: 50%; */
+    /* display: none; */
+    /* z-index: 10; */
   }
 
   .j-about-btn {

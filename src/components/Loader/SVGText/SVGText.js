@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import './svgtext.scss';
 
+// Video
+// Luis Quintero - Pexels.com - Free to use
+import svgVideo from '../../../assets/videos/svg-video.mp4';
+
 // SVG Data
 // const svgTxt = ["three", "one", "two"];
 const svgTxt = ["James", "JL", "Lina"];
@@ -18,7 +22,7 @@ const JamesSVG = () => {
                 return prevIndex + 1;
             })
         };
-        setInterval(txtTimer, 1500);
+        setInterval(txtTimer, 1200);
 
         // A "cleanup" function which will clear the interval timer when the component unmounts
         return () => { clearInterval(txtTimer); }
@@ -28,7 +32,7 @@ const JamesSVG = () => {
         <div className='svg-txt-container'>
 
             <video className='loader-video' autoPlay playsInline muted loop preload>
-                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"></source>
+                <source src={svgVideo}></source>
             </video>
 
             <svg className='loader-txt' height="100%" width="100%">
