@@ -34,6 +34,9 @@ Some of the frameworks we used to make this site come alive include:</br>
  ```
  
 ## Visuals
+- Wireframe on Figma
+<img width="714" alt="Screen Shot 2022-08-24 at 1 38 28 PM" src="https://user-images.githubusercontent.com/100983245/186486695-8371493f-4927-4d58-aafe-94415475eb4d.png">
+
 
 ## Technologies
 
