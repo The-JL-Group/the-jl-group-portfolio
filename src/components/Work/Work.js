@@ -21,7 +21,7 @@ const Work = () => {
     {
       project: 'the jl group portfolio',
       url: 'https://medcare-healthcert.herokuapp.com/',
-      image: 'work-card-2',
+      image: 'work-card-3',
       className: 'object-left-top',
     },
   ];

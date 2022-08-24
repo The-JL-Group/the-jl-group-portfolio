@@ -35,7 +35,7 @@ const RentalCard = () => {
         // onClick={() => setIsExpanded(true)}
       >
         <div className="j-content bg-card-dark dark:bg-card-light">
-          <AnimatePresence initial={false} exitBeforeEnter>
+          <AnimatePresence initial={false} mode="wait">
             {!isExpanded ? (
               <CardContent
                 data={cardData}
