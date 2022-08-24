@@ -35,7 +35,10 @@ Some of the frameworks we used to make this site come alive include:</br>
  
 ## Visuals
 - Wireframe on Figma
-<img width="714" alt="Screen Shot 2022-08-24 at 1 38 28 PM" src="https://user-images.githubusercontent.com/100983245/186486695-8371493f-4927-4d58-aafe-94415475eb4d.png">
+<img width="748" alt="Screen Shot 2022-08-24 at 1 38 28 PM" src="https://user-images.githubusercontent.com/100983245/186486695-8371493f-4927-4d58-aafe-94415475eb4d.png">
+
+- Finished Project
+<img width="748" alt="Screen Shot 2022-08-24 at 1 44 42 PM" src="https://user-images.githubusercontent.com/100983245/186487723-6e223c3d-87e6-4059-96e3-0b1891f1a587.png">
 
 
 ## Technologies
