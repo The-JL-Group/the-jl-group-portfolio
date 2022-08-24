@@ -16,16 +16,6 @@ As our agile methodology continues to improve, so do our projects, and likewise,
 6. [Authors](#authors)
 7. [Deployment](#deployment)
 
-Some of the frameworks we used to make this site come alive include:</br>
-* AOS (Animate on Scroll)
-* Framer Motion
-* React Multi Carousel
-* React Scroll Progress Bar
-* SCSS
-* Tailwind
-* Web Vitals
-... and more
-
 ## Technologies
 
 ![React Icon](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
