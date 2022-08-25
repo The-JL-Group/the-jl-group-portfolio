@@ -62,3 +62,4 @@ Some of the frameworks we used:<br/>
   - https://github.com/choilina16
 
 ## Deployment
+[Deployed on Vercel](https://the-jl-group.vercel.app/)
