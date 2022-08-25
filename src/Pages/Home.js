@@ -9,6 +9,7 @@ import TabletSlider from '../components/Header/CardSlider/TabletSlider/TabletSli
 import DesktopNavbar from '../components/Header/Navbar/DesNav/DesktopNavbar';
 import AboutBoth from '../components/About/AboutBoth';
 import Work from '../components/Work/Work';
+import Testimonials from '../components/Testimonials/Testimonials';
 import Contact from '../components/Contact/Contact';
 import ScrollToTop from '../components/Scroll/ScrollToTop';
 
@@ -35,6 +36,7 @@ const Home = () => {
           <TabletSlider />
           <AboutBoth />
           <Work />
+          <Testimonials/>
           <Contact />
           <ScrollToTop />
         </div>

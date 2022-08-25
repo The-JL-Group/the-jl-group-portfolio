@@ -1,0 +1,31 @@
+.testimonials-container {
+    width: 100%;
+}
+
+.testimonials-header {
+    font-size: 3em;
+    text-align: center;
+}
+
+@media (min-width: 801px) {
+    .testimonials-container {
+        margin-bottom: 10rem;
+    }
+
+    .testimonials-header {
+      font-size: 4em;
+    }
+}
+  
+
+@media (min-width: 1029px) {
+    .testimonials-header {
+      font-size: 6.5em;
+    }
+}
+  
+@media (min-width: 1655px) {
+    .testimonials-header {
+        font-size: 8em;
+    }
+}
