@@ -13,7 +13,7 @@ export const regIcons = [
   {
     title: 'portfolio',
     icon: <BiDesktop size={'1.4rem'} />,
-    pathway: '#header',
+    pathway: '#work',
   },
   {
     title: 'about us',

@@ -7,7 +7,8 @@ import svgVideo from '../../../assets/videos/svg-video.mp4';
 
 // SVG Data
 // const svgTxt = ["three", "one", "two"];
-const svgTxt = ['James', 'JL', 'Lina'];
+// Works backwards on liveserver; Works as it should on Vercel
+const svgTxt = ['James', 'Lina', 'JL'];
 
 const JamesSVG = () => {
   const [index, setTxtChange] = useState(0);
