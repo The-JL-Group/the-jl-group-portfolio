@@ -13,7 +13,19 @@ const Contact = () => {
     threshold: 0.3,
   });
   const animation = useAnimation();
-  const motionVariants = {
+
+  const titleVariants = {
+    visible: {
+      y: 0,
+
+      transition: {
+          type: 'spring', duration: 2, bounce: 0.3
+      }
+    },
+    hidden: { y: '100vh'},
+  }
+
+  const imgVariants = {
     visible: {
       opacity: 1,
       scale: 1,
@@ -33,15 +45,19 @@ const Contact = () => {
   }, [animation, inView]);
 
   return (
-    <section id="contact" className="contact-container">
-      <h2 className="contact-header text-shadow-org dark:text-shadow-pnk ">
-        CONTACT
-      </h2>
-      <motion.div
-        ref={ref}
+    <section id="contact" className="contact-container" ref={ref}>
+      <motion.h2 
+        className="contact-header text-shadow-org dark:text-shadow-pnk "
         animate={animation}
         initial="hidden"
-        variants={motionVariants}
+        variants={titleVariants}
+      >
+        CONTACT
+      </motion.h2>
+      <motion.div
+        animate={animation}
+        initial="hidden"
+        variants={imgVariants}
       >
         {/* IMAGE CONTAINER */}
         {/* ON SMALLER SCREEN | HIDDEN ON LARGE AND UP */}

@@ -58,3 +58,10 @@
     font-size: 8em;
   }
 }
+
+
+@media (max-width: 442px) {
+  .contact-header {
+    font-size: 3em;
+  }
+}
