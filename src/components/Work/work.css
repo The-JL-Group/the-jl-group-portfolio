@@ -126,3 +126,9 @@
     font-size: 8em;
   }
 }
+
+@media (max-width: 442px) {
+  .work-header {
+    font-size: 2em;
+  }
+}
