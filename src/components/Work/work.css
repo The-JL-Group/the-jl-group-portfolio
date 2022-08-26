@@ -109,6 +109,16 @@
   .work-card img {
     height: 20em;
   }
+
+  .work-container {
+    scale: 0.9;
+  }
+}
+
+@media (min-width: 1600px) {
+  .work-container {
+    scale: 1;
+  }
 }
 
 @media (min-width: 1655px) {
