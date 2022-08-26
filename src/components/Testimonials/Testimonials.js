@@ -1,12 +1,67 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+// Styling
 import './testimonials.css'
+
+// Framer Motion
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Testimonials = () => {
 
+    // Framer Motion Hook
+    const { ref, inView } = useInView({
+        threshold: 0.3,
+    });
+    const animation = useAnimation();
+
+    const titleVariants = {
+        visible: {
+            x: 0,
+
+            transition: {
+                type: 'spring', duration: 2, bounce: 0.3
+            }
+        },
+        hidden: { x: '100vw'},
+    }
+
+    const cardVariants = {
+        visible: {
+          x: 0,
+          
+          transition: {
+            type: 'spring', duration: 2, bounce: 0.3
+          },
+        },
+        hidden: { x: '-100vw' },
+    };
+
+    useEffect(() => {
+        if (inView) {
+          animation.start('visible');
+        }
+    }, [animation, inView]);
+
     return (
-        <section class="testimonials-container body-font">
-            <h1 class="testimonials-header text-shadow-org dark:text-shadow-pnk">Testimonials</h1>
-            <div class="container px-5 py-6 mx-auto">
+        <section 
+            class="testimonials-container body-font"
+            ref={ref}
+        >
+            <motion.h1 
+                class="testimonials-header text-shadow-org dark:text-shadow-pnk"
+                animate={animation}
+                initial="hidden"
+                variants={titleVariants}
+            >
+                Testimonials
+            </motion.h1>
+            <motion.div 
+                class="container px-5 py-6 mx-auto"
+                animate={animation}
+                initial="hidden"
+                variants={cardVariants}
+                >
                 <div class="flex flex-wrap -m-4">
                     <div class="p-4 md:w-1/2 w-full">
                         <div class="h-full bg-white dark:bg-blk p-8 rounded">
@@ -39,7 +94,7 @@ const Testimonials = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
       );
     

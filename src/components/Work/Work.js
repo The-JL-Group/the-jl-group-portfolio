@@ -33,7 +33,19 @@ const Work = () => {
     threshold: 0.3,
   });
   const animation = useAnimation();
-  const motionVariants = {
+
+  const titleVariants = {
+    visible: {
+      x: 0,
+
+      transition: {
+          type: 'tween', duration: 1, bounce: 0.3
+      }
+    },
+    hidden: { x: '-100vw'},
+  }
+
+  const cardVariants = {
     visible: {
       opacity: 1,
       scale: 1,
@@ -53,19 +65,23 @@ const Work = () => {
   }, [animation, inView]);
 
   return (
-    <section className="work-container" id="work">
+    <section className="work-container" id="work" ref={ref}>
       {/* HEADER CONTAINER */}
       <div className="work-container-header">
-        <h2 className="work-header text-shadow-org dark:text-shadow-pnk">
+        <motion.h2 
+          className="work-header text-shadow-org dark:text-shadow-pnk"
+          animate={animation}
+          initial="hidden"
+          variants={titleVariants}
+        >
           VIEW OUR WORK
-        </h2>
+        </motion.h2>
       </div>
 
       <motion.div
-        ref={ref}
         animate={animation}
         initial="hidden"
-        variants={motionVariants}
+        variants={cardVariants}
       >
         {/* WORK CARD CONTAINER */}
         <div className="work-card-section">

@@ -16,19 +16,23 @@ const AboutBoth = () => {
     threshold: 0.3,
   });
   const animation = useAnimation();
+
   const motionVariants = {
     visible: {
       opacity: 1,
       scale: 1,
+      x: 0,
       
       transition: {
         duration: 1,
         ease: 'easeInOut',
+        type: 'spring', duration: 2, bounce: 0.3
       },
     },
-    hidden: { opacity: 0, scale: 0.5 },
+    hidden: { opacity: 0, scale: 0.5, },
+    // x: '-10vw',
   };
-
+ 
   useEffect(() => {
     if (inView) {
       animation.start('visible');
