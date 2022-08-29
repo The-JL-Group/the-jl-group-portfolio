@@ -8,9 +8,7 @@ import AboutLina from './AboutLina';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-
 const AboutBoth = () => {
-
   // Framer Motion Hook
   const { ref, inView } = useInView({
     threshold: 0.3,
@@ -22,27 +20,26 @@ const AboutBoth = () => {
       opacity: 1,
       scale: 1,
       x: 0,
-      
+
       transition: {
         duration: 1,
         ease: 'easeInOut',
-        type: 'spring', duration: 2, bounce: 0.3
+        type: 'spring',
+        bounce: 0.3,
       },
     },
-    hidden: { opacity: 0, scale: 0.5, },
-    // x: '-10vw',
+    hidden: { opacity: 0, scale: 0.5 },
   };
- 
+
   useEffect(() => {
     if (inView) {
       animation.start('visible');
     }
   }, [animation, inView]);
 
-
   return (
-    <motion.div 
-      className="overflow-hidden" 
+    <motion.div
+      className="overflow-hidden"
       ref={ref}
       animate={animation}
       initial="hidden"

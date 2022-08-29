@@ -15,14 +15,12 @@
 
 /* Rental Card */
 .j-card {
-  /* margin: auto; */
   max-height: 31.25rem;
   min-height: 50%;
   max-width: 50rem;
   width: 18.75rem;
   height: 18.75rem;
   position: relative;
-  /* margin-bottom: 50px; */
   padding: 1rem;
 }
 
@@ -87,10 +85,9 @@
   padding: 0.188rem;
   font-size: 1.125rem;
   color: #fff;
-  /* transition: all .4s ease-in-out; */
 }
 
-.j-about-btn:hover  {
+.j-about-btn:hover {
   background: rgb(49, 49, 49);
 }
 
@@ -127,7 +124,6 @@
   margin: 0;
   padding: 0;
   width: 7.813rem;
-  /* border: 3px solid red; */
   margin: 0 auto;
 }
 
@@ -192,7 +188,6 @@
   }
 
   .j-title {
-    /* margin: 0 0 10px; */
     font-size: 3.5rem;
     position: absolute;
     bottom: 0;
@@ -204,8 +199,6 @@
     height: 100%;
     width: 100%;
     padding: 0.875rem 1rem;
-    /* transform: scale(1);
-    z-index: 900; */
   }
 }
 
@@ -239,16 +232,6 @@
     padding: 2.75rem 1rem;
   }
 
-  .j-social-list {
-    /* z-index: 11; */
-  }
-
-  .j-about-btn-container {
-    /* width: 50%; */
-    /* display: none; */
-    /* z-index: 10; */
-  }
-
   .j-about-btn {
     width: 50%;
   }
@@ -263,11 +246,9 @@
   .j-profile-img {
     display: flex;
     position: absolute;
-    /* display: none; */
     top: 18%;
     right: 8%;
     width: 9.375rem;
-    /* height: 30px;  */
   }
 
   .j-social-list {
@@ -277,14 +258,8 @@
     right: 10%;
   }
 
-  .j-profile-main {
-  }
-
   .j-profile-name {
     font-size: 1rem;
-  }
-
-  .j-profile-position {
   }
 
   .j-profile-body {
@@ -462,7 +437,6 @@
   .j-card {
     width: 43.75rem;
     height: 12.5rem;
-    /* right: 5%; */
   }
 
   .j-card::before {

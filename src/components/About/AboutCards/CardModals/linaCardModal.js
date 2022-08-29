@@ -31,7 +31,7 @@ export default class LModal extends Component {
         </div>
         <div className="modal-card bg-white dark:bg-blk">
           <div class="modal-img-container">
-            <img src={linaImg}></img>
+            <img src={linaImg} alt="Lina"></img>
           </div>
           <div className="modal-content">
             <div className="modal-details text-blk dark:text-white">
@@ -55,7 +55,11 @@ export default class LModal extends Component {
               </div>
 
               <div className="modal-action-btn">
-                <a href="https://github.com/choilina16" target="_blank" rel="noreferrer">
+                <a
+                  href="https://github.com/choilina16"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <button className="bg-blk text-white hover:bg-org hover:text-blk dark:bg-white dark:text-blk dark:hover:bg-pnk dark:hover:text-white">
                     Follow GitHub
                   </button>

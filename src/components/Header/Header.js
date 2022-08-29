@@ -1,21 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './header.css';
 
 // Components
 import LogoBar from './Navbar/LogoBar/LogoBar';
 import Banner from './Banner/Banner';
-import { HeaderMarquee } from './Banner/Banner';
 import CardSlider from './CardSlider/CardSlider';
-import { HeaderImageBlock, HeaderTxt } from '../Loader/Loader';
+import { HeaderImageBlock } from '../Loader/Loader';
 
 // Icon(s)
 import { BsFillEyeFill } from 'react-icons/bs';
 
 const Header = () => {
-
   return (
-    <header id="header" className="z-0 header font-['Major Mono Display'] overflow-hidden">
-
+    <header id="header" className="z-0 header overflow-hidden">
       {/* Logo + Day/Night Btn */}
       <LogoBar />
 
@@ -24,16 +21,12 @@ const Header = () => {
         {/* Header Img */}
 
         {/* Framer Motion Header Img */}
-        <HeaderImageBlock/>
-
+        <HeaderImageBlock />
 
         {/* Text */}
         <div className="text-wrapper">
-          
           {/* Banner Txt */}
-          <Banner/>
-
-          {/* <HeaderMarquee/> */}
+          <Banner />
 
           {/* Plain Text 'Carats' must be written as HTML entities */}
           <h5 className="dark:text-black">&lt;ux/ui developers/&gt;</h5>

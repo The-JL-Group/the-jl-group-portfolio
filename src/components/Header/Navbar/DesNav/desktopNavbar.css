@@ -1,34 +1,28 @@
 .desktopNav {
-    position: fixed;
-    /* position: sticky; */
-    /* top: 0; */
-    bottom: 0;
-    z-index: 999;
-    width: 100%;
-    display: none;
-    justify-content: center;
-    transition: 0.4s ease-in;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  transition: 0.4s ease-in;
 }
 
 .desktopNav ul {
-    list-style: none;
-    display: inline-flex;
-    padding: 0.625rem;
+  list-style: none;
+  display: inline-flex;
+  padding: 0.625rem;
 }
 
 .desktopNav ul li {
-    font-size: 1.5rem;
-    display: flex;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-}
-
-.desktopNav ul li a {
-    
+  font-size: 1.5rem;
+  display: flex;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 @media (min-width: 1029px) {
-    .desktopNav {
-        display: inline-flex;
-    }
+  .desktopNav {
+    display: inline-flex;
+  }
 }

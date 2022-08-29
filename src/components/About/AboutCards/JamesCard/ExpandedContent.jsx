@@ -17,17 +17,15 @@ export const ModalBtn = (props) => {
 
   // NEED THIS IN ABOUT.JS
   const [modal, setModal] = useState(false);
-  // const [tempdata, setTempdata] = useState([])
 
   const getData = (jamesImgSrc, expandedTitle) => {
     let tempData = [jamesImgSrc, expandedTitle];
-    // setTempdata(item => [1, ...])
 
     return setModal(true);
   };
 
   return (
-    <div className='j-about-btn-container'>
+    <div className="j-about-btn-container">
       {/* Show Modal */}
       <button
         className="j-about-btn"
@@ -56,32 +54,46 @@ const AnimatedContentBlock = ({ children }) => (
 // Main expanded content component
 // James
 const JamesExpandedContent = ({ data, onClick }) => (
-  <motion.div
-    // variants={expandedVariants}
-    animate="active"
-    initial="inactive"
-    exit="exit"
-  >
+  <motion.div animate="active" initial="inactive" exit="exit">
     <button className="j-expanded-close" onClick={() => onClick(false)}>
       <Close />
     </button>
     <motion.div className="card-content-flex j-float-container j-expanded-content j-float-child">
       <div className="j-inner-card">
         <div className="j-profile-sidebar">
-          <img className="j-profile-img" src={data.jamesImgSrc}></img>
+          <img
+            className="j-profile-img"
+            src={data.jamesImgSrc}
+            alt="James"
+          ></img>
           <ul className="j-social-list">
             <li className="j-social-item">
-              <a href="https://github.com/jimbolikesgithub" className="j-social-link" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/jimbolikesgithub"
+                className="j-social-link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {data.github}
               </a>
             </li>
             <li className="j-social-item">
-              <a href="mailto:edwards.econn@gmail.com" className="j-social-link" target="_blank" rel="noreferrer">
+              <a
+                href="mailto:edwards.econn@gmail.com"
+                className="j-social-link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {data.email}
               </a>
             </li>
             <li className="j-social-item">
-              <a href="https://www.linkedin.com/in/james-edwards-4b820422b/" className="j-social-link" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.linkedin.com/in/james-edwards-4b820422b/"
+                className="j-social-link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {data.linkedIn}
               </a>
             </li>
@@ -92,7 +104,6 @@ const JamesExpandedContent = ({ data, onClick }) => (
           <p className="j-profile-position">UX/UI Developer</p>
           <p className="j-profile-body">{data.longDescription}</p>
           <ModalBtn />
-          {/* <PortfolioBtn/> */}
         </div>
       </div>
     </motion.div>
@@ -100,5 +111,3 @@ const JamesExpandedContent = ({ data, onClick }) => (
 );
 
 export default JamesExpandedContent;
-
-

@@ -27,8 +27,6 @@ const LinaRentalCard = () => {
         animate={isExpanded ? 'active' : 'inactive'}
         // Required to prevent animations from running on page load
         initial="inactive"
-
-        // onClick={() => setIsExpanded(!isExpanded)}
       >
         <div className="l-content">
           <AnimatePresence initial={false} mode="wait">

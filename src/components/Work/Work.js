@@ -14,13 +14,13 @@ const Work = () => {
     },
     {
       project: 'medcare healthcert',
-      url: 'https://medcare-healthcert.herokuapp.com/',
+      url: 'https://medcare-healthcert.vercel.app/',
       image: 'work-card-2',
       className: 'object-left-top',
     },
     {
       project: 'the jl group portfolio',
-      url: 'https://medcare-healthcert.herokuapp.com/',
+      url: 'https://the-jl-group.vercel.app/',
       image: 'work-card-3',
       className: 'object-left-top',
     },
@@ -39,11 +39,13 @@ const Work = () => {
       x: 0,
 
       transition: {
-          type: 'tween', duration: 1, bounce: 0.3
-      }
+        type: 'tween',
+        duration: 1,
+        bounce: 0.3,
+      },
     },
-    hidden: { x: '-100vw'},
-  }
+    hidden: { x: '-100vw' },
+  };
 
   const cardVariants = {
     visible: {
@@ -68,7 +70,7 @@ const Work = () => {
     <section className="work-container" id="work" ref={ref}>
       {/* HEADER CONTAINER */}
       <div className="work-container-header">
-        <motion.h2 
+        <motion.h2
           className="work-header text-shadow-org dark:text-shadow-pnk"
           animate={animation}
           initial="hidden"
@@ -78,11 +80,7 @@ const Work = () => {
         </motion.h2>
       </div>
 
-      <motion.div
-        animate={animation}
-        initial="hidden"
-        variants={cardVariants}
-      >
+      <motion.div animate={animation} initial="hidden" variants={cardVariants}>
         {/* WORK CARD CONTAINER */}
         <div className="work-card-section">
           {workList.map((item, index) => (

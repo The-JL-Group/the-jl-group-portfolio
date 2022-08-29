@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import React from 'react';
 
 import './about.scss';
 
@@ -9,15 +7,8 @@ import LinaAboutCard from './AboutCards/LinaCard/linaAboutCard';
 
 const AboutLina = () => {
   return (
-    <div
-      id="about-lina"
-      className="l-main-about"
-      // ref={ref}
-    >
-      <div
-        className="l-card-flex"
-        // animate={animation}
-      >
+    <div id="about-lina" className="l-main-about">
+      <div className="l-card-flex">
         <h2 className="about-us text-shadow-org dark:text-shadow-pnk">US</h2>
         <LinaAboutCard />
       </div>

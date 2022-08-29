@@ -36,12 +36,10 @@
 }
 
 .about-about {
-  // width: 50%;
   font-size: 4em;
 }
 
 .about-us {
-  // width: 50%;
   font-size: 4em;
 }
 
@@ -51,31 +49,26 @@
 // Width
 @media (min-width: 801px) {
   #about-lina {
-    // height: 500px;
     margin-bottom: 15rem;
   }
 }
 
 @media (min-width: 1029px) {
   .about-about {
-    // width: 50%;
     font-size: 6.5em;
   }
 
   .about-us {
-    // width: 50%;
     font-size: 6.5em;
   }
 }
 
 @media (min-width: 1655px) {
   .about-about {
-    // width: 50%;
     font-size: 8em;
   }
 
   .about-us {
-    // width: 50%;
     font-size: 8em;
   }
 }
@@ -204,4 +197,3 @@
     font-size: 3em;
   }
 }
-

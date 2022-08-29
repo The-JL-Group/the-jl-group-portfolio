@@ -95,5 +95,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// ${open ? 'h-full' : 'h-0'}

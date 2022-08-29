@@ -4,22 +4,15 @@
 .main-header {
   width: 100%;
   text-align: center;
-
-  /* border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff; */
-
-  /* height: 800px; */
   position: relative;
   overflow: hidden;
 }
 
 /* Header Img */
 .header-image {
-  /* transform: scale(2.9); */
   min-width: 43.75rem;
   width: 100%;
   height: 43.75rem;
-  /* height: 100vh; */
   position: absolute;
   left: -23.125rem;
   top: -4.375rem;
@@ -44,7 +37,6 @@
 }
 
 .text-wrapper h5 {
-  /* line-height: 0; */
   margin: 1.5rem 0 0 0;
   letter-spacing: 0.119rem;
   line-height: 1.05;
@@ -80,7 +72,6 @@
 }
 
 .cta-text {
-  /* display: inline-flex; */
   align-items: center;
   padding: 0 0.4rem;
 }
@@ -98,11 +89,11 @@
 /* ----------------------------------- */
 /* Mobile Header */
 @media (min-width: 329px) {
-    .text-wrapper p {
-      padding-top: 0.625rem;
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-    }
+  .text-wrapper p {
+    padding-top: 0.625rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 @media (min-width: 409px) {
@@ -135,15 +126,12 @@
 /* ----------------------------------- */
 /* Tablet Header */
 
-/* IMPLEMENT BOX SHANDOW ON TOP OF ABOUT SECTION WHILE CIRCLES ARE PLACED UNDERNEATH OVERFLOW */
+/* IMPLEMENT BOX SHADOW ON TOP OF ABOUT SECTION WHILE CIRCLES ARE PLACED UNDERNEATH OVERFLOW */
 @media (min-width: 601px) {
-
-
   /* Main Header */
   .main-header {
     text-align: right;
   }
-
 
   /* Header Img */
   .header-image {
@@ -193,13 +181,9 @@
 
   /* Main Header */
   .main-header {
-    /* height: 100vh; */
-    /* height: 700px; */
     height: 62.5rem;
     overflow: hidden;
   }
-
-  /* Main Header */
 
   /* Header Img */
   .header-image {
@@ -219,7 +203,6 @@
     transform: translate(-50%, -50%);
   }
 
-
   /* Header Text + Btn */
   .text-wrapper {
     display: flex;
@@ -227,7 +210,6 @@
     justify-content: right;
     width: 100%;
     height: 60%;
-    /* top: 40px; */
   }
 
   .text-wrapper h1 {
@@ -239,10 +221,9 @@
   .cta-wrapper button {
     display: none;
   }
-
 }
 
-/* Macbook Pro 2020 13in */
+/* MacBook Pro 2020 13in */
 @media (min-width: 1440px) {
   /* Header Text + Btn */
   .text-wrapper h1 {
@@ -273,7 +254,6 @@
 @media (min-width: 1715px) {
   /* Main Header */
   .main-header {
-    /* height: 100vh; */
     height: 68.75rem;
     overflow: hidden;
   }

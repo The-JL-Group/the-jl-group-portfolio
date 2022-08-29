@@ -8,7 +8,6 @@ const Toggle = () => {
     <div>
       <label
         htmlFor="default-toggle"
-        // inline-flex
         className=" relative items-center cursor-pointer"
       >
         <input
