@@ -102,16 +102,17 @@ const Testimonials = () => {
               </svg>
 
               <p class="leading-relaxed mb-6 text-blk dark:text-white">
-                We had some other offers to rebuild our site. it was incredibly antiquated. James and Lina rebuilt it from the ground up. They've been only helpful.
+                We had some other offers to rebuild our site. it was incredibly
+                antiquated. James and Lina rebuilt it from the ground up.
+                They've been only helpful.
               </p>
-              <a class="inline-flex items-center">
+              <div class="inline-flex items-center">
                 <span class="flex-grow flex flex-col pl-4">
                   <span class="text-org dark:text-pnk title-font font-medium ">
                     susanna edwards
                   </span>
                   <span class="text-sm text-blk dark:text-white">
                     Co-CEO - all american doors &#38; windows
-
                   </span>
                 </span>
               </div>
