@@ -17,11 +17,9 @@ export const ModalBtn = (props) => {
 
   // NEED THIS IN ABOUT.JS
   const [modal, setModal] = useState(false);
-  // const [tempdata, setTempdata] = useState([])
 
   const getData = (jamesImgSrc, expandedTitle) => {
     let tempData = [jamesImgSrc, expandedTitle];
-    // setTempdata(item => [1, ...])
 
     return setModal(true);
   };
@@ -56,32 +54,42 @@ const AnimatedContentBlock = ({ children }) => (
 // Main expanded content component
 // James
 const LinaExpandedContent = ({ data, onClick }) => (
-  <motion.div
-    // variants={expandedVariants}
-    animate="active"
-    initial="inactive"
-    exit="exit"
-  >
+  <motion.div animate="active" initial="inactive" exit="exit">
     <button className="j-expanded-close" onClick={() => onClick(false)}>
       <Close />
     </button>
     <motion.div className="card-content-flex l-expanded-content">
       <div className="l-inner-card">
         <div className="l-profile-sidebar">
-          <img className="l-profile-img" src={data.linaImgSrc}></img>
+          <img className="l-profile-img" src={data.linaImgSrc} alt="Lina"></img>
           <ul className="l-social-list">
             <li className="l-social-item">
-              <a href="https://github.com/choilina16" className="l-social-link" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/choilina16"
+                className="l-social-link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {data.github}
               </a>
             </li>
             <li className="l-social-item">
-              <a href="mailto:choilina16@gmail.com" className="l-social-link" target="_blank" rel="noreferrer">
+              <a
+                href="mailto:choilina16@gmail.com"
+                className="l-social-link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {data.email}
               </a>
             </li>
             <li className="l-social-item">
-              <a href="https://www.linkedin.com/in/lina-choi-0bb7547b/" className="l-social-link" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.linkedin.com/in/lina-choi-0bb7547b/"
+                className="l-social-link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {data.linkedIn}
               </a>
             </li>
@@ -92,7 +100,6 @@ const LinaExpandedContent = ({ data, onClick }) => (
           <p className="l-profile-position">UX/UI Developer</p>
           <p className="l-profile-body">{data.longDescription}</p>
           <ModalBtn />
-          {/* <PortfolioBtn/> */}
         </div>
       </div>
     </motion.div>

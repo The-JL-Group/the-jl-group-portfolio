@@ -32,7 +32,7 @@ export default class JModal extends Component {
 
         <div className="modal-card bg-white dark:bg-blk">
           <div class="modal-img-container">
-            <img src={jamesImg}></img>
+            <img src={jamesImg} alt="James"></img>
           </div>
           <div className="modal-content">
             <div className="modal-details text-blk dark:text-white">
@@ -56,7 +56,11 @@ export default class JModal extends Component {
               </div>
 
               <div className="modal-action-btn">
-                <a href="https://github.com/jimbolikesgithub" target="_blank" rel="noreferrer">
+                <a
+                  href="https://github.com/jimbolikesgithub"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <button className="bg-blk text-white hover:bg-org hover:text-blk dark:bg-white dark:text-blk dark:hover:bg-pnk dark:hover:text-white">
                     Follow GitHub
                   </button>

@@ -14,7 +14,7 @@ export const socialsIcons = [
     title: 'fiverr',
     icon: <SiFiverr size={'2.5rem'} />,
     pathway:
-      'https://www.fiverr.com/thejlgroup/design-and-create-your-custom-unique-website-using-react',
+      'https://www.fiverr.com/jimbodwards/build-modern-websites-using-html-css-js-react-and-more?context_referrer=user_page&ref_ctx_id=03508d6e14b6adba55c8a4234f793e61&pckg_id=1&pos=1&imp_id=085176b9-bd43-468c-8277-20dd6f59167a',
   },
   {
     title: 'email us',

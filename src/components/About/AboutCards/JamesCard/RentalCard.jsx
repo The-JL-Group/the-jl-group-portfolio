@@ -29,10 +29,6 @@ const RentalCard = () => {
         animate={isExpanded ? 'active' : 'inactive'}
         // Required to prevent animations from running on page load
         initial="inactive"
-
-        // onClick={() => setIsExpanded(!isExpanded)}
-
-        // onClick={() => setIsExpanded(true)}
       >
         <div className="j-content">
           <AnimatePresence initial={false} mode="wait">

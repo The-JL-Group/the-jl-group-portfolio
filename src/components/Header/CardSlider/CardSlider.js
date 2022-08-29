@@ -17,12 +17,12 @@ function CardSlider() {
     },
     {
       project: 'Medcare Healthcert',
-      url: 'https://medcare-healthcert.herokuapp.com/',
+      url: 'https://medcare-healthcert.vercel.app/',
       icon: <FaHandHoldingMedical size={'3rem'} />,
     },
     {
       project: 'The-JL-Group-Portfolio',
-      url: '',
+      url: 'https://the-jl-group.vercel.app/',
       icon: <MdComputer size={'3rem'} />,
     },
   ];

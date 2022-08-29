@@ -6,7 +6,6 @@ import './svgtext.scss';
 import svgVideo from '../../../assets/videos/svg-video.mp4';
 
 // SVG Data
-// const svgTxt = ["three", "one", "two"];
 // Works backwards on liveserver; Works as it should on Vercel
 const svgTxt = ['James', 'Lina', 'JL'];
 
@@ -47,7 +46,6 @@ const JamesSVG = () => {
         <defs>
           <mask id="mask" x="0" y="0" height="100%" width="100%">
             <rect x="0" y="0" height="100%" width="100%" />
-            {/* <text x="50%" y="50%" fill="red" text-anchor="middle">I love SVG</text> */}
             <text x="50%" y="50%" textAnchor="middle">
               {svgTxt[index]}
             </text>
