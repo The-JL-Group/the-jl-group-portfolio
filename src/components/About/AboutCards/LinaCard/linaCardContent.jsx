@@ -14,9 +14,6 @@ const linaCardContent = ({ data, onClick }) => (
     animate="active"
     initial="inactive"
   >
-    <motion.div className="thumbnail-container">
-      <img src={data.imgSrc} alt={data.imgAlt} className="thumbnail" />
-    </motion.div>
     <motion.div className="initial-content">
       <span className="l-title text-header-org dark:text-header-pnk">
         {data.contentTitle}

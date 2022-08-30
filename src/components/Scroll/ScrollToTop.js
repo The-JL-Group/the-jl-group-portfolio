@@ -23,11 +23,11 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     // looking for scroll event, run toggleVisibility function
-    window.addEventListener('scroll', toggleVisibility);
+    window.addEventListener('scroll', toggleVisibility, { passive: true });
 
     // need to move the toggleVisibility function when it's done
     return () => {
-      window.removeEventListener('scroll', toggleVisibility);
+      window.removeEventListener('scroll', toggleVisibility, { passive: true });
     };
   }, []);
 
@@ -36,6 +36,7 @@ const ScrollToTop = () => {
       <button
         type="button"
         onClick={scrollTop}
+        aria-label="to top"
         className={classNames(
           isVisible ? 'opacity-100' : 'opacity-0',
           'inline-flex items-center p-3 rounded-full shadow-sm text-white bg-org transition-opacity hover:bg-ltOrg focus:outline-none dark:bg-pnk dark:hover:bg-ltPnk'

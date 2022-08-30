@@ -7,7 +7,7 @@ const Toggle = () => {
   return (
     <div>
       <label
-        htmlFor="default-toggle"
+        for="default-toggle"
         className=" relative items-center cursor-pointer"
       >
         <input
