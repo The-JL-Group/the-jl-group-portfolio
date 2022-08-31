@@ -21,7 +21,7 @@ const Error = () => {
       <div className="error-btn-container">
         <button
           onClick={homeLink}
-          class="btn-flip error-btn"
+          className="btn-flip error-btn"
           data-back="Back"
           data-front="Go"
         ></button>

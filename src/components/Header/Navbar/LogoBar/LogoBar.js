@@ -17,7 +17,7 @@ const LogoBar = () => {
     }
   };
 
-  window.addEventListener('scroll', changeBackground);
+  window.addEventListener('scroll', changeBackground, { passive: true });
 
   return (
     <div

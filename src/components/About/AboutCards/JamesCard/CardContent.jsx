@@ -10,9 +10,6 @@ const CardContent = ({ data, onClick }) => (
     animate="active"
     initial="inactive"
   >
-    <motion.div className="thumbnail-container">
-      <img src={data.imgSrc} alt={data.imgAlt} className="thumbnail" />
-    </motion.div>
     <motion.div className="initial-content">
       {/* Name */}
       <span className="j-title text-header-org dark:text-header-pnk">

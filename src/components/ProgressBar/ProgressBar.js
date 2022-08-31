@@ -16,9 +16,12 @@ const ProgressBarComponent = () => {
       setScroll(scroll);
     };
 
-    window.addEventListener('scroll', progressBarHandler);
+    window.addEventListener('scroll', progressBarHandler, { passive: true });
 
-    return () => window.removeEventListener('scroll', progressBarHandler);
+    return () =>
+      window.removeEventListener('scroll', progressBarHandler, {
+        passive: true,
+      });
   });
 
   return (
